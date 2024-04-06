@@ -107,14 +107,14 @@
   </url>
   
   <url>
-    <loc>http://www.vreteam.eu.org/posts/d74d8b76.html</loc>
+    <loc>http://www.vreteam.eu.org/posts/e3e08109.html</loc>
     
     <lastmod>2024-04-06</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.vreteam.eu.org/posts/e3e08109.html</loc>
+    <loc>http://www.vreteam.eu.org/posts/d74d8b76.html</loc>
     
     <lastmod>2024-04-06</lastmod>
     
@@ -156,14 +156,14 @@
   </url>
   
   <url>
-    <loc>http://www.vreteam.eu.org/List/galleries/%E7%92%80%E7%92%A8%E6%98%9F%E7%A9%BA/index.html</loc>
+    <loc>http://www.vreteam.eu.org/List/galleries/%E7%94%9C%E7%BE%8E%E9%A3%9F%E5%93%81/index.html</loc>
     
     <lastmod>2024-04-06</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.vreteam.eu.org/List/galleries/%E7%94%9C%E7%BE%8E%E9%A3%9F%E5%93%81/index.html</loc>
+    <loc>http://www.vreteam.eu.org/List/galleries/%E7%92%80%E7%92%A8%E6%98%9F%E7%A9%BA/index.html</loc>
     
     <lastmod>2024-04-06</lastmod>
     
@@ -184,6 +184,13 @@
   </url>
   
   <url>
+    <loc>http://www.vreteam.eu.org/List/galleries/%E5%8A%A8%E6%BC%AB%E9%A3%8E%E6%99%AF/index.html</loc>
+    
+    <lastmod>2024-04-06</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.vreteam.eu.org/List/galleries/%E5%91%86%E8%90%8C%E7%8C%AB%E5%92%AA/index.html</loc>
     
     <lastmod>2024-04-06</lastmod>
@@ -192,13 +199,6 @@
   
   <url>
     <loc>http://www.vreteam.eu.org/List/galleries/%E5%9F%8E%E5%B8%82%E9%A3%8E%E5%85%89/index.html</loc>
-    
-    <lastmod>2024-04-06</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.vreteam.eu.org/List/galleries/%E5%8A%A8%E6%BC%AB%E9%A3%8E%E6%99%AF/index.html</loc>
     
     <lastmod>2024-04-06</lastmod>
     
@@ -305,6 +305,13 @@
   </url>
   
   <url>
+    <loc>http://www.vreteam.eu.org/tags/Github/</loc>
+    <lastmod>2024-04-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://www.vreteam.eu.org/tags/hexo-blog-lucky/</loc>
     <lastmod>2024-04-06</lastmod>
     <changefreq>daily</changefreq>
@@ -313,13 +320,6 @@
   
   <url>
     <loc>http://www.vreteam.eu.org/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2024-04-06</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.vreteam.eu.org/tags/Github/</loc>
     <lastmod>2024-04-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
