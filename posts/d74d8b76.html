@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="LuckyBlog开源搭建教程, luckyzmj 计算机 网络安全 渗透测试">
-    <meta name="description" content="本科 | 计算机科学与技术 | 网络安全">
+    <meta name="keywords" content="LuckyBlog开源搭建教程, JackTang 计算机 网络安全 渗透测试">
+    <meta name="description" content="硕士 | 计算机科学与技术 | 虚拟现实技术">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -45,6 +45,16 @@
 <link rel="alternate" href="/atom.xml" title="JackTang" type="application/atom+xml">
 </head>
 
+
+
+   <style>
+    body{
+       background-image: url(https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20210101002438.jpg);
+       background-repeat:no-repeat;
+       background-size:cover;
+       background-attachment:fixed;
+    }
+</style>
 
 
 
@@ -243,7 +253,7 @@
         <div class="logo-name">JackTang</div>
         <div class="logo-desc">
             
-            本科 | 计算机科学与技术 | 网络安全
+            硕士 | 计算机科学与技术 | 虚拟现实技术
             
         </div>
     </div>
@@ -705,7 +715,7 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>之前在<a target="_blank" rel="noopener" href="https://www.bilibili.com/">B站</a>上发布了个人博客的视频，播放量也破千了，有网友私聊也想要搭建一个这样的博客。经过一段时间的准备，现将本人博客的源代码公布出来，大家只需要根据以下的步骤，即可快速搭建一个漂亮完善的博客。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20210518215948.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20210518215948.png"></p>
 <h3 id="0x01-LuckyBlog-介绍"><a href="#0x01-LuckyBlog-介绍" class="headerlink" title="0x01 LuckyBlog 介绍"></a>0x01 LuckyBlog 介绍</h3><p>上一个LuckyBlog版本发布于2020年的9月份，是在 <a target="_blank" rel="noopener" href="https://sunhwee.com/">洪卫の博客</a> 基础上进行修改的。自从发布以来有很多网友都私信搭建了博客，同时也发现了旧版本中存在的一些问题需要解决，例如：搜索框不适配XML代码搜索，部分图片失效，代码块问题以及各种小问题。现在将最新的LuckyBlog版本代码发布出来，修复改进了不少的BUG，使其更加稳定运行。同时完善了博客的基础功能，例如：音乐、视频、相册、百宝箱等页面。同时增加了不少的新功能，例如：适配Hexo5.x、黑白天浏览模式、仿Windows页面，站点统计等。</p>
 <ul>
 <li>博客演示地址：<a target="_blank" rel="noopener" href="http://luckyzmj.cn/">http://luckyzmj.cn/</a></li>
@@ -791,13 +801,13 @@
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> clone https://github.com/LuckyZmj/LuckyBlog.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>将下载好的<code>LuckyBlog</code>全部复制到<code>MyBlog</code>目录下，如果复制过程中出现重复文件，点击替换。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20210518202657.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20210518202657.png"></p>
 <p>最后使用 <code>npm i</code> 或者 <code>npm install</code> 安装依赖环境包即可。</p>
 <blockquote>
 <p>如果安装依赖环境出错，可以参考<a target="_blank" rel="noopener" href="https://blog.csdn.net/Seven71111/article/details/103364738">这篇文章</a>。</p>
 </blockquote>
 <p>最后执行 <code>hexo clean</code> 和 <code>hexo s -g</code> 启动Hexo本地预览，即可看到效果。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20210518204521.JPG"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20210518204521.JPG"></p>
 <p>到此为止LuckyBlog安装完成，接下来就是个性化设置了。</p>
 <h3 id="0x03-LuckyBlog-个性化"><a href="#0x03-LuckyBlog-个性化" class="headerlink" title="0x03 LuckyBlog 个性化"></a>0x03 LuckyBlog 个性化</h3><blockquote>
 <p>注意！注意！注意！在阅读以下博客个性化之前，最好希望大家有Hexo博客配置主题的基础。如果是完全小白，建议去网上搜索学习相关Hexo搭建博客的过程，另外去B站上也有很多视频教程。博客个性化是需要大家有耐心的，因为每个人的操作不同，在配置过程中可能会遇到一些不可预期的问题，希望大家可以克服这些困难，如有需要帮助，也可以私信博主帮助大家解决问题。</p>
@@ -840,7 +850,7 @@ logo: https://s1.ax1x.com/2020/05/17/YRWsYT.png<span aria-hidden="true" class="l
 
 
 <h4 id="4-修改留言板简介"><a href="#4-修改留言板简介" class="headerlink" title="4. 修改留言板简介"></a>4. 修改留言板简介</h4><p>演示效果如下：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20210518204949.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20210518204949.png"></p>
 <p>编辑 <code>/MyBlog/contact/index.md</code>，修改你想要内容即可</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">---
 title: contact
@@ -867,7 +877,7 @@ Lucky_Meの友链信息
 
 <h4 id="5-修改音乐列表"><a href="#5-修改音乐列表" class="headerlink" title="5. 修改音乐列表"></a>5. 修改音乐列表</h4><p>想要修改自己喜欢的音乐之前，需要先获取音乐列表的id。</p>
 <p>以QQ音乐为例：先登录<a target="_blank" rel="noopener" href="https://y.qq.com/">QQ音乐网页版</a>，点击打开自己喜欢的音乐列表，在网页的URL处包含了音乐列表的id，如下图所示</p>
-<p><img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed/posts/20200916213029.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed/posts/20200916213029.png"></p>
 <p>编辑主题目录下的配置文件<code>MyBlog/themes/matery/_config.yml</code>，找到如下内容并修改</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 默认是博主的QQ音乐的id，大家可以改为自己音乐喜欢列表的id</span>
 <span class="token comment"># 更新完id，就可以同步加载自己喜欢的列表音乐了</span>
@@ -957,7 +967,7 @@ valine:
   app_id: 4xxxxxxxe   <span class="token comment">#DaoVoice中的app_id</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <h4 id="8-快捷导航页面个性化"><a href="#8-快捷导航页面个性化" class="headerlink" title="8. 快捷导航页面个性化"></a>8. 快捷导航页面个性化</h4><p>编辑文件<code>MyBlog/source/tools/index.html</code>，以下简单标记出几处，还有其他涉及到博客信息的内容都需要改为你自己的博客信息即可。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed/posts/20200916235833.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed/posts/20200916235833.png"></p>
 <h4 id="9-添加友情链接"><a href="#9-添加友情链接" class="headerlink" title="9. 添加友情链接"></a>9. 添加友情链接</h4><p>编辑文件<code>MyBlog/suorce/_data/friends.json</code>，按如下格式添加友情</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token punctuation">[</span>
     <span class="token punctuation">{</span>
@@ -1000,11 +1010,11 @@ https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed/galleries/动漫风景/02.jpg
 https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed/galleries/<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <p>themes/matery/layout/galleries.ejs</p>
-<p><img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed/posts/20201008183019.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed/posts/20201008183019.png"></p>
 <p>themes/matery/layout/gallerie.ejs</p>
-<p><img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed/posts/20201008183219.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed/posts/20201008183219.png"></p>
 <p>为每个相册添加链接地址，在根目录/source/List/galleries/下新建 相册名称 文件夹，并在该文件夹下新建 <code>index.md</code> </p>
-<p><img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed/posts/20201008183808.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed/posts/20201008183808.png"></p>
 <p>最后，在根目录/source/_data/galleries.json中添加图片链接，格式如下,</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token punctuation">[</span>
   <span class="token punctuation">{</span>
@@ -1056,12 +1066,12 @@ https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed/galleries/<span aria-hidden="true" c
 <span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h4 id="11-站点统计功能"><a href="#11-站点统计功能" class="headerlink" title="11. 站点统计功能"></a>11. 站点统计功能</h4><p>站点统计的数据来源于<a target="_blank" rel="noopener" href="https://tongji.baidu.com/web/welcome/login">百度统计</a>,当你的网站被百度收录后就会在百度统计中出现数据，具体效果如下：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20210518211242.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20210518211242.png"></p>
 <p>由于博客的统计页面数据不能直接从百度站点中调用，因此需要自行从百度站点中将相应数据填入博客站点统计页面的源代码文件中，个人建议每隔一个月手动更新一次数据。</p>
 <p>打开<code>MyBlog\themes\matery\layout\census.ejs</code>文件，将百度统计中的数据填入源代码中，修改代码如下：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20210518210629.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20210518210629.png"></p>
 <h4 id="11-仿Windows个性化"><a href="#11-仿Windows个性化" class="headerlink" title="11. 仿Windows个性化"></a>11. 仿Windows个性化</h4><p>仿Windows页面是采用<a target="_blank" rel="noopener" href="https://ylui.yuri2.cn/">YLUI</a>实现的，YLUI提供了社区版本供大家学习使用，具体效果如下：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20210518211817.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20210518211817.png"></p>
 <p>大家可以查看YLUI官方的<a target="_blank" rel="noopener" href="https://github.com/yuri2peter/ylui/tree/master/documents">开发文档</a>进行开发，有不懂的可以加官方的QQ群：<code>191372634</code> 进行讨论。</p>
 <h4 id="12-博客动漫风格背景图"><a href="#12-博客动漫风格背景图" class="headerlink" title="12. 博客动漫风格背景图"></a>12. 博客动漫风格背景图</h4><p>因为在上一个LuckyBlog版本发布的网站风格是偏向动漫风格的，如果大家喜欢动漫风格，只需要替换以下配置即可。</p>
 <p><strong>博客每日轮播图：</strong> 以下链接图片全部下载保存到<code>MyBlog\themes\matery\source\medias\banner</code>中，以0~7.jpg的文件名格式命名即可。</p>
@@ -1610,8 +1620,8 @@ let metaPlaceholder = {"nick":"昵称/QQ号(必填)","mail":"邮箱(必填)","li
 //这里要换行
 new Valine({
         el: '#vcomments',
-        appId: 'Ucrxxxxxxxxxxxxxxxx-xxxxsz',
-        appKey: 'zPsLxxxxxxxxxxxxxxerLmd',
+        appId: '9ms6AZv1cuLRBBeWQlFFlwLg-gzGzoHsz',
+        appKey: 'fENamgWWXxCociucYVG4nM4e',
         notify: 'true' === 'true',
         verify: 'true' === 'true',
         visitor: 'true' === 'true',
@@ -1665,30 +1675,29 @@ new Valine({
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/posts/d74d8b76.html">
+                <a href="/posts/86a643d.html">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928013834.jpg" class="responsive-img" alt="LuckyBlog开源搭建教程">
+                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021245.jpg" class="responsive-img" alt="解决不算子统计失效问题">
                         
-                        <span class="card-title">LuckyBlog开源搭建教程</span>
+                        <span class="card-title">解决不算子统计失效问题</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            之前在B站上发布了个人博客的视频，播放量也破千了，有网友私聊也想要搭建一个这样的博客。经过一段时间的准备，现将博客LuckyBlog的源代码公布出来，大家只需要根据以下的步骤，即可快速搭建一个漂亮且完善的博客。
+                            今天看了下Hexo搭建个人博客，不算字统计失效了，找了很多资料终于解决了
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-17
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-04-06
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1701,16 +1710,19 @@ new Valine({
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/hexo-blog-lucky/">
-                        <span class="chip bg-color">hexo-blog-lucky</span>
+                    <a href="/tags/Hexo/">
+                        <span class="chip bg-color">Hexo</span>
                     </a>
                     
-                    <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/">
-                        <span class="chip bg-color">博客搭建教程</span>
+                    <a href="/tags/%E5%8D%9A%E5%AE%A2/">
+                        <span class="chip bg-color">博客</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%BA%A0%E9%94%99/">
+                        <span class="chip bg-color">纠错</span>
                     </a>
                     
                 </div>
@@ -1940,16 +1952,12 @@ new Valine({
 <style>
     .aplayer .aplayer-lrc p {
         
-        display: none;
-        
         font-size: 12px;
         font-weight: 700;
         line-height: 16px !important;
     }
 
     .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
         
         font-size: 15px;
         color: #42b983;
@@ -1996,14 +2004,13 @@ new Valine({
             
                 <span id="year">2019-2024</span>
             
-            <span id="year">2019</span>
+           
             <a href="/about" target="_blank">JackTang</a>
-            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+           
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">16.2k</span>&nbsp;字
+                class="white-color">16.3k</span>&nbsp;字
             
             
             
@@ -2056,11 +2063,11 @@ new Valine({
                         diffMinutes * minutes) / seconds);
                     if (startYear == todayYear) {
                         document.getElementById("year").innerHTML = todayYear;
-                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                        document.getElementById("sitetime").innerHTML = "本站已运行 " + diffDays + " 天 " + diffHours +
                             " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
                     } else {
                         document.getElementById("year").innerHTML = startYear + " - " + todayYear;
-                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                        document.getElementById("sitetime").innerHTML = "本站已运行 " + diffYears + " 年 " + diffDays +
                             " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
                     }
                 }
@@ -2070,7 +2077,7 @@ new Valine({
             <br>
             
             <span id="icp"><img src="/medias/icp.png" style="vertical-align: text-bottom;" />
-                <a href="http://www.beian.miit.gov.cn/" target="_blank">闽ICP备xxxxxxx号-1</a>
+                <a href="http://www.beian.miit.gov.cn/" target="_blank">赣ICP备2022020022号-1</a>
             </span>
             
         </div>
@@ -2267,7 +2274,7 @@ $(function () {
     <script src="/libs/others/clicklove.js" async="async"></script>
     
     
-    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    <script async src="https://cn.vercount.one/js"></script>
     
 
     
@@ -2337,6 +2344,11 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
-</body>
+<script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 
 </html>

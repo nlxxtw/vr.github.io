@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.vreteam.eu.org/googleaadede73f0e069b9.html</loc>
+    
+    <lastmod>2024-04-06</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.vreteam.eu.org/posts/86a643d.html</loc>
+    
+    <lastmod>2024-04-06</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.vreteam.eu.org/posts/7a46f93c.html</loc>
     
     <lastmod>2024-04-06</lastmod>
@@ -17,13 +31,6 @@
   
   <url>
     <loc>http://www.vreteam.eu.org/tags/index.html</loc>
-    
-    <lastmod>2024-04-06</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.vreteam.eu.org/google1xxxxxxx0.html</loc>
     
     <lastmod>2024-04-06</lastmod>
     
@@ -86,14 +93,14 @@
   </url>
   
   <url>
-    <loc>http://www.vreteam.eu.org/posts/17fd92ae.html</loc>
+    <loc>http://www.vreteam.eu.org/posts/19d2a4e6.html</loc>
     
     <lastmod>2024-04-06</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.vreteam.eu.org/posts/19d2a4e6.html</loc>
+    <loc>http://www.vreteam.eu.org/posts/17fd92ae.html</loc>
     
     <lastmod>2024-04-06</lastmod>
     
@@ -149,14 +156,14 @@
   </url>
   
   <url>
-    <loc>http://www.vreteam.eu.org/List/galleries/%E7%94%9C%E7%BE%8E%E9%A3%9F%E5%93%81/index.html</loc>
+    <loc>http://www.vreteam.eu.org/List/galleries/%E7%92%80%E7%92%A8%E6%98%9F%E7%A9%BA/index.html</loc>
     
     <lastmod>2024-04-06</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.vreteam.eu.org/List/galleries/%E7%92%80%E7%92%A8%E6%98%9F%E7%A9%BA/index.html</loc>
+    <loc>http://www.vreteam.eu.org/List/galleries/%E7%94%9C%E7%BE%8E%E9%A3%9F%E5%93%81/index.html</loc>
     
     <lastmod>2024-04-06</lastmod>
     
@@ -184,14 +191,14 @@
   </url>
   
   <url>
-    <loc>http://www.vreteam.eu.org/List/galleries/%E5%91%86%E8%90%8C%E7%8C%AB%E5%92%AA/index.html</loc>
+    <loc>http://www.vreteam.eu.org/List/galleries/%E5%9F%8E%E5%B8%82%E9%A3%8E%E5%85%89/index.html</loc>
     
     <lastmod>2024-04-06</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.vreteam.eu.org/List/galleries/%E5%9F%8E%E5%B8%82%E9%A3%8E%E5%85%89/index.html</loc>
+    <loc>http://www.vreteam.eu.org/List/galleries/%E5%91%86%E8%90%8C%E7%8C%AB%E5%92%AA/index.html</loc>
     
     <lastmod>2024-04-06</lastmod>
     
@@ -249,20 +256,6 @@
 
   
   <url>
-    <loc>http://www.vreteam.eu.org/tags/Hexo/</loc>
-    <lastmod>2024-04-06</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.vreteam.eu.org/tags/%E6%B8%B2%E6%9F%93%E7%BB%95%E8%BF%87/</loc>
-    <lastmod>2024-04-06</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://www.vreteam.eu.org/tags/PicGo/</loc>
     <lastmod>2024-04-06</lastmod>
     <changefreq>daily</changefreq>
@@ -277,6 +270,13 @@
   </url>
   
   <url>
+    <loc>http://www.vreteam.eu.org/tags/Hexo/</loc>
+    <lastmod>2024-04-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://www.vreteam.eu.org/tags/%E9%98%BF%E9%87%8C%E4%BA%91/</loc>
     <lastmod>2024-04-06</lastmod>
     <changefreq>daily</changefreq>
@@ -285,6 +285,20 @@
   
   <url>
     <loc>http://www.vreteam.eu.org/tags/%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2024-04-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.vreteam.eu.org/tags/%E6%B8%B2%E6%9F%93%E7%BB%95%E8%BF%87/</loc>
+    <lastmod>2024-04-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.vreteam.eu.org/tags/%E7%BA%A0%E9%94%99/</loc>
     <lastmod>2024-04-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

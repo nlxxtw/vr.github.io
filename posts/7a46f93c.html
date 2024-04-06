@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="PicGo+GitHub 图床搭建, luckyzmj 计算机 网络安全 渗透测试">
-    <meta name="description" content="本科 | 计算机科学与技术 | 网络安全">
+    <meta name="keywords" content="PicGo+GitHub 图床搭建, JackTang 计算机 网络安全 渗透测试">
+    <meta name="description" content="硕士 | 计算机科学与技术 | 虚拟现实技术">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -45,6 +45,16 @@
 <link rel="alternate" href="/atom.xml" title="JackTang" type="application/atom+xml">
 </head>
 
+
+
+   <style>
+    body{
+       background-image: url(https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20210101002438.jpg);
+       background-repeat:no-repeat;
+       background-size:cover;
+       background-attachment:fixed;
+    }
+</style>
 
 
 
@@ -243,7 +253,7 @@
         <div class="logo-name">JackTang</div>
         <div class="logo-desc">
             
-            本科 | 计算机科学与技术 | 网络安全
+            硕士 | 计算机科学与技术 | 虚拟现实技术
             
         </div>
     </div>
@@ -714,21 +724,21 @@
 </ul>
 <h3 id="0x002-GitHub-图床"><a href="#0x002-GitHub-图床" class="headerlink" title="0x002 GitHub 图床"></a>0x002 GitHub 图床</h3><h4 id="1-创建GitHub图床仓库"><a href="#1-创建GitHub图床仓库" class="headerlink" title="1. 创建GitHub图床仓库"></a>1. 创建GitHub图床仓库</h4><p>首先需要有一个登录GitHub的账号，没有的话去<a target="_blank" rel="noopener" href="https://github.com/">GitHub官网</a>注册一个</p>
 <p>创建一个新的图床仓库，点击右上角的New repository</p>
-<p><img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200529155833.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200529155833.png"></p>
 <p>填写如下配置信息，然后Create创建仓库</p>
-<p><img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200529160010.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200529160010.png"></p>
 <h4 id="2-获取GitHub-token值"><a href="#2-获取GitHub-token值" class="headerlink" title="2. 获取GitHub token值"></a>2. 获取GitHub token值</h4><p>点击右上的头像，选择设置Setting</p>
-<p><img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200529160727.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200529160727.png"></p>
 <p>点击选择Developer settings </p>
-<p><img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200529160939.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200529160939.png"></p>
 <p>点击 Generate New token</p>
-<p><img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200529161241.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200529161241.png"></p>
 <p>填写如下配置信息，只要勾选repo选项即可，然后页面拉到底部点击Generate token 即可</p>
-<p><img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200529161716.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200529161716.png"></p>
 <p>此时会跳转到带有token的页面，将token值复制记录下来，之后用PicGo绑定GitHub图床时会利用到</p>
-<p><img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200529162127.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200529162127.png"></p>
 <h3 id="0x003-PicGo-配置"><a href="#0x003-PicGo-配置" class="headerlink" title="0x003 PicGo 配置"></a>0x003 PicGo 配置</h3><h4 id="1-绑定GitHub图床"><a href="#1-绑定GitHub图床" class="headerlink" title="1. 绑定GitHub图床"></a>1. 绑定GitHub图床</h4><p>首先下载安装好PicGo软件，然后在右列表找到GitHub图床配置</p>
-<p><img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200529163130.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200529163130.png"></p>
 <p><strong>1. 设定仓库名(必填)：</strong> </p>
 <p>按照“GitHub账户名/仓库名的格式填写”，比如我的是：Luckyzmj/imgbed</p>
 <p><strong>2. 设定分支名(必填)：</strong> </p>
@@ -745,9 +755,9 @@
 
 <p>配置完全部信息后，点击 设为默认图床，最后点击确定即可</p>
 <h4 id="2-上传图片到图床"><a href="#2-上传图片到图床" class="headerlink" title="2. 上传图片到图床"></a>2. 上传图片到图床</h4><p>在上传区上传图片，可支持本地图片上传(可多选图片)、剪贴板上传、URL上传等三种方式。上传图片成功后，选择你想要生成的图片链接格式</p>
-<p><img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200529170555.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200529170555.png"></p>
 <p>在图片区，可以看到成功上传的图片，选择相应的图片进行操作即可</p>
-<p><img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200529170831.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200529170831.png"></p>
 <h4 id="3-PicGo-注意事项"><a href="#3-PicGo-注意事项" class="headerlink" title="3. PicGo 注意事项"></a>3. PicGo 注意事项</h4><p>如果配置完PicGo后却上传图片失败，可以参考以下方法：</p>
 <ol>
 <li>检查自定义域名是否正确</li>
@@ -1246,8 +1256,8 @@ let metaPlaceholder = {"nick":"昵称/QQ号(必填)","mail":"邮箱(必填)","li
 //这里要换行
 new Valine({
         el: '#vcomments',
-        appId: 'Ucrxxxxxxxxxxxxxxxx-xxxxsz',
-        appKey: 'zPsLxxxxxxxxxxxxxxerLmd',
+        appId: '9ms6AZv1cuLRBBeWQlFFlwLg-gzGzoHsz',
+        appKey: 'fENamgWWXxCociucYVG4nM4e',
         notify: 'true' === 'true',
         verify: 'true' === 'true',
         visitor: 'true' === 'true',
@@ -1578,16 +1588,12 @@ new Valine({
 <style>
     .aplayer .aplayer-lrc p {
         
-        display: none;
-        
         font-size: 12px;
         font-weight: 700;
         line-height: 16px !important;
     }
 
     .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
         
         font-size: 15px;
         color: #42b983;
@@ -1634,14 +1640,13 @@ new Valine({
             
                 <span id="year">2019-2024</span>
             
-            <span id="year">2019</span>
+           
             <a href="/about" target="_blank">JackTang</a>
-            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+           
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">16.2k</span>&nbsp;字
+                class="white-color">16.3k</span>&nbsp;字
             
             
             
@@ -1694,11 +1699,11 @@ new Valine({
                         diffMinutes * minutes) / seconds);
                     if (startYear == todayYear) {
                         document.getElementById("year").innerHTML = todayYear;
-                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                        document.getElementById("sitetime").innerHTML = "本站已运行 " + diffDays + " 天 " + diffHours +
                             " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
                     } else {
                         document.getElementById("year").innerHTML = startYear + " - " + todayYear;
-                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                        document.getElementById("sitetime").innerHTML = "本站已运行 " + diffYears + " 年 " + diffDays +
                             " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
                     }
                 }
@@ -1708,7 +1713,7 @@ new Valine({
             <br>
             
             <span id="icp"><img src="/medias/icp.png" style="vertical-align: text-bottom;" />
-                <a href="http://www.beian.miit.gov.cn/" target="_blank">闽ICP备xxxxxxx号-1</a>
+                <a href="http://www.beian.miit.gov.cn/" target="_blank">赣ICP备2022020022号-1</a>
             </span>
             
         </div>
@@ -1905,7 +1910,7 @@ $(function () {
     <script src="/libs/others/clicklove.js" async="async"></script>
     
     
-    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    <script async src="https://cn.vercount.one/js"></script>
     
 
     
@@ -1975,6 +1980,11 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
-</body>
+<script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 
 </html>
