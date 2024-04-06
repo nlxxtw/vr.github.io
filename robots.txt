@@ -9,9 +9,12 @@ Allow: /tools/
 Allow: /_posts/
 
 Disallow: /resource/
-Disallow: /_data/
-
 Disallow: /List/
+Disallow: /assets/
+Disallow: /img/
+Disallow: /js/
+Disallow: /css/
+
 
 Sitemap: http://javahikers.gitee.io/sitemap.xml
 Sitemap: http://javahikers.gitee.io/baidusitemap.xml

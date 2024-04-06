@@ -3,11 +3,11 @@
   <title>JackTang</title>
   
   <subtitle>JackTangの博客</subtitle>
-  <link href="http://www.vreteam.eu.org/atom.xml" rel="self"/>
+  <link href="http://www.vre.she.ci/atom.xml" rel="self"/>
   
-  <link href="http://www.vreteam.eu.org/"/>
+  <link href="http://www.vre.she.ci/"/>
   <updated>2024-04-06T13:02:41.660Z</updated>
-  <id>http://www.vreteam.eu.org/</id>
+  <id>http://www.vre.she.ci/</id>
   
   <author>
     <name>JackTang</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>解决不算子统计失效问题</title>
-    <link href="http://www.vreteam.eu.org/posts/86a643d.html"/>
-    <id>http://www.vreteam.eu.org/posts/86a643d.html</id>
+    <link href="http://www.vre.she.ci/posts/86a643d.html"/>
+    <id>http://www.vre.she.ci/posts/86a643d.html</id>
     <published>2024-04-06T12:41:33.000Z</published>
     <updated>2024-04-06T13:02:41.660Z</updated>
     
@@ -33,21 +33,21 @@
     
     
     
-    <category term="博客篇" scheme="http://www.vreteam.eu.org/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/"/>
+    <category term="博客篇" scheme="http://www.vre.she.ci/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/"/>
     
     
-    <category term="Hexo" scheme="http://www.vreteam.eu.org/tags/Hexo/"/>
+    <category term="Hexo" scheme="http://www.vre.she.ci/tags/Hexo/"/>
     
-    <category term="博客" scheme="http://www.vreteam.eu.org/tags/%E5%8D%9A%E5%AE%A2/"/>
+    <category term="博客" scheme="http://www.vre.she.ci/tags/%E5%8D%9A%E5%AE%A2/"/>
     
-    <category term="纠错" scheme="http://www.vreteam.eu.org/tags/%E7%BA%A0%E9%94%99/"/>
+    <category term="纠错" scheme="http://www.vre.she.ci/tags/%E7%BA%A0%E9%94%99/"/>
     
   </entry>
   
   <entry>
     <title>LuckyBlog开源搭建教程</title>
-    <link href="http://www.vreteam.eu.org/posts/d74d8b76.html"/>
-    <id>http://www.vreteam.eu.org/posts/d74d8b76.html</id>
+    <link href="http://www.vre.she.ci/posts/d74d8b76.html"/>
+    <id>http://www.vre.she.ci/posts/d74d8b76.html</id>
     <published>2020-09-16T16:00:00.000Z</published>
     <updated>2024-04-06T07:48:46.217Z</updated>
     
@@ -61,19 +61,19 @@
     
     
     
-    <category term="博客篇" scheme="http://www.vreteam.eu.org/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/"/>
+    <category term="博客篇" scheme="http://www.vre.she.ci/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/"/>
     
     
-    <category term="hexo-blog-lucky" scheme="http://www.vreteam.eu.org/tags/hexo-blog-lucky/"/>
+    <category term="hexo-blog-lucky" scheme="http://www.vre.she.ci/tags/hexo-blog-lucky/"/>
     
-    <category term="博客搭建教程" scheme="http://www.vreteam.eu.org/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/"/>
+    <category term="博客搭建教程" scheme="http://www.vre.she.ci/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
   <entry>
     <title>Hexo之渲染绕过</title>
-    <link href="http://www.vreteam.eu.org/posts/17fd92ae.html"/>
-    <id>http://www.vreteam.eu.org/posts/17fd92ae.html</id>
+    <link href="http://www.vre.she.ci/posts/17fd92ae.html"/>
+    <id>http://www.vre.she.ci/posts/17fd92ae.html</id>
     <published>2020-04-27T16:00:00.000Z</published>
     <updated>2024-04-06T07:48:46.218Z</updated>
     
@@ -87,19 +87,19 @@
     
     
     
-    <category term="博客篇" scheme="http://www.vreteam.eu.org/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/"/>
+    <category term="博客篇" scheme="http://www.vre.she.ci/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/"/>
     
     
-    <category term="Hexo" scheme="http://www.vreteam.eu.org/tags/Hexo/"/>
+    <category term="Hexo" scheme="http://www.vre.she.ci/tags/Hexo/"/>
     
-    <category term="渲染绕过" scheme="http://www.vreteam.eu.org/tags/%E6%B8%B2%E6%9F%93%E7%BB%95%E8%BF%87/"/>
+    <category term="渲染绕过" scheme="http://www.vre.she.ci/tags/%E6%B8%B2%E6%9F%93%E7%BB%95%E8%BF%87/"/>
     
   </entry>
   
   <entry>
     <title>文字背景粒子特效</title>
-    <link href="http://www.vreteam.eu.org/posts/4b3510a4.html"/>
-    <id>http://www.vreteam.eu.org/posts/4b3510a4.html</id>
+    <link href="http://www.vre.she.ci/posts/4b3510a4.html"/>
+    <id>http://www.vre.she.ci/posts/4b3510a4.html</id>
     <published>2020-03-26T16:00:00.000Z</published>
     <updated>2024-04-06T07:48:46.219Z</updated>
     
@@ -113,19 +113,19 @@
     
     
     
-    <category term="前端篇" scheme="http://www.vreteam.eu.org/categories/%E5%89%8D%E7%AB%AF%E7%AF%87/"/>
+    <category term="前端篇" scheme="http://www.vre.she.ci/categories/%E5%89%8D%E7%AB%AF%E7%AF%87/"/>
     
     
-    <category term="jQuery+CSS3" scheme="http://www.vreteam.eu.org/tags/jQuery-CSS3/"/>
+    <category term="jQuery+CSS3" scheme="http://www.vre.she.ci/tags/jQuery-CSS3/"/>
     
-    <category term="粒子特效" scheme="http://www.vreteam.eu.org/tags/%E7%B2%92%E5%AD%90%E7%89%B9%E6%95%88/"/>
+    <category term="粒子特效" scheme="http://www.vre.she.ci/tags/%E7%B2%92%E5%AD%90%E7%89%B9%E6%95%88/"/>
     
   </entry>
   
   <entry>
     <title>PicGo+GitHub 图床搭建</title>
-    <link href="http://www.vreteam.eu.org/posts/7a46f93c.html"/>
-    <id>http://www.vreteam.eu.org/posts/7a46f93c.html</id>
+    <link href="http://www.vre.she.ci/posts/7a46f93c.html"/>
+    <id>http://www.vre.she.ci/posts/7a46f93c.html</id>
     <published>2020-03-14T16:00:00.000Z</published>
     <updated>2024-04-06T07:59:09.139Z</updated>
     
@@ -139,19 +139,19 @@
     
     
     
-    <category term="博客篇" scheme="http://www.vreteam.eu.org/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/"/>
+    <category term="博客篇" scheme="http://www.vre.she.ci/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/"/>
     
     
-    <category term="PicGo" scheme="http://www.vreteam.eu.org/tags/PicGo/"/>
+    <category term="PicGo" scheme="http://www.vre.she.ci/tags/PicGo/"/>
     
-    <category term="GitHub图床" scheme="http://www.vreteam.eu.org/tags/GitHub%E5%9B%BE%E5%BA%8A/"/>
+    <category term="GitHub图床" scheme="http://www.vre.she.ci/tags/GitHub%E5%9B%BE%E5%BA%8A/"/>
     
   </entry>
   
   <entry>
     <title>阿里云服务器部署Hexo博客</title>
-    <link href="http://www.vreteam.eu.org/posts/19d2a4e6.html"/>
-    <id>http://www.vreteam.eu.org/posts/19d2a4e6.html</id>
+    <link href="http://www.vre.she.ci/posts/19d2a4e6.html"/>
+    <id>http://www.vre.she.ci/posts/19d2a4e6.html</id>
     <published>2020-02-26T16:00:00.000Z</published>
     <updated>2024-04-06T07:48:46.218Z</updated>
     
@@ -165,21 +165,21 @@
     
     
     
-    <category term="博客篇" scheme="http://www.vreteam.eu.org/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/"/>
+    <category term="博客篇" scheme="http://www.vre.she.ci/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/"/>
     
     
-    <category term="Hexo" scheme="http://www.vreteam.eu.org/tags/Hexo/"/>
+    <category term="Hexo" scheme="http://www.vre.she.ci/tags/Hexo/"/>
     
-    <category term="阿里云" scheme="http://www.vreteam.eu.org/tags/%E9%98%BF%E9%87%8C%E4%BA%91/"/>
+    <category term="阿里云" scheme="http://www.vre.she.ci/tags/%E9%98%BF%E9%87%8C%E4%BA%91/"/>
     
-    <category term="博客" scheme="http://www.vreteam.eu.org/tags/%E5%8D%9A%E5%AE%A2/"/>
+    <category term="博客" scheme="http://www.vre.she.ci/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
   <entry>
     <title>个人博客搭建</title>
-    <link href="http://www.vreteam.eu.org/posts/e3e08109.html"/>
-    <id>http://www.vreteam.eu.org/posts/e3e08109.html</id>
+    <link href="http://www.vre.she.ci/posts/e3e08109.html"/>
+    <id>http://www.vre.she.ci/posts/e3e08109.html</id>
     <published>2019-08-27T03:41:03.000Z</published>
     <updated>2024-04-06T07:48:46.217Z</updated>
     
@@ -193,14 +193,14 @@
     
     
     
-    <category term="博客篇" scheme="http://www.vreteam.eu.org/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/"/>
+    <category term="博客篇" scheme="http://www.vre.she.ci/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/"/>
     
     
-    <category term="Hexo" scheme="http://www.vreteam.eu.org/tags/Hexo/"/>
+    <category term="Hexo" scheme="http://www.vre.she.ci/tags/Hexo/"/>
     
-    <category term="博客" scheme="http://www.vreteam.eu.org/tags/%E5%8D%9A%E5%AE%A2/"/>
+    <category term="博客" scheme="http://www.vre.she.ci/tags/%E5%8D%9A%E5%AE%A2/"/>
     
-    <category term="Github" scheme="http://www.vreteam.eu.org/tags/Github/"/>
+    <category term="Github" scheme="http://www.vre.she.ci/tags/Github/"/>
     
   </entry>
   
