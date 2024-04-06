@@ -93,13 +93,6 @@
   </url>
   
   <url>
-    <loc>http://www.vreteam.eu.org/posts/19d2a4e6.html</loc>
-    
-    <lastmod>2024-04-06</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.vreteam.eu.org/posts/17fd92ae.html</loc>
     
     <lastmod>2024-04-06</lastmod>
@@ -107,7 +100,7 @@
   </url>
   
   <url>
-    <loc>http://www.vreteam.eu.org/posts/e3e08109.html</loc>
+    <loc>http://www.vreteam.eu.org/posts/19d2a4e6.html</loc>
     
     <lastmod>2024-04-06</lastmod>
     
@@ -115,6 +108,13 @@
   
   <url>
     <loc>http://www.vreteam.eu.org/posts/d74d8b76.html</loc>
+    
+    <lastmod>2024-04-06</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.vreteam.eu.org/posts/e3e08109.html</loc>
     
     <lastmod>2024-04-06</lastmod>
     
@@ -184,7 +184,7 @@
   </url>
   
   <url>
-    <loc>http://www.vreteam.eu.org/List/galleries/%E5%8A%A8%E6%BC%AB%E9%A3%8E%E6%99%AF/index.html</loc>
+    <loc>http://www.vreteam.eu.org/List/galleries/%E5%91%86%E8%90%8C%E7%8C%AB%E5%92%AA/index.html</loc>
     
     <lastmod>2024-04-06</lastmod>
     
@@ -198,7 +198,7 @@
   </url>
   
   <url>
-    <loc>http://www.vreteam.eu.org/List/galleries/%E5%91%86%E8%90%8C%E7%8C%AB%E5%92%AA/index.html</loc>
+    <loc>http://www.vreteam.eu.org/List/galleries/%E5%8A%A8%E6%BC%AB%E9%A3%8E%E6%99%AF/index.html</loc>
     
     <lastmod>2024-04-06</lastmod>
     
@@ -277,6 +277,13 @@
   </url>
   
   <url>
+    <loc>http://www.vreteam.eu.org/tags/%E6%B8%B2%E6%9F%93%E7%BB%95%E8%BF%87/</loc>
+    <lastmod>2024-04-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://www.vreteam.eu.org/tags/%E9%98%BF%E9%87%8C%E4%BA%91/</loc>
     <lastmod>2024-04-06</lastmod>
     <changefreq>daily</changefreq>
@@ -291,21 +298,7 @@
   </url>
   
   <url>
-    <loc>http://www.vreteam.eu.org/tags/%E6%B8%B2%E6%9F%93%E7%BB%95%E8%BF%87/</loc>
-    <lastmod>2024-04-06</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://www.vreteam.eu.org/tags/%E7%BA%A0%E9%94%99/</loc>
-    <lastmod>2024-04-06</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.vreteam.eu.org/tags/Github/</loc>
     <lastmod>2024-04-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -320,6 +313,13 @@
   
   <url>
     <loc>http://www.vreteam.eu.org/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2024-04-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.vreteam.eu.org/tags/Github/</loc>
     <lastmod>2024-04-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
