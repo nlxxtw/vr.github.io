@@ -5,7 +5,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="放松一下, JackTang 计算机 网络安全 渗透测试">
+    <meta name="keywords" content="如何给hexo博客文章加密和实现【matery主题】弹出欢迎弹窗, JackTang 计算机 网络安全 渗透测试">
     <meta name="description" content="硕士 | 计算机科学与技术 | 虚拟现实技术">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -19,7 +19,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>放松一下 | JackTang</title>
+    <title>如何给hexo博客文章加密和实现【matery主题】弹出欢迎弹窗 | JackTang</title>
     
 
     <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/nlxxtw/cdn@main/favicon.png">
@@ -514,12 +514,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928013951.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928014929.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">放松一下</h1>
+                    <h1 class="description center-align post-title">如何给hexo博客文章加密和实现【matery主题】弹出欢迎弹窗</h1>
                 </div>
             </div>
         </div>
@@ -638,12 +638,33 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Hexo/">
+                                <span class="chip bg-color">Hexo</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%8D%9A%E5%AE%A2%E5%8A%A0%E5%AF%86/">
+                                <span class="chip bg-color">博客加密</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%8D%9A%E5%AE%A2%E5%BC%B9%E7%AA%97/">
+                                <span class="chip bg-color">博客弹窗</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/" class="post-category">
+                                博客篇
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -652,21 +673,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-08-10
+                    2024-04-07
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-04-06
+                    2024-04-07
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    6
+                    417
                 </div>
                 
 
@@ -691,8 +712,47 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="影音资源共享"><a href="#影音资源共享" class="headerlink" title="影音资源共享"></a>影音资源共享</h1>
-<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="//player.bilibili.com/player.html?aid=2979186&amp;cid=4667585&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"></iframe></div>
+                <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>介绍一种给博客文章加密的方法，很多时候当我们写了一篇博客，但并不想所有人能够访问它。所以得设置密码。也有时候需要弹窗提醒用户。对于WordPress这很容易做到，但是对于hexo，由于是静态网页，并不能做到完全的加密。</p>
+<h3 id="0x001-安装"><a href="#0x001-安装" class="headerlink" title="0x001 安装"></a>0x001 安装</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> --save hexo-blog-encrypt
+或者 <span class="token function">yarn</span> <span class="token function">add</span> hexo-blog-encrypt <span class="token punctuation">(</span>require Yarn<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>找到根目录下的_config.yml文件，添加如下:</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># Security</span>
+encrypt:
+    enable: <span class="token boolean">true</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>在博客开头写上密码</p>
+<pre class="line-numbers language-none"><code class="language-none">password: 
+message: 输入密码访问<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p><a target="_blank" rel="noopener" href="https://github.com/D0n9X1n/hexo-blog-encrypt">参考资料</a></p>
+<h3 id="0x002-弹窗功能实现"><a href="#0x002-弹窗功能实现" class="headerlink" title="0x002 弹窗功能实现"></a>0x002 弹窗功能实现</h3><h4 id="1-下载sweetalert2-all-min-js"><a href="#1-下载sweetalert2-all-min-js" class="headerlink" title="1.下载sweetalert2.all.min.js"></a>1.下载sweetalert2.all.min.js</h4><p>我们需要将<a target="_blank" rel="noopener" href="https://blog.pai233.top/js/sweetalert.js?_sw-precache=800cbdcad6a26e06fc9471102d8c50c4">sweetalert.js</a>和<a target="_blank" rel="noopener" href="https://blog.pai233.top/css/sweetalert.css?_sw-precache=196c08c89f0c8a9b688a16d3435ac327">sweetalert.css</a>放到自己博客下，防止CDN炸裂导致的错误。(这2个文件用CTRL+S保存吧)</p>
+<p><code>sweetalert.js</code>放在博客根目录\themes\matery\source\js</p>
+<p><code>sweetalert.css</code>放在博客根目录\themes\matery\source\css</p>
+<h4 id="2-引入到主题中"><a href="#2-引入到主题中" class="headerlink" title="2.引入到主题中"></a>2.引入到主题中</h4><p>打开主题配置文件，在\themes\matery\layout\layout.ejs中写入</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">  <span class="token operator">&lt;</span>head<span class="token operator">&gt;</span> 
+    <span class="token operator">&lt;</span>script <span class="token assign-left variable">type</span><span class="token operator">=</span><span class="token string">"text/javascript"</span> src <span class="token operator">=</span><span class="token string">"/js/welcome.js"</span> <span class="token operator">&gt;</span><span class="token operator">&lt;</span>/script<span class="token operator">&gt;</span> 
+    <span class="token operator">&lt;</span>script <span class="token assign-left variable">src</span><span class="token operator">=</span><span class="token string">"/js/sweetalert.js"</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span>/script<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>link <span class="token assign-left variable">rel</span><span class="token operator">=</span><span class="token string">"stylesheet"</span> <span class="token assign-left variable">href</span><span class="token operator">=</span><span class="token string">"/css/sweetalert.css"</span><span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>/head<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="3-自动弹窗欢迎设置-例子"><a href="#3-自动弹窗欢迎设置-例子" class="headerlink" title="3.自动弹窗欢迎设置 (例子)"></a>3.自动弹窗欢迎设置 (例子)</h4><p>创建<code>welcome.js</code>放在博客根目录\themes\matery\source\js</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token keyword">function</span> <span class="token function-name function">welcome</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token builtin class-name">let</span> welcome_text <span class="token operator">=</span> <span class="token string">'欢迎光顾本网站~'</span>
+    if<span class="token punctuation">(</span>document.referrer<span class="token operator">!=</span><span class="token operator">=</span><span class="token string">''</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token builtin class-name">let</span> <span class="token assign-left variable">referrer</span><span class="token operator">=</span>document.referrer.split<span class="token punctuation">(</span><span class="token string">"/"</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token assign-left variable">welcome_text</span><span class="token operator">=</span><span class="token string">"欢迎你，来自"</span>+referrer.toUpperCase<span class="token punctuation">(</span><span class="token punctuation">)</span>+<span class="token string">"的用户！"</span><span class="token punctuation">;</span>
+        if<span class="token punctuation">(</span>referrer.toUpperCase<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">==</span>document.domain.toUpperCase<span class="token punctuation">(</span><span class="token punctuation">))</span>return<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    swal<span class="token punctuation">(</span><span class="token punctuation">{</span>
+        title: <span class="token string">" 欢迎！"</span>,
+        text: welcome_text+<span class="token string">'<span class="token entity" title="\n">\n</span>打开页面下方音乐以获得更佳体验！'</span>,
+        imageUrl: <span class="token string">"/img/avatar.jpg"</span>,
+        timer: <span class="token number">3000</span>,
+        showConfirmButton: <span class="token boolean">false</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token variable"><span class="token variable">$(</span>document<span class="token variable">)</span></span>.ready<span class="token punctuation">((</span><span class="token punctuation">)</span><span class="token operator">=</span><span class="token operator">&gt;</span><span class="token punctuation">{</span>
+    welcome<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>这样，就大功告成了。参考<a target="_blank" rel="noopener" href="https://blog.pai233.top/20220409/butterfly-popup-welcome-window/">【Butterfly主题】弹出欢迎弹窗</a></p>
+<p>其他主题原理类似，欢迎交流讨论!!!</p>
 
                 
             </div>
@@ -709,7 +769,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">JackTang</a>
+                    <a href="/about" rel="external nofollow noreferrer">jacktang</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -719,7 +779,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://www.vre.she.ci/List/index.html">http://www.vre.she.ci/List/index.html</a>
+                    <a href="http://www.vre.she.ci/posts/e1554a4.html">http://www.vre.she.ci/posts/e1554a4.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -732,7 +792,7 @@
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">JackTang</a>
+                    <a href="/about" target="_blank">jacktang</a>
                     !
                 </span>
             </div>
@@ -756,7 +816,19 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/Hexo/">
+                                    <span class="chip bg-color">Hexo</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%8D%9A%E5%AE%A2%E5%8A%A0%E5%AF%86/">
+                                    <span class="chip bg-color">博客加密</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%8D%9A%E5%AE%A2%E5%BC%B9%E7%AA%97/">
+                                    <span class="chip bg-color">博客弹窗</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -1231,34 +1303,54 @@ new Valine({
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/List/index.html">
+                <a href="/posts/e1554a4.html">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928013951.jpg" class="responsive-img" alt="放松一下">
+                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928014929.jpg" class="responsive-img" alt="如何给hexo博客文章加密和实现【matery主题】弹出欢迎弹窗">
                         
-                        <span class="card-title">放松一下</span>
+                        <span class="card-title">如何给hexo博客文章加密和实现【matery主题】弹出欢迎弹窗</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            介绍一种给博客文章加密的方法，很多时候当我们写了一篇博客，但并不想所有人能够访问它。所以得设置密码。也有时候需要弹窗提醒用户。
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-08-10
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-04-07
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            JackTang
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/" class="post-category">
+                                    博客篇
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Hexo/">
+                        <span class="chip bg-color">Hexo</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%8D%9A%E5%AE%A2%E5%8A%A0%E5%AF%86/">
+                        <span class="chip bg-color">博客加密</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%8D%9A%E5%AE%A2%E5%BC%B9%E7%AA%97/">
+                        <span class="chip bg-color">博客弹窗</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -1266,37 +1358,56 @@ new Valine({
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/List/index.html">
+                <a href="/posts/86a643d.html">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928013951.jpg" class="responsive-img" alt="放松一下">
+                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021245.jpg" class="responsive-img" alt="解决不算子统计失效问题">
                         
-                        <span class="card-title">放松一下</span>
+                        <span class="card-title">解决不算子统计失效问题</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            今天看了下Hexo搭建个人博客，不算字统计失效了，找了很多资料终于解决了
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-08-10
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-04-06
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            JackTang
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/" class="post-category">
+                                    博客篇
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Hexo/">
+                        <span class="chip bg-color">Hexo</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%8D%9A%E5%AE%A2/">
+                        <span class="chip bg-color">博客</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%BA%A0%E9%94%99/">
+                        <span class="chip bg-color">纠错</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
