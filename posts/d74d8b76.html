@@ -22,7 +22,7 @@
     <title>LuckyBlog开源搭建教程 | JackTang</title>
     
 
-    <link rel="icon" type="image/jpeg" href="https://s1.ax1x.com/2020/05/17/YR20js.jpg">
+    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/nlxxtw/cdn@main/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
     <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
@@ -68,7 +68,7 @@
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
                     
-                    <img src="https://s1.ax1x.com/2020/05/17/YRWsYT.png" class="logo-img" alt="LOGO">
+                    <img src="https://cdn.jsdelivr.net/gh/nlxxtw/cdn@main/medias/logo.png" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">JackTang</span>
                 </a>
@@ -251,7 +251,7 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="https://s1.ax1x.com/2020/05/17/YRWsYT.png" class="logo-img circle responsive-img">
+        <img src="https://cdn.jsdelivr.net/gh/nlxxtw/cdn@main/medias/logo.png" class="logo-img circle responsive-img">
         
         <div class="logo-name">JackTang</div>
         <div class="logo-desc">
@@ -507,19 +507,6 @@
 </header>
 
     
-<script src="/libs/cryptojs/crypto-js.min.js"></script>
-<script>
-    (function() {
-        let pwd = '';
-        if (pwd && pwd.length > 0) {
-            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
-                alert('密码错误，将返回主页！');
-                location.href = '/';
-            }
-        }
-    })();
-</script>
-
 
 
 
@@ -1336,10 +1323,10 @@ featureImages:
                         <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
                     </ul>
                     <div id="alipay">
-                        <img src="/null" class="reward-img" alt="支付宝打赏二维码">
+                        <img src="https://cdn.jsdelivr.net/gh/nlxxtw/cdn@main/medias/reward/alipay.bmp" class="reward-img" alt="支付宝打赏二维码">
                     </div>
                     <div id="wechat">
-                        <img src="/null" class="reward-img" alt="微信打赏二维码">
+                        <img src="https://cdn.jsdelivr.net/gh/nlxxtw/cdn@main/medias/reward/wechat.bmp" class="reward-img" alt="微信打赏二维码">
                     </div>
                 </div>
             </div>
@@ -1799,7 +1786,7 @@ new Valine({
 
         var selection = window.getSelection();
         // if the selection is short let's not annoy our users.
-        if (('' + selection).length < Number.parseInt('120')) {
+        if (('' + selection).length < Number.parseInt('220')) {
             return;
         }
 
@@ -1955,6 +1942,8 @@ new Valine({
 <style>
     .aplayer .aplayer-lrc p {
         
+        display: none;
+        
         font-size: 12px;
         font-weight: 700;
         line-height: 16px !important;
@@ -1962,17 +1951,10 @@ new Valine({
 
     .aplayer .aplayer-lrc p.aplayer-lrc-current {
         
+        display: none;
+        
         font-size: 15px;
         color: #42b983;
-    }
-
-    
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-        left: -66px !important;
-    }
-
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-        left: 0px !important;
     }
 
     
@@ -2005,7 +1987,7 @@ new Valine({
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2019-2024</span>
+                <span id="year">2018-2024</span>
             
            
             <a href="/about" target="_blank">JackTang</a>
@@ -2013,7 +1995,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">16.3k</span>&nbsp;字
+                class="white-color">15.3k</span>&nbsp;字
             
             
             
@@ -2042,7 +2024,7 @@ new Valine({
                     var days = hours * 24;
                     var years = days * 365;
                     var today = new Date();
-                    var startYear = "2019";
+                    var startYear = "2018";
                     var startMonth = "10";
                     var startDate = "25";
                     var startHour = "0";
