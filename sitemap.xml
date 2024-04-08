@@ -56,7 +56,7 @@
   </url>
   
   <url>
-    <loc>http://www.vre.she.ci/tags/index.html</loc>
+    <loc>http://www.vre.she.ci/resource/index.html</loc>
     
     <lastmod>2024-04-06</lastmod>
     
@@ -65,7 +65,7 @@
   </url>
   
   <url>
-    <loc>http://www.vre.she.ci/resource/index.html</loc>
+    <loc>http://www.vre.she.ci/tags/index.html</loc>
     
     <lastmod>2024-04-06</lastmod>
     
@@ -254,7 +254,7 @@
   </url>
   
   <url>
-    <loc>http://www.vre.she.ci/List/galleries/%E5%91%86%E8%90%8C%E7%8C%AB%E5%92%AA/index.html</loc>
+    <loc>http://www.vre.she.ci/List/galleries/%E5%9F%8E%E5%B8%82%E9%A3%8E%E5%85%89/index.html</loc>
     
     <lastmod>2024-04-06</lastmod>
     
@@ -263,7 +263,7 @@
   </url>
   
   <url>
-    <loc>http://www.vre.she.ci/List/galleries/%E5%9F%8E%E5%B8%82%E9%A3%8E%E5%85%89/index.html</loc>
+    <loc>http://www.vre.she.ci/List/galleries/%E5%91%86%E8%90%8C%E7%8C%AB%E5%92%AA/index.html</loc>
     
     <lastmod>2024-04-06</lastmod>
     
@@ -328,7 +328,7 @@
 
   <url>
     <loc>http://www.vre.she.ci/</loc>
-    <lastmod>2024-04-07</lastmod>
+    <lastmod>2024-04-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -336,98 +336,98 @@
   
   <url>
     <loc>http://www.vre.she.ci/tags/Hexo/</loc>
-    <lastmod>2024-04-07</lastmod>
+    <lastmod>2024-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.vre.she.ci/tags/%E6%B8%B2%E6%9F%93%E7%BB%95%E8%BF%87/</loc>
-    <lastmod>2024-04-07</lastmod>
+    <lastmod>2024-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.vre.she.ci/tags/PicGo/</loc>
-    <lastmod>2024-04-07</lastmod>
+    <lastmod>2024-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.vre.she.ci/tags/GitHub%E5%9B%BE%E5%BA%8A/</loc>
-    <lastmod>2024-04-07</lastmod>
+    <lastmod>2024-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.vre.she.ci/tags/%E9%98%BF%E9%87%8C%E4%BA%91/</loc>
-    <lastmod>2024-04-07</lastmod>
+    <lastmod>2024-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.vre.she.ci/tags/%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2024-04-07</lastmod>
+    <lastmod>2024-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.vre.she.ci/tags/%E5%8D%9A%E5%AE%A2%E5%8A%A0%E5%AF%86/</loc>
-    <lastmod>2024-04-07</lastmod>
+    <lastmod>2024-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.vre.she.ci/tags/%E5%8D%9A%E5%AE%A2%E5%BC%B9%E7%AA%97/</loc>
-    <lastmod>2024-04-07</lastmod>
+    <lastmod>2024-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.vre.she.ci/tags/%E7%BA%A0%E9%94%99/</loc>
-    <lastmod>2024-04-07</lastmod>
+    <lastmod>2024-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.vre.she.ci/tags/Github/</loc>
-    <lastmod>2024-04-07</lastmod>
+    <lastmod>2024-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.vre.she.ci/tags/hexo-blog-lucky/</loc>
-    <lastmod>2024-04-07</lastmod>
+    <lastmod>2024-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.vre.she.ci/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2024-04-07</lastmod>
+    <lastmod>2024-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.vre.she.ci/tags/jQuery-CSS3/</loc>
-    <lastmod>2024-04-07</lastmod>
+    <lastmod>2024-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.vre.she.ci/tags/%E7%B2%92%E5%AD%90%E7%89%B9%E6%95%88/</loc>
-    <lastmod>2024-04-07</lastmod>
+    <lastmod>2024-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -436,14 +436,14 @@
   
   <url>
     <loc>http://www.vre.she.ci/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/</loc>
-    <lastmod>2024-04-07</lastmod>
+    <lastmod>2024-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.vre.she.ci/categories/%E5%89%8D%E7%AB%AF%E7%AF%87/</loc>
-    <lastmod>2024-04-07</lastmod>
+    <lastmod>2024-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
