@@ -56,7 +56,7 @@
   </url>
   
   <url>
-    <loc>https://nlxxtw.github.io/tags/index.html</loc>
+    <loc>https://nlxxtw.github.io/resource/index.html</loc>
     
     <lastmod>2024-04-06</lastmod>
     
@@ -65,7 +65,7 @@
   </url>
   
   <url>
-    <loc>https://nlxxtw.github.io/resource/index.html</loc>
+    <loc>https://nlxxtw.github.io/tags/index.html</loc>
     
     <lastmod>2024-04-06</lastmod>
     
@@ -83,15 +83,6 @@
   </url>
   
   <url>
-    <loc>https://nlxxtw.github.io/census/index.html</loc>
-    
-    <lastmod>2024-04-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://nlxxtw.github.io/contact/index.html</loc>
     
     <lastmod>2024-04-06</lastmod>
@@ -101,7 +92,7 @@
   </url>
   
   <url>
-    <loc>https://nlxxtw.github.io/baidu_verify_xxxxxxx.html</loc>
+    <loc>https://nlxxtw.github.io/census/index.html</loc>
     
     <lastmod>2024-04-06</lastmod>
     
@@ -164,7 +155,7 @@
   </url>
   
   <url>
-    <loc>https://nlxxtw.github.io/List/tools/index.html</loc>
+    <loc>https://nlxxtw.github.io/List/music/index.html</loc>
     
     <lastmod>2024-04-06</lastmod>
     
@@ -173,7 +164,7 @@
   </url>
   
   <url>
-    <loc>https://nlxxtw.github.io/List/music/index.html</loc>
+    <loc>https://nlxxtw.github.io/List/tools/index.html</loc>
     
     <lastmod>2024-04-06</lastmod>
     
@@ -209,7 +200,7 @@
   </url>
   
   <url>
-    <loc>https://nlxxtw.github.io/List/galleries/%E7%92%80%E7%92%A8%E6%98%9F%E7%A9%BA/index.html</loc>
+    <loc>https://nlxxtw.github.io/List/galleries/%E7%94%9C%E7%BE%8E%E9%A3%9F%E5%93%81/index.html</loc>
     
     <lastmod>2024-04-06</lastmod>
     
@@ -218,7 +209,7 @@
   </url>
   
   <url>
-    <loc>https://nlxxtw.github.io/List/galleries/%E7%94%9C%E7%BE%8E%E9%A3%9F%E5%93%81/index.html</loc>
+    <loc>https://nlxxtw.github.io/List/galleries/%E7%92%80%E7%92%A8%E6%98%9F%E7%A9%BA/index.html</loc>
     
     <lastmod>2024-04-06</lastmod>
     
@@ -281,7 +272,7 @@
   </url>
   
   <url>
-    <loc>https://nlxxtw.github.io/List/galleries/%E4%BA%8C%E6%AC%A1%E5%85%83%E9%A3%8E/index.html</loc>
+    <loc>https://nlxxtw.github.io/List/galleries/%E5%8A%A8%E6%BC%AB%E4%BA%BA%E7%89%A9/index.html</loc>
     
     <lastmod>2024-04-06</lastmod>
     
@@ -290,7 +281,7 @@
   </url>
   
   <url>
-    <loc>https://nlxxtw.github.io/List/galleries/%E5%8A%A8%E6%BC%AB%E4%BA%BA%E7%89%A9/index.html</loc>
+    <loc>https://nlxxtw.github.io/List/galleries/%E4%BA%8C%E6%AC%A1%E5%85%83%E9%A3%8E/index.html</loc>
     
     <lastmod>2024-04-06</lastmod>
     
@@ -363,20 +354,6 @@
   </url>
   
   <url>
-    <loc>https://nlxxtw.github.io/tags/%E9%98%BF%E9%87%8C%E4%BA%91/</loc>
-    <lastmod>2024-04-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://nlxxtw.github.io/tags/%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2024-04-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://nlxxtw.github.io/tags/%E5%8D%9A%E5%AE%A2%E5%8A%A0%E5%AF%86/</loc>
     <lastmod>2024-04-08</lastmod>
     <changefreq>weekly</changefreq>
@@ -392,6 +369,20 @@
   
   <url>
     <loc>https://nlxxtw.github.io/tags/%E7%BA%A0%E9%94%99/</loc>
+    <lastmod>2024-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://nlxxtw.github.io/tags/%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2024-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://nlxxtw.github.io/tags/%E9%98%BF%E9%87%8C%E4%BA%91/</loc>
     <lastmod>2024-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
