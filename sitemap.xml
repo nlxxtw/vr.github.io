@@ -101,7 +101,7 @@
   </url>
   
   <url>
-    <loc>https://vre.she.ci/census/index.html</loc>
+    <loc>https://vre.she.ci/contact/index.html</loc>
     
     <lastmod>2024-04-06</lastmod>
     
@@ -110,7 +110,7 @@
   </url>
   
   <url>
-    <loc>https://vre.she.ci/contact/index.html</loc>
+    <loc>https://vre.she.ci/census/index.html</loc>
     
     <lastmod>2024-04-06</lastmod>
     
@@ -173,7 +173,7 @@
   </url>
   
   <url>
-    <loc>https://vre.she.ci/List/tools/index.html</loc>
+    <loc>https://vre.she.ci/List/music/index.html</loc>
     
     <lastmod>2024-04-06</lastmod>
     
@@ -182,7 +182,7 @@
   </url>
   
   <url>
-    <loc>https://vre.she.ci/List/music/index.html</loc>
+    <loc>https://vre.she.ci/List/tools/index.html</loc>
     
     <lastmod>2024-04-06</lastmod>
     
@@ -254,7 +254,7 @@
   </url>
   
   <url>
-    <loc>https://vre.she.ci/List/galleries/%E5%8A%A8%E6%BC%AB%E9%A3%8E%E6%99%AF/index.html</loc>
+    <loc>https://vre.she.ci/List/galleries/%E5%91%86%E8%90%8C%E7%8C%AB%E5%92%AA/index.html</loc>
     
     <lastmod>2024-04-06</lastmod>
     
@@ -263,7 +263,7 @@
   </url>
   
   <url>
-    <loc>https://vre.she.ci/List/galleries/%E5%91%86%E8%90%8C%E7%8C%AB%E5%92%AA/index.html</loc>
+    <loc>https://vre.she.ci/List/galleries/%E5%8A%A8%E6%BC%AB%E9%A3%8E%E6%99%AF/index.html</loc>
     
     <lastmod>2024-04-06</lastmod>
     
@@ -344,6 +344,20 @@
 
   
   <url>
+    <loc>https://vre.she.ci/tags/PicGo/</loc>
+    <lastmod>2024-04-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://vre.she.ci/tags/GitHub%E5%9B%BE%E5%BA%8A/</loc>
+    <lastmod>2024-04-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://vre.she.ci/tags/Hexo/</loc>
     <lastmod>2024-04-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -366,27 +380,6 @@
   
   <url>
     <loc>https://vre.she.ci/tags/%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2024-04-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://vre.she.ci/tags/PicGo/</loc>
-    <lastmod>2024-04-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://vre.she.ci/tags/GitHub%E5%9B%BE%E5%BA%8A/</loc>
-    <lastmod>2024-04-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://vre.she.ci/tags/%E7%BA%A0%E9%94%99/</loc>
     <lastmod>2024-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -422,6 +415,13 @@
   
   <url>
     <loc>https://vre.she.ci/tags/%E5%8D%9A%E5%AE%A2%E5%BC%B9%E7%AA%97/</loc>
+    <lastmod>2024-04-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://vre.she.ci/tags/%E7%BA%A0%E9%94%99/</loc>
     <lastmod>2024-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
