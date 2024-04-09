@@ -3,7 +3,7 @@ function welcome() {
   let lastVisitTime = localStorage.getItem('lastVisitTime');
   let currentTime = new Date().getTime();
   
-  if (!lastVisitTime || (currentTime - lastVisitTime > 27000)) { // 第一次访问或距上次访问超过30秒
+  if (!lastVisitTime || (currentTime - lastVisitTime > 15000)) { // 第一次访问或距上次访问超过30秒
     if (document.referrer !== '') {
       let referrer = document.referrer.split("/")[2];
       welcome_text = "欢迎你，来自" + referrer.toUpperCase() + "的朋友！";
@@ -30,7 +30,7 @@ function welcome() {
             swal.close(); // 关闭弹窗
           }
         });
-      }, 27000); // 等待30秒后显示弹窗
+      }, 15000); // 等待30秒后显示弹窗
     });
     
     localStorage.setItem('lastVisitTime', currentTime);

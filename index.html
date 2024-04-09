@@ -741,6 +741,29 @@
         
             
             <div class="carousel-item amber white-text carousel-post bg-cover"
+                 style="background-image: url('https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021245.jpg');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s10 offset-s1">
+                            <div class="title center-align">解决不算子统计失效问题</div>
+                            <div class="description center-align">
+                                
+                                    今天看了下Hexo搭建个人博客，不算字统计失效了，找了很多资料终于解决了
+                                
+                            </div>
+                            <div class="cover-btns">
+                                <a href="/posts/86a643d.html" class="waves-effect waves-light btn"
+                                   target="_blank">
+                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class="carousel-item amber white-text carousel-post bg-cover"
                  style="background-image: url('/medias/banner/9.jpg');">
                 <div class="container">
                     <div class="row">
@@ -776,29 +799,6 @@
                             </div>
                             <div class="cover-btns">
                                 <a href="/posts/e1554a4.html" class="waves-effect waves-light btn"
-                                   target="_blank">
-                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            
-            <div class="carousel-item amber white-text carousel-post bg-cover"
-                 style="background-image: url('https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021245.jpg');">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s10 offset-s1">
-                            <div class="title center-align">解决不算子统计失效问题</div>
-                            <div class="description center-align">
-                                
-                                    今天看了下Hexo搭建个人博客，不算字统计失效了，找了很多资料终于解决了
-                                
-                            </div>
-                            <div class="cover-btns">
-                                <a href="/posts/86a643d.html" class="waves-effect waves-light btn"
                                    target="_blank">
                                     <i class="icon fa fa-eye fa-fw"></i>阅读更多
                                 </a>
@@ -925,12 +925,11 @@
 
     
     
-    
-                        <div id="loadback" style="background-color: #000; width: 100%; height: 100%; z-index: 105; position: fixed; top: 0; left: 0; color: #d2d2d2; transition: 5s;">
-                            <p id="loadbacktext" style="width: 100%; position: absolute; left: 0; font-size: 50px; transition: 1s; height: 100px; top: calc(50% - 80px); text-align: center; opacity: 0; margin: 0;">
-                                嗨,别来无恙啊!
+                        <div id="loadback" style="background-color: #000; width: 100vw; height: 100vh; z-index: 105; position: fixed; top: 0; left: 0; color: #d2d2d2; transition: 5s;">
+                            <p id="loadbacktext" style="width: 100%; position: absolute; left: 0; font-size: calc(2.5vw + 10px); transition: 1s; top: calc(50% - 40px); text-align: center; opacity: 0; margin: 0;">
+                                嗨, 别来无恙啊!
                             </p>
-                            <p id="loadbacktexteng" style="width: 100%; position: absolute; left: 0; font-size: 25px; transition: 1s; height: 50px; top: 50%; text-align: center; opacity: 0; margin: 0;">
+                            <p id="loadbacktexteng" style="width: 100%; position: absolute; left: 0; font-size: calc(1.25vw + 5px); transition: 1s; top: calc(50% + 10px); text-align: center; opacity: 0; margin: 0;">
                                 Hi, terribly nice to meet you!
                             </p>
                         </div>
@@ -951,7 +950,7 @@
                                 document.getElementById('loadbacktexteng').style.opacity = 1;
                             }, 4100);
                         
-                            let zh_ms = ['海内存知己,天涯若比邻,正在加载请稍等...', '有朋自远方来,不亦乐乎,欢迎!', '君问归期未有期,巴山夜雨涨秋池,请耐心等待', '无可奈何花落去,似曾相识燕归来,页面马上加载出来', '盈缩之期,不但在天;养怡之福,可得永年。正在努力加载', '遗民泪尽胡尘里,南望王师又一年,你的网络太慢了', '让我们再来一次吧'];
+                            let zh_ms = ['海内存知己, 天涯若比邻, 正在加载请稍等...', '有朋自远方来, 不亦乐乎, 欢迎!', '君问归期未有期, 巴山夜雨涨秋池, 请耐心等待', '无可奈何花落去, 似曾相识燕归来, 页面马上加载出来', '盈缩之期, 不但在天; 养怡之福, 可得永年。正在努力加载', '遗民泪尽胡尘里, 南望王师又一年, 你的网络太慢了', '让我们再来一次吧'];
                             let en_ms = ['Wherever you are, friendship never changes. Page is loading...', 'Meeting friends is very happy. Welcome!', 'Your returning date hasn\'t decided, rain rises the pond. Please wait', 'Flowers fall helplessly, the swallow returns again, Page coming soon', 'The length of life is not just decided by god. Loading hard...', 'Loyalists crying in Hun\'s territory, year after year. The network is too slow.', 'Let\'s do it again'];
                             let c = -1;
                             let bcci = setInterval(() => {
@@ -970,7 +969,7 @@
                                 }, 4200);
                             }, 5000);
                         
-                            document.body.onload = () => {
+                            window.onload = () => {
                                 document.getElementById('loadback').style.opacity = 0;
                                 setTimeout(() => {
                                     document.getElementById('loadback').style.display = 'none';
@@ -1073,6 +1072,30 @@
     
     <div class="col s12" >
         
+            <div class="post-card" style="background-image: url('https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021245.jpg')">
+            
+            <div class="post-body">
+                <div class="post-categories">
+                    
+                        
+                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/" class="category">博客篇</a>
+                        
+                    
+                </div>
+                <a href="/posts/86a643d.html">
+                    <h3 class="post-title">解决不算子统计失效问题</h3>
+                </a>
+                <p class="post-description">今天看了下Hexo搭建个人博客，不算字统计失效了，找了很多资料终于解决了</p>
+                <a href="/posts/86a643d.html" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #FF5E3A 0%, #FF2A68 100%)" target="_blank">
+                    <i class="icon far fa-eye fa-fw"></i>阅读更多
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="col s12 m6" data-aos="zoom-in-up">
+        
             <div class="post-card" style="background-image: url('https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928020120.jpg')">
             
             <div class="post-body">
@@ -1087,7 +1110,7 @@
                     <h3 class="post-title">元宇宙赋能教育产业主题沙龙报告</h3>
                 </a>
                 <p class="post-description">江西省虚拟现实(VR)产业技术创新战略联盟第十四期主题沙龙</p>
-                <a href="/posts/18d197ad.html" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #FF5E3A 0%, #FF2A68 100%)" target="_blank">
+                <a href="/posts/18d197ad.html" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #EF4DB6 0%, #C643FC 100%)" target="_blank">
                     <i class="icon far fa-eye fa-fw"></i>阅读更多
                 </a>
             </div>
@@ -1111,31 +1134,7 @@
                     <h3 class="post-title">如何给hexo博客文章加密和实现【matery主题】弹出欢迎弹窗</h3>
                 </a>
                 <p class="post-description">介绍一种给博客文章加密的方法，很多时候当我们写了一篇博客，但并不想所有人能够访问它。所以得设置密码。也有时候需要弹窗提醒用户。</p>
-                <a href="/posts/e1554a4.html" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #EF4DB6 0%, #C643FC 100%)" target="_blank">
-                    <i class="icon far fa-eye fa-fw"></i>阅读更多
-                </a>
-            </div>
-        </div>
-    </div>
-    
-    
-    <div class="col s12 m6" data-aos="zoom-in-up">
-        
-            <div class="post-card" style="background-image: url('https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021245.jpg')">
-            
-            <div class="post-body">
-                <div class="post-categories">
-                    
-                        
-                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/" class="category">博客篇</a>
-                        
-                    
-                </div>
-                <a href="/posts/86a643d.html">
-                    <h3 class="post-title">解决不算子统计失效问题</h3>
-                </a>
-                <p class="post-description">今天看了下Hexo搭建个人博客，不算字统计失效了，找了很多资料终于解决了</p>
-                <a href="/posts/86a643d.html" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #1AD6FD 0%, #1D62F0 100%)" target="_blank">
+                <a href="/posts/e1554a4.html" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #1AD6FD 0%, #1D62F0 100%)" target="_blank">
                     <i class="icon far fa-eye fa-fw"></i>阅读更多
                 </a>
             </div>
