@@ -81,12 +81,15 @@
         <div id="navContainer" class="nav-wrapper container">
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
-                    
-                    <img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/nlxxtw/cdn@main/medias/logo.png" class="logo-img" alt="LOGO">
-                    
-                    <span class="logo-span">JackTang</span>
+                    <div>
+                        
+                        <img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/nlxxtw/cdn@main/medias/logo.png" class="logo-img" alt="LOGO">
+                        
+                        <span class="logo-span">JackTang</span>
+                    </div>
                 </a>
             </div>
+            
             
 
 <a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
@@ -969,10 +972,10 @@ hexo server<span class="token punctuation">(</span>或者简写:hexo s）<span c
 <h2 id="6-将hexo部署到GitHub"><a href="#6-将hexo部署到GitHub" class="headerlink" title="6. 将hexo部署到GitHub"></a><a href="#6-%E5%B0%86hexo%E9%83%A8%E7%BD%B2%E5%88%B0GitHub" title="6. 将hexo部署到GitHub"></a>6. 将hexo部署到GitHub</h2><hr>
 <p>这一步，我们就可以将<code>hexo</code>和<code>GitHub</code>关联起来，也就是将<code>hexo</code>生成的文章部署到<code>GitHub</code>上，打开博客根目录下的<code>_config.yml</code>文件，这是博客的配置文件，在这里你可以修改与博客配置相关的各种信息。</p>
 <p>修改最后一行的配置：</p>
-<pre class="line-numbers language-yml" data-language="yml"><code class="language-yml">deploy:
-  type: git
-  repository: https://github.com/shw2018/shw2018.github.io
-  branch: master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-yml" data-language="yml"><code class="language-yml"><span class="token key atrule">deploy</span><span class="token punctuation">:</span>
+  <span class="token key atrule">type</span><span class="token punctuation">:</span> git
+  <span class="token key atrule">repository</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//github.com/shw2018/shw2018.github.io
+  <span class="token key atrule">branch</span><span class="token punctuation">:</span> master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p><code>repository</code>修改为你自己的<code>github</code>项目地址即可，就是部署时，告诉工具，将生成网页通过<code>git</code>方式上传到你对应的链接仓库中。</p>
 <p>这个时候需要先安装<code>deploy-git</code> ，也就是部署的命令,这样你才能用命令部署到<code>GitHub</code>。</p>
@@ -1037,7 +1040,7 @@ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span><span
 <p>参数结果:year/:month/:day/:title/2019/08/10/hello-world :year-:month-:day-:title.html 2019-08-10-hello-world.html :category/:titlefoo/bar/hello-world</p>
 </blockquote>
 <p>再往下翻，中间这些都默认就好了。</p>
-<pre class="line-numbers language-yml" data-language="yml"><code class="language-yml">theme: landscap<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-yml" data-language="yml"><code class="language-yml"><span class="token key atrule">theme</span><span class="token punctuation">:</span> landscap<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p><code>theme</code>就是选择什么主题，也就是在<code>themes</code>这个文件夹下，在官网上有很多个主题，默认给你安装的是<code>lanscape</code>这个主题。当你需要更换主题时，在官网上下载，把主题的文件放在<code>themes</code>文件夹下，再修改这个主题参数就可以了。</p>
 <h4 id="1-2-3-Front-matter"><a href="#1-2-3-Front-matter" class="headerlink" title="1.2.3 Front-matter"></a><a href="#1-2-3-Front-matter" title="1.2.3 Front-matter"></a>1.2.3 Front-matter</h4><hr>
@@ -1048,25 +1051,25 @@ date: 2019-08-10 21:44:44<span aria-hidden="true" class="line-numbers-rows"><spa
 <p>下是预先定义的参数，您可在模板中使用这些参数值并加以利用。</p>
 <p>参数描述<code>layout</code>布局<code>title</code>标题<code>date</code>建立日期<code>updated</code>更新日期<code>comments</code>开启文章的评论功能<code>tags</code>标签（不适用于分页）<code>categories</code>分类（不适用于分页）<code>permalink</code>覆盖文章网址</p>
 <p>其中，分类和标签需要区别一下，分类具有顺序性和层次性，也就是说<code>Foo</code>，<code>Bar</code>不等于<code>Bar</code>，<code>Foo</code>；而标签没有顺序和层次。</p>
-<pre class="line-numbers language-yml" data-language="yml"><code class="language-yml">---
-title: Hexo+Github博客搭建记录
-date: 2019-08-10 21:44:44
-author: 洪卫
-img: /medias/banner/7.jpg
-coverImg: /medias/banner/7.jpg
-top: true
-cover: true
-toc: true
-password: 5f15b28ffe43f8be4f239bdd9b69af9d80dbafcb20a5f0df5d1677a120ae9110
-mathjax: true
-summary: 这是你自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要
-tags:
-- Hexo
-- Github
-- 博客
-categories:
-- 软件安装与配置
----<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-yml" data-language="yml"><code class="language-yml"><span class="token punctuation">---</span>
+<span class="token key atrule">title</span><span class="token punctuation">:</span> Hexo+Github博客搭建记录
+<span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token datetime number">2019-08-10 21:44:44</span>
+<span class="token key atrule">author</span><span class="token punctuation">:</span> 洪卫
+<span class="token key atrule">img</span><span class="token punctuation">:</span> /medias/banner/7.jpg
+<span class="token key atrule">coverImg</span><span class="token punctuation">:</span> /medias/banner/7.jpg
+<span class="token key atrule">top</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+<span class="token key atrule">cover</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+<span class="token key atrule">toc</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+<span class="token key atrule">password</span><span class="token punctuation">:</span> 5f15b28ffe43f8be4f239bdd9b69af9d80dbafcb20a5f0df5d1677a120ae9110
+<span class="token key atrule">mathjax</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+<span class="token key atrule">summary</span><span class="token punctuation">:</span> 这是你自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要
+<span class="token key atrule">tags</span><span class="token punctuation">:</span>
+<span class="token punctuation">-</span> Hexo
+<span class="token punctuation">-</span> Github
+<span class="token punctuation">-</span> 博客
+<span class="token key atrule">categories</span><span class="token punctuation">:</span>
+<span class="token punctuation">-</span> 软件安装与配置
+<span class="token punctuation">---</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h4 id="1-2-4-layout（布局）"><a href="#1-2-4-layout（布局）" class="headerlink" title="1.2.4 layout（布局）"></a><a href="#1-2-4-layout%EF%BC%88%E5%B8%83%E5%B1%80%EF%BC%89" title="1.2.4 layout（布局）"></a>1.2.4 layout（布局）</h4><hr>
 <p><strong>1.2.4.1 post</strong></p>
@@ -1324,24 +1327,24 @@ description<span class="token operator">:</span> <span class="token string">"Oop
 <p>这里的动漫模型可以改，只需要下载对应模型就行了，你可以官方仓库去看有哪些模型，下载你喜欢的就行。</p>
 </blockquote>
 <p><strong>第三步：</strong><br>在根目录配置文件中添加如下代码：</p>
-<pre class="line-numbers language-yml" data-language="yml"><code class="language-yml">live2d:
-    enable: true
-    scriptFrom: local
-    pluginRootPath: live2dw/
-    pluginJsPath: lib/
-    pluginModelPath: assets/
-    tagMode: false
-    log: false
-    model:
-        use: live2d-widget-model-shizuku
-    display:
-        position: right
-        width: 150
-        height: 300
-    mobile:
-        show: false
-    react:
-        opacity: 0.7<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-yml" data-language="yml"><code class="language-yml"><span class="token key atrule">live2d</span><span class="token punctuation">:</span>
+    <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">scriptFrom</span><span class="token punctuation">:</span> local
+    <span class="token key atrule">pluginRootPath</span><span class="token punctuation">:</span> live2dw/
+    <span class="token key atrule">pluginJsPath</span><span class="token punctuation">:</span> lib/
+    <span class="token key atrule">pluginModelPath</span><span class="token punctuation">:</span> assets/
+    <span class="token key atrule">tagMode</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token key atrule">log</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token key atrule">model</span><span class="token punctuation">:</span>
+        <span class="token key atrule">use</span><span class="token punctuation">:</span> live2d<span class="token punctuation">-</span>widget<span class="token punctuation">-</span>model<span class="token punctuation">-</span>shizuku
+    <span class="token key atrule">display</span><span class="token punctuation">:</span>
+        <span class="token key atrule">position</span><span class="token punctuation">:</span> right
+        <span class="token key atrule">width</span><span class="token punctuation">:</span> <span class="token number">150</span>
+        <span class="token key atrule">height</span><span class="token punctuation">:</span> <span class="token number">300</span>
+    <span class="token key atrule">mobile</span><span class="token punctuation">:</span>
+        <span class="token key atrule">show</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token key atrule">react</span><span class="token punctuation">:</span>
+        <span class="token key atrule">opacity</span><span class="token punctuation">:</span> <span class="token number">0.7</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>然后<code>hexo g</code>再<code>hexo s</code>就能预览出效果了，但是有个注意的地方，<strong>这个动漫人物最好不要和不蒜子同时使用</strong>，不然不蒜子会显示不出来。至于解决办法后续更新。</p>
 <blockquote>
@@ -3245,8 +3248,11 @@ new Valine({
            
             <br>
             
+
+
+            
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">45.2k</span>&nbsp;字
+                class="white-color">48.1k</span>&nbsp;字
             
             
             
@@ -3518,7 +3524,18 @@ $(function () {
     
 
     
-
+    <!-- 标签 -->
+    <script type="text/javascript">
+        var OriginTitile = document.title,
+            st;
+        document.addEventListener("visibilitychange", function () {
+            document.hidden ? (document.title = "您已离开~", clearTimeout(st)) : (document.title =
+                "欢迎回来", st = setTimeout(function () {
+                    document.title = OriginTitile
+                }, 3e3))
+        })
+    </script>
+    
 <!-- 深色模式按钮 -->
     <script>
         if (localStorage.getItem('dark') === '1') {

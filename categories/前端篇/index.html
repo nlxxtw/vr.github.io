@@ -81,12 +81,15 @@
         <div id="navContainer" class="nav-wrapper container">
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
-                    
-                    <img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/nlxxtw/cdn@main/medias/logo.png" class="logo-img" alt="LOGO">
-                    
-                    <span class="logo-span">JackTang</span>
+                    <div>
+                        
+                        <img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/nlxxtw/cdn@main/medias/logo.png" class="logo-img" alt="LOGO">
+                        
+                        <span class="logo-span">JackTang</span>
+                    </div>
                 </a>
             </div>
+            
             
 
 <a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
@@ -668,12 +671,12 @@
                 
                 
                 
-                <a href="/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/" title="博客篇: 10">
+                <a href="/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/" title="博客篇: 11">
                   <div class="moleskine-wrapper">
                       <div class="moleskine-notebook">
                           <div class="chip notebook-cover center-align waves-effect waves-light
                            chip-default "
-                                  style="background-color: #9E600A;">                                               
+                                  style="background-color: #A236B5;">                                               
                               <div class="notebook-skin
                                    chip-default "
                                   >博客篇                                  
@@ -690,7 +693,7 @@
                       <div class="moleskine-notebook">
                           <div class="chip notebook-cover center-align waves-effect waves-light
                            chip-default "
-                                  style="background-color: #4A052A;">                                               
+                                  style="background-color: #B356A2;">                                               
                               <div class="notebook-skin
                                    chip-default "
                                   >学术篇                                  
@@ -707,7 +710,7 @@
                       <div class="moleskine-notebook">
                           <div class="chip notebook-cover center-align waves-effect waves-light
                            chip-active "
-                                  style="background-color: #72AF19;">                                               
+                                  style="background-color: #70630A;">                                               
                               <div class="notebook-skin
                                    chip-active "
                                   >前端篇                                  
@@ -954,8 +957,11 @@
            
             <br>
             
+
+
+            
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">45.2k</span>&nbsp;字
+                class="white-color">48.1k</span>&nbsp;字
             
             
             
@@ -1227,7 +1233,18 @@ $(function () {
     
 
     
-
+    <!-- 标签 -->
+    <script type="text/javascript">
+        var OriginTitile = document.title,
+            st;
+        document.addEventListener("visibilitychange", function () {
+            document.hidden ? (document.title = "您已离开~", clearTimeout(st)) : (document.title =
+                "欢迎回来", st = setTimeout(function () {
+                    document.title = OriginTitile
+                }, 3e3))
+        })
+    </script>
+    
 <!-- 深色模式按钮 -->
     <script>
         if (localStorage.getItem('dark') === '1') {

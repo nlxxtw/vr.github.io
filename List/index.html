@@ -81,12 +81,15 @@
         <div id="navContainer" class="nav-wrapper container">
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
-                    
-                    <img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/nlxxtw/cdn@main/medias/logo.png" class="logo-img" alt="LOGO">
-                    
-                    <span class="logo-span">JackTang</span>
+                    <div>
+                        
+                        <img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/nlxxtw/cdn@main/medias/logo.png" class="logo-img" alt="LOGO">
+                        
+                        <span class="logo-span">JackTang</span>
+                    </div>
                 </a>
             </div>
+            
             
 
 <a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
@@ -1624,8 +1627,11 @@ new Valine({
            
             <br>
             
+
+
+            
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">45.2k</span>&nbsp;字
+                class="white-color">48.1k</span>&nbsp;字
             
             
             
@@ -1897,7 +1903,18 @@ $(function () {
     
 
     
-
+    <!-- 标签 -->
+    <script type="text/javascript">
+        var OriginTitile = document.title,
+            st;
+        document.addEventListener("visibilitychange", function () {
+            document.hidden ? (document.title = "您已离开~", clearTimeout(st)) : (document.title =
+                "欢迎回来", st = setTimeout(function () {
+                    document.title = OriginTitile
+                }, 3e3))
+        })
+    </script>
+    
 <!-- 深色模式按钮 -->
     <script>
         if (localStorage.getItem('dark') === '1') {
