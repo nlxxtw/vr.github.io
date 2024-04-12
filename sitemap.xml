@@ -254,7 +254,7 @@
   </url>
   
   <url>
-    <loc>https://nlxxtw.github.io/List/galleries/%E7%94%9C%E7%BE%8E%E9%A3%9F%E5%93%81/index.html</loc>
+    <loc>https://nlxxtw.github.io/List/galleries/%E7%92%80%E7%92%A8%E6%98%9F%E7%A9%BA/index.html</loc>
     
     <lastmod>2024-04-06</lastmod>
     
@@ -263,7 +263,7 @@
   </url>
   
   <url>
-    <loc>https://nlxxtw.github.io/List/galleries/%E7%92%80%E7%92%A8%E6%98%9F%E7%A9%BA/index.html</loc>
+    <loc>https://nlxxtw.github.io/List/galleries/%E7%94%9C%E7%BE%8E%E9%A3%9F%E5%93%81/index.html</loc>
     
     <lastmod>2024-04-06</lastmod>
     
@@ -457,13 +457,6 @@
   </url>
   
   <url>
-    <loc>https://nlxxtw.github.io/tags/%E7%BA%A0%E9%94%99/</loc>
-    <lastmod>2024-04-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://nlxxtw.github.io/tags/%E5%8D%9A%E5%AE%A2%E5%8A%A0%E5%AF%86/</loc>
     <lastmod>2024-04-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -478,6 +471,20 @@
   </url>
   
   <url>
+    <loc>https://nlxxtw.github.io/tags/%E7%BA%A0%E9%94%99/</loc>
+    <lastmod>2024-04-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://nlxxtw.github.io/tags/Github/</loc>
+    <lastmod>2024-04-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://nlxxtw.github.io/tags/hexo-blog-lucky/</loc>
     <lastmod>2024-04-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -486,13 +493,6 @@
   
   <url>
     <loc>https://nlxxtw.github.io/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2024-04-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://nlxxtw.github.io/tags/Github/</loc>
     <lastmod>2024-04-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
