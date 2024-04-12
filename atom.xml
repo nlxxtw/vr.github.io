@@ -66,9 +66,9 @@
     
     <category term="Hexo" scheme="https://nlxxtw.github.io/tags/Hexo/"/>
     
-    <category term="博客" scheme="https://nlxxtw.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
-    
     <category term="博客优化" scheme="https://nlxxtw.github.io/tags/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/"/>
+    
+    <category term="博客" scheme="https://nlxxtw.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
@@ -363,9 +363,9 @@
     
     <category term="Hexo" scheme="https://nlxxtw.github.io/tags/Hexo/"/>
     
-    <category term="阿里云" scheme="https://nlxxtw.github.io/tags/%E9%98%BF%E9%87%8C%E4%BA%91/"/>
-    
     <category term="博客" scheme="https://nlxxtw.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="阿里云" scheme="https://nlxxtw.github.io/tags/%E9%98%BF%E9%87%8C%E4%BA%91/"/>
     
   </entry>
   
