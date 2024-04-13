@@ -1008,33 +1008,33 @@
     </div>
 
     
+        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
 
-    
-        <link rel="stylesheet" href="/libs/gitment/gitment-default.css">
-<link rel="stylesheet" href="/css/gitment.css">
-
-<div class="gitment-card card" data-aos="fade-up">
+<div class="card gitalk-card" data-aos="fade-up">
     <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
         <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
         <span>评论</span>
     </div>
-    <div id="gitment-content" class="card-content"></div>
+    <div id="gitalk-container" class="card-content"></div>
 </div>
 
-<script src="/libs/gitment/gitment.js"></script>
+<script src="/libs/gitalk/gitalk.min.js"></script>
 <script>
-var gitment = new Gitment({
-    id: 'Sat Apr 06 2024 21:14:27 GMT+0800',
-    owner: 'nlxxtw',
-    repo: 'nlxxtw.github.io',
-    oauth: {
-        client_id: '87a63a3ed5c49db79052',
-        client_secret: 'adfd1f4ba110c1ac217868fe8a1b8a45cd6896d1'
-    }
-});
+    let gitalk = new Gitalk({
+        clientID: '87a63a3ed5c49db79052',
+        clientSecret: 'a2b09867b61f7f7e8e94bb206749e67d89463dd0',
+        repo: 'issue',
+        owner: 'nlxxtw',
+        admin: "nlxxtw",
+        id: '2024-04-06T21-14-27',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
 
-gitment.render('gitment-content');
+    gitalk.render('gitalk-container');
 </script>
+
+    
 
     
 
