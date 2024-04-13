@@ -3,11 +3,11 @@
   <title>JackTang</title>
   
   <subtitle>JackTangの博客</subtitle>
-  <link href="https://nlxxtw.github.io/atom.xml" rel="self"/>
+  <link href="https://vre.she.ci/atom.xml" rel="self"/>
   
-  <link href="https://nlxxtw.github.io/"/>
+  <link href="https://vre.she.ci/"/>
   <updated>2024-04-12T13:19:09.053Z</updated>
-  <id>https://nlxxtw.github.io/</id>
+  <id>https://vre.she.ci/</id>
   
   <author>
     <name>JackTang</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>2024 Office 365 E5 账号申请及永久续期教程</title>
-    <link href="https://nlxxtw.github.io/posts/ee2a51ed.html"/>
-    <id>https://nlxxtw.github.io/posts/ee2a51ed.html</id>
+    <link href="https://vre.she.ci/posts/ee2a51ed.html"/>
+    <id>https://vre.she.ci/posts/ee2a51ed.html</id>
     <published>2024-04-12T04:23:20.000Z</published>
     <updated>2024-04-12T13:19:09.053Z</updated>
     
@@ -33,21 +33,21 @@
     
     
     
-    <category term="技术篇" scheme="https://nlxxtw.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AF%87/"/>
+    <category term="技术篇" scheme="https://vre.she.ci/categories/%E6%8A%80%E6%9C%AF%E7%AF%87/"/>
     
     
-    <category term="Hexo" scheme="https://nlxxtw.github.io/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://vre.she.ci/tags/Hexo/"/>
     
-    <category term="博客" scheme="https://nlxxtw.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    <category term="博客" scheme="https://vre.she.ci/tags/%E5%8D%9A%E5%AE%A2/"/>
     
-    <category term="Office 365 E5" scheme="https://nlxxtw.github.io/tags/Office-365-E5/"/>
+    <category term="Office 365 E5" scheme="https://vre.she.ci/tags/Office-365-E5/"/>
     
   </entry>
   
   <entry>
     <title>hexo matery主题博客优化图片懒加载代码压缩CDN加速</title>
-    <link href="https://nlxxtw.github.io/posts/85f7a4bb.html"/>
-    <id>https://nlxxtw.github.io/posts/85f7a4bb.html</id>
+    <link href="https://vre.she.ci/posts/85f7a4bb.html"/>
+    <id>https://vre.she.ci/posts/85f7a4bb.html</id>
     <published>2024-04-11T13:30:58.000Z</published>
     <updated>2024-04-11T13:35:50.637Z</updated>
     
@@ -61,21 +61,21 @@
     
     
     
-    <category term="博客篇" scheme="https://nlxxtw.github.io/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/"/>
+    <category term="博客篇" scheme="https://vre.she.ci/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/"/>
     
     
-    <category term="Hexo" scheme="https://nlxxtw.github.io/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://vre.she.ci/tags/Hexo/"/>
     
-    <category term="博客优化" scheme="https://nlxxtw.github.io/tags/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/"/>
+    <category term="博客" scheme="https://vre.she.ci/tags/%E5%8D%9A%E5%AE%A2/"/>
     
-    <category term="博客" scheme="https://nlxxtw.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    <category term="博客优化" scheme="https://vre.she.ci/tags/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/"/>
     
   </entry>
   
   <entry>
     <title>基于 Hexo GitHub 从零开始搭建个人博客：Matery 主题（DIY 版）详细配置教程</title>
-    <link href="https://nlxxtw.github.io/posts/541756ae.html"/>
-    <id>https://nlxxtw.github.io/posts/541756ae.html</id>
+    <link href="https://vre.she.ci/posts/541756ae.html"/>
+    <id>https://vre.she.ci/posts/541756ae.html</id>
     <published>2024-04-10T15:08:04.000Z</published>
     <updated>2024-04-10T15:14:50.864Z</updated>
     
@@ -89,21 +89,21 @@
     
     
     
-    <category term="博客篇" scheme="https://nlxxtw.github.io/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/"/>
+    <category term="博客篇" scheme="https://vre.she.ci/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/"/>
     
     
-    <category term="Hexo" scheme="https://nlxxtw.github.io/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://vre.she.ci/tags/Hexo/"/>
     
-    <category term="博客" scheme="https://nlxxtw.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    <category term="博客" scheme="https://vre.she.ci/tags/%E5%8D%9A%E5%AE%A2/"/>
     
-    <category term="博客搭建" scheme="https://nlxxtw.github.io/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    <category term="博客搭建" scheme="https://vre.she.ci/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
   </entry>
   
   <entry>
     <title>如何优雅的搭建自己风格的博客</title>
-    <link href="https://nlxxtw.github.io/posts/adfb6d52.html"/>
-    <id>https://nlxxtw.github.io/posts/adfb6d52.html</id>
+    <link href="https://vre.she.ci/posts/adfb6d52.html"/>
+    <id>https://vre.she.ci/posts/adfb6d52.html</id>
     <published>2024-04-10T14:56:44.000Z</published>
     <updated>2024-04-10T15:14:50.857Z</updated>
     
@@ -117,21 +117,21 @@
     
     
     
-    <category term="博客篇" scheme="https://nlxxtw.github.io/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/"/>
+    <category term="博客篇" scheme="https://vre.she.ci/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/"/>
     
     
-    <category term="Hexo" scheme="https://nlxxtw.github.io/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://vre.she.ci/tags/Hexo/"/>
     
-    <category term="博客" scheme="https://nlxxtw.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    <category term="博客" scheme="https://vre.she.ci/tags/%E5%8D%9A%E5%AE%A2/"/>
     
-    <category term="博客搭建" scheme="https://nlxxtw.github.io/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    <category term="博客搭建" scheme="https://vre.she.ci/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
   </entry>
   
   <entry>
     <title>Hexo Matery主题博客搭建教程（珍藏）</title>
-    <link href="https://nlxxtw.github.io/posts/e4393438.html"/>
-    <id>https://nlxxtw.github.io/posts/e4393438.html</id>
+    <link href="https://vre.she.ci/posts/e4393438.html"/>
+    <id>https://vre.she.ci/posts/e4393438.html</id>
     <published>2024-04-10T14:34:02.000Z</published>
     <updated>2024-04-10T15:14:50.861Z</updated>
     
@@ -145,21 +145,21 @@
     
     
     
-    <category term="博客篇" scheme="https://nlxxtw.github.io/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/"/>
+    <category term="博客篇" scheme="https://vre.she.ci/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/"/>
     
     
-    <category term="Hexo" scheme="https://nlxxtw.github.io/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://vre.she.ci/tags/Hexo/"/>
     
-    <category term="博客搭建" scheme="https://nlxxtw.github.io/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    <category term="博客搭建" scheme="https://vre.she.ci/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
-    <category term="Matery" scheme="https://nlxxtw.github.io/tags/Matery/"/>
+    <category term="Matery" scheme="https://vre.she.ci/tags/Matery/"/>
     
   </entry>
   
   <entry>
     <title>元宇宙赋能教育产业主题沙龙报告</title>
-    <link href="https://nlxxtw.github.io/posts/18d197ad.html"/>
-    <id>https://nlxxtw.github.io/posts/18d197ad.html</id>
+    <link href="https://vre.she.ci/posts/18d197ad.html"/>
+    <id>https://vre.she.ci/posts/18d197ad.html</id>
     <published>2024-04-08T13:53:27.876Z</published>
     <updated>2024-04-09T05:37:43.725Z</updated>
     
@@ -173,21 +173,21 @@
     
     
     
-    <category term="学术篇" scheme="https://nlxxtw.github.io/categories/%E5%AD%A6%E6%9C%AF%E7%AF%87/"/>
+    <category term="学术篇" scheme="https://vre.she.ci/categories/%E5%AD%A6%E6%9C%AF%E7%AF%87/"/>
     
     
-    <category term="学术" scheme="https://nlxxtw.github.io/tags/%E5%AD%A6%E6%9C%AF/"/>
+    <category term="学术" scheme="https://vre.she.ci/tags/%E5%AD%A6%E6%9C%AF/"/>
     
-    <category term="讲座" scheme="https://nlxxtw.github.io/tags/%E8%AE%B2%E5%BA%A7/"/>
+    <category term="讲座" scheme="https://vre.she.ci/tags/%E8%AE%B2%E5%BA%A7/"/>
     
-    <category term="元宇宙" scheme="https://nlxxtw.github.io/tags/%E5%85%83%E5%AE%87%E5%AE%99/"/>
+    <category term="元宇宙" scheme="https://vre.she.ci/tags/%E5%85%83%E5%AE%87%E5%AE%99/"/>
     
   </entry>
   
   <entry>
     <title>如何给hexo博客文章加密和实现【matery主题】弹出欢迎弹窗</title>
-    <link href="https://nlxxtw.github.io/posts/e1554a4.html"/>
-    <id>https://nlxxtw.github.io/posts/e1554a4.html</id>
+    <link href="https://vre.she.ci/posts/e1554a4.html"/>
+    <id>https://vre.she.ci/posts/e1554a4.html</id>
     <published>2024-04-07T02:49:52.000Z</published>
     <updated>2024-04-08T13:57:33.466Z</updated>
     
@@ -201,21 +201,21 @@
     
     
     
-    <category term="博客篇" scheme="https://nlxxtw.github.io/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/"/>
+    <category term="博客篇" scheme="https://vre.she.ci/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/"/>
     
     
-    <category term="Hexo" scheme="https://nlxxtw.github.io/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://vre.she.ci/tags/Hexo/"/>
     
-    <category term="博客加密" scheme="https://nlxxtw.github.io/tags/%E5%8D%9A%E5%AE%A2%E5%8A%A0%E5%AF%86/"/>
+    <category term="博客加密" scheme="https://vre.she.ci/tags/%E5%8D%9A%E5%AE%A2%E5%8A%A0%E5%AF%86/"/>
     
-    <category term="博客弹窗" scheme="https://nlxxtw.github.io/tags/%E5%8D%9A%E5%AE%A2%E5%BC%B9%E7%AA%97/"/>
+    <category term="博客弹窗" scheme="https://vre.she.ci/tags/%E5%8D%9A%E5%AE%A2%E5%BC%B9%E7%AA%97/"/>
     
   </entry>
   
   <entry>
     <title>解决不算子统计失效问题</title>
-    <link href="https://nlxxtw.github.io/posts/86a643d.html"/>
-    <id>https://nlxxtw.github.io/posts/86a643d.html</id>
+    <link href="https://vre.she.ci/posts/86a643d.html"/>
+    <id>https://vre.she.ci/posts/86a643d.html</id>
     <published>2024-04-06T12:41:33.000Z</published>
     <updated>2024-04-08T14:02:46.043Z</updated>
     
@@ -229,21 +229,21 @@
     
     
     
-    <category term="博客篇" scheme="https://nlxxtw.github.io/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/"/>
+    <category term="博客篇" scheme="https://vre.she.ci/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/"/>
     
     
-    <category term="Hexo" scheme="https://nlxxtw.github.io/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://vre.she.ci/tags/Hexo/"/>
     
-    <category term="博客" scheme="https://nlxxtw.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    <category term="博客" scheme="https://vre.she.ci/tags/%E5%8D%9A%E5%AE%A2/"/>
     
-    <category term="纠错" scheme="https://nlxxtw.github.io/tags/%E7%BA%A0%E9%94%99/"/>
+    <category term="纠错" scheme="https://vre.she.ci/tags/%E7%BA%A0%E9%94%99/"/>
     
   </entry>
   
   <entry>
     <title>LuckyBlog开源搭建教程</title>
-    <link href="https://nlxxtw.github.io/posts/d74d8b76.html"/>
-    <id>https://nlxxtw.github.io/posts/d74d8b76.html</id>
+    <link href="https://vre.she.ci/posts/d74d8b76.html"/>
+    <id>https://vre.she.ci/posts/d74d8b76.html</id>
     <published>2020-09-16T16:00:00.000Z</published>
     <updated>2024-04-07T03:40:25.993Z</updated>
     
@@ -257,19 +257,19 @@
     
     
     
-    <category term="博客篇" scheme="https://nlxxtw.github.io/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/"/>
+    <category term="博客篇" scheme="https://vre.she.ci/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/"/>
     
     
-    <category term="hexo-blog-lucky" scheme="https://nlxxtw.github.io/tags/hexo-blog-lucky/"/>
+    <category term="hexo-blog-lucky" scheme="https://vre.she.ci/tags/hexo-blog-lucky/"/>
     
-    <category term="博客搭建教程" scheme="https://nlxxtw.github.io/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/"/>
+    <category term="博客搭建教程" scheme="https://vre.she.ci/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
   <entry>
     <title>Hexo之渲染绕过</title>
-    <link href="https://nlxxtw.github.io/posts/17fd92ae.html"/>
-    <id>https://nlxxtw.github.io/posts/17fd92ae.html</id>
+    <link href="https://vre.she.ci/posts/17fd92ae.html"/>
+    <id>https://vre.she.ci/posts/17fd92ae.html</id>
     <published>2020-04-27T16:00:00.000Z</published>
     <updated>2024-04-06T07:48:46.218Z</updated>
     
@@ -283,19 +283,19 @@
     
     
     
-    <category term="博客篇" scheme="https://nlxxtw.github.io/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/"/>
+    <category term="博客篇" scheme="https://vre.she.ci/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/"/>
     
     
-    <category term="Hexo" scheme="https://nlxxtw.github.io/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://vre.she.ci/tags/Hexo/"/>
     
-    <category term="渲染绕过" scheme="https://nlxxtw.github.io/tags/%E6%B8%B2%E6%9F%93%E7%BB%95%E8%BF%87/"/>
+    <category term="渲染绕过" scheme="https://vre.she.ci/tags/%E6%B8%B2%E6%9F%93%E7%BB%95%E8%BF%87/"/>
     
   </entry>
   
   <entry>
     <title>文字背景粒子特效</title>
-    <link href="https://nlxxtw.github.io/posts/4b3510a4.html"/>
-    <id>https://nlxxtw.github.io/posts/4b3510a4.html</id>
+    <link href="https://vre.she.ci/posts/4b3510a4.html"/>
+    <id>https://vre.she.ci/posts/4b3510a4.html</id>
     <published>2020-03-26T16:00:00.000Z</published>
     <updated>2024-04-06T07:48:46.219Z</updated>
     
@@ -309,19 +309,19 @@
     
     
     
-    <category term="前端篇" scheme="https://nlxxtw.github.io/categories/%E5%89%8D%E7%AB%AF%E7%AF%87/"/>
+    <category term="前端篇" scheme="https://vre.she.ci/categories/%E5%89%8D%E7%AB%AF%E7%AF%87/"/>
     
     
-    <category term="jQuery+CSS3" scheme="https://nlxxtw.github.io/tags/jQuery-CSS3/"/>
+    <category term="jQuery+CSS3" scheme="https://vre.she.ci/tags/jQuery-CSS3/"/>
     
-    <category term="粒子特效" scheme="https://nlxxtw.github.io/tags/%E7%B2%92%E5%AD%90%E7%89%B9%E6%95%88/"/>
+    <category term="粒子特效" scheme="https://vre.she.ci/tags/%E7%B2%92%E5%AD%90%E7%89%B9%E6%95%88/"/>
     
   </entry>
   
   <entry>
     <title>PicGo+GitHub 图床搭建</title>
-    <link href="https://nlxxtw.github.io/posts/7a46f93c.html"/>
-    <id>https://nlxxtw.github.io/posts/7a46f93c.html</id>
+    <link href="https://vre.she.ci/posts/7a46f93c.html"/>
+    <id>https://vre.she.ci/posts/7a46f93c.html</id>
     <published>2020-03-14T16:00:00.000Z</published>
     <updated>2024-04-07T01:07:53.554Z</updated>
     
@@ -332,19 +332,19 @@
     
     
     
-    <category term="博客篇" scheme="https://nlxxtw.github.io/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/"/>
+    <category term="博客篇" scheme="https://vre.she.ci/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/"/>
     
     
-    <category term="PicGo" scheme="https://nlxxtw.github.io/tags/PicGo/"/>
+    <category term="PicGo" scheme="https://vre.she.ci/tags/PicGo/"/>
     
-    <category term="GitHub图床" scheme="https://nlxxtw.github.io/tags/GitHub%E5%9B%BE%E5%BA%8A/"/>
+    <category term="GitHub图床" scheme="https://vre.she.ci/tags/GitHub%E5%9B%BE%E5%BA%8A/"/>
     
   </entry>
   
   <entry>
     <title>阿里云服务器部署Hexo博客</title>
-    <link href="https://nlxxtw.github.io/posts/19d2a4e6.html"/>
-    <id>https://nlxxtw.github.io/posts/19d2a4e6.html</id>
+    <link href="https://vre.she.ci/posts/19d2a4e6.html"/>
+    <id>https://vre.she.ci/posts/19d2a4e6.html</id>
     <published>2020-02-26T16:00:00.000Z</published>
     <updated>2024-04-06T07:48:46.218Z</updated>
     
@@ -358,21 +358,21 @@
     
     
     
-    <category term="博客篇" scheme="https://nlxxtw.github.io/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/"/>
+    <category term="博客篇" scheme="https://vre.she.ci/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/"/>
     
     
-    <category term="Hexo" scheme="https://nlxxtw.github.io/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://vre.she.ci/tags/Hexo/"/>
     
-    <category term="博客" scheme="https://nlxxtw.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    <category term="阿里云" scheme="https://vre.she.ci/tags/%E9%98%BF%E9%87%8C%E4%BA%91/"/>
     
-    <category term="阿里云" scheme="https://nlxxtw.github.io/tags/%E9%98%BF%E9%87%8C%E4%BA%91/"/>
+    <category term="博客" scheme="https://vre.she.ci/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
   <entry>
     <title>个人博客搭建</title>
-    <link href="https://nlxxtw.github.io/posts/e3e08109.html"/>
-    <id>https://nlxxtw.github.io/posts/e3e08109.html</id>
+    <link href="https://vre.she.ci/posts/e3e08109.html"/>
+    <id>https://vre.she.ci/posts/e3e08109.html</id>
     <published>2019-08-27T03:41:03.000Z</published>
     <updated>2024-04-07T03:41:10.212Z</updated>
     
@@ -386,14 +386,14 @@
     
     
     
-    <category term="博客篇" scheme="https://nlxxtw.github.io/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/"/>
+    <category term="博客篇" scheme="https://vre.she.ci/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/"/>
     
     
-    <category term="Hexo" scheme="https://nlxxtw.github.io/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://vre.she.ci/tags/Hexo/"/>
     
-    <category term="博客" scheme="https://nlxxtw.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    <category term="博客" scheme="https://vre.she.ci/tags/%E5%8D%9A%E5%AE%A2/"/>
     
-    <category term="Github" scheme="https://nlxxtw.github.io/tags/Github/"/>
+    <category term="Github" scheme="https://vre.she.ci/tags/Github/"/>
     
   </entry>
   
