@@ -1,0 +1,40 @@
+/*弹窗样式*/
+.iziToast {
+    backdrop-filter: blur(10px) !important;
+}
+
+.iziToast > .iziToast-body .iziToast-title {
+    font-size: 16px !important;
+}
+
+.iziToast-body .iziToast-message {
+    line-height: 18px !important;
+}
+
+.iziToast > .iziToast-body .iziToast-message {
+    margin: 6px 0px 4px 0px !important;
+}
+
+.iziToast:after {
+    box-shadow: none !important;
+}
+
+.iziToast > .iziToast-body .iziToast-texts {
+    margin: 6px 6px !important;
+    display: flex !important;
+    align-items: center;
+}
+
+.iziToast > .iziToast-body i {
+    margin-left: 6px;
+    margin-top: 10px;
+}
+
+.iziToast-message {
+    word-break: break-all !important;
+}
+
+.iziToast > .iziToast-close {
+    background: url(https://cdn.jsdelivr.net/gh/imsyy/file/pic/close.png) no-repeat 50% 50% !important;
+    background-size: 8px !important;
+}
