@@ -10,5 +10,5 @@ Disallow: /vendors/
 
 
 
-Sitemap: http://vre.she.ci/sitemap.xml
-Sitemap: http://vre.she.ci/baidusitemap.xml
+https://19492035.xyz/baidusitemap.xml
+https://19492035.xyz/sitemap/xml
