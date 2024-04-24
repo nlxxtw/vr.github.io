@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>网站域名迁移引流教程</title>
+      <link href="posts/e89b357b.html"/>
+      <url>posts/e89b357b.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><hr><h3 id="收藏备用"><a href="#收藏备用" class="headerlink" title="收藏备用"></a><a href="#%E5%89%8D%E8%A8%80" title="前言"></a>收藏备用</h3><hr><blockquote><p>由于之前网站很长一段时间使用旧域名，导致百度等搜索引擎SEO收录都是旧域名的URL地址。如今网站迁移到新域名，需要将之前各搜索引擎中收录旧域名的所有URL地址自动引流跳转到新域名中。</p></blockquote><h3 id="0x01-环境准备"><a href="#0x01-环境准备" class="headerlink" title="0x01 环境准备"></a><a href="#0x01-%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87" title="0x01 环境准备"></a>0x01 环境准备</h3><hr><ul><li>  虚拟主机示例：<a href="https://www.46yun.com/">https://www.46yun.com</a></li><li>  旧域名示例：luckyzmj.cn</li><li>  新域名示例：luckysec.cn</li></ul><h3 id="0x02-域名引流"><a href="#0x02-域名引流" class="headerlink" title="0x02 域名引流"></a><a href="#0x02-%E5%9F%9F%E5%90%8D%E5%BC%95%E6%B5%81" title="0x02 域名引流"></a>0x02 域名引流</h3><hr><p>按照视频教程获取免费的虚拟主机，选择香港或者国外的虚拟主机可以免去繁琐的备案流程。</p><p>登录虚拟主机控制台，选择基本功能-绑定域名-添加旧域名。</p><p><img src="https://luckyseccloud.oss-cn-fuzhou.aliyuncs.com/picture/imgbed-master/posts/202211121515664.png"></p><p>在旧域名控制台中添加域名解析到虚拟主机提供的IP地址。</p><p><img src="https://luckyseccloud.oss-cn-fuzhou.aliyuncs.com/picture/imgbed-master/posts/202211121511658.png"></p><p>在主机控制台，选择基本功能-域名跳转-设置旧域名跳转新域名，提交保存。</p><p><img src="https://luckyseccloud.oss-cn-fuzhou.aliyuncs.com/picture/imgbed-master/posts/202211121517110.png"></p><p>等几分钟生效以后，在搜索引擎中点击收录的旧域名URL地址，即可自动跳转到新域名对应的URL地址。</p><p><img src="https://luckyseccloud.oss-cn-fuzhou.aliyuncs.com/picture/imgbed-master/posts/202211121522616.png"></p><hr><p>&nbsp;上一篇</p><p> <a href="http://www.luckysec.cn/posts/ae18017c.html"><img src="http://www.luckysec.cn/medias/imgbed/20200928021853.jpg" alt="会话 Cookie 未设置 Secure 属性"> 会话 Cookie 未设置 Secure 属性</a></p><p>Web 应用程序设置了不含 Secure 属性的会话 Cookie，这意味着 Cookie 信息在传递的过程中容易被监听捕获造成信息泄露。标记为 Secure 的 Cookie 只会通过被 HTTPS 协议加密过的请求发送给服务端进行会话验证，它永远不会使用不安全的 HTTP 发送传输（本地主机除外），这意味着中间人攻击者无法轻松访问它。此外，在不安全的站点（在 URL 中带有 `http://`）无法使用 Secure 属性设置的 Cookie 值。</p><p>2022-11-20 <a href="http://www.luckysec.cn/categories/%E6%BC%8F%E6%B4%9E%E7%AF%87/">漏洞篇</a></p><p>下一篇&nbsp;</p><p> <a href="http://www.luckysec.cn/posts/30f3a43b.html"><img src="http://www.luckysec.cn/medias/imgbed/20200928020120.jpg" alt="Weblogic Console弱口令后台getShell"> Weblogic Console弱口令后台getShell</a></p><p>Weblogic Server是Oracle公司的一款适用于云环境和传统环境的应用服务器，它提供了一个现代轻型开发平台，支持应用从开发到生产的整个生命周期管理，并简化了应用的部署和管理。Weblogic Console控制台由于管理员配置疏忽没有更改默认密码，或者存在账号弱口令漏洞，攻击者可在获取到账号密码的前提下登录管理后台，通过控制台“部署”功能模块部署恶意war包，进而getShell获取服务器管理权限。</p><p>2022-11-12 <a href="http://www.luckysec.cn/categories/%E6%BC%8F%E6%B4%9E%E7%AF%87/">漏洞篇</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 博客篇 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 博客 </tag>
+            
+            <tag> 网站 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>微信公众号如何接入AI大模型——星火认知大模型，通义千问大模型</title>
       <link href="posts/6a0ec4ee.html"/>
       <url>posts/6a0ec4ee.html</url>
