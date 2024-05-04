@@ -2,6 +2,60 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://19492035.xyz/posts/2069cd24.html</loc>
+    
+    <lastmod>2024-05-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://19492035.xyz/posts/f1ab9e5a.html</loc>
+    
+    <lastmod>2024-05-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://19492035.xyz/posts/d09a2d58.html</loc>
+    
+    <lastmod>2024-05-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://19492035.xyz/posts/ec4ef32e.html</loc>
+    
+    <lastmod>2024-05-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://19492035.xyz/posts/94330dcd.html</loc>
+    
+    <lastmod>2024-05-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://19492035.xyz/posts/8f2d0415.html</loc>
+    
+    <lastmod>2024-05-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://19492035.xyz/posts/e89b357b.html</loc>
     
     <lastmod>2024-05-03</lastmod>
@@ -317,7 +371,7 @@
   </url>
   
   <url>
-    <loc>https://19492035.xyz/List/galleries/%E7%82%AB%E9%85%B7%E8%B7%91%E8%BD%A6/index.html</loc>
+    <loc>https://19492035.xyz/List/galleries/%E6%B8%85%E6%96%B0%E8%8A%B1%E5%8D%89/index.html</loc>
     
     <lastmod>2024-04-06</lastmod>
     
@@ -326,7 +380,7 @@
   </url>
   
   <url>
-    <loc>https://19492035.xyz/List/galleries/%E6%B8%85%E6%96%B0%E8%8A%B1%E5%8D%89/index.html</loc>
+    <loc>https://19492035.xyz/List/galleries/%E7%82%AB%E9%85%B7%E8%B7%91%E8%BD%A6/index.html</loc>
     
     <lastmod>2024-04-06</lastmod>
     
@@ -524,6 +578,13 @@
   
   <url>
     <loc>https://19492035.xyz/tags/%E5%85%83%E5%AE%87%E5%AE%99/</loc>
+    <lastmod>2024-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://19492035.xyz/tags/%E5%BB%BA%E7%AB%99/</loc>
     <lastmod>2024-05-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
