@@ -6,7 +6,7 @@
   <link href="https://19492035.xyz/atom.xml" rel="self"/>
   
   <link href="https://19492035.xyz/"/>
-  <updated>2024-05-04T09:48:23.847Z</updated>
+  <updated>2024-05-05T12:37:28.943Z</updated>
   <id>https://19492035.xyz/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>解决wordpress网站页面打不开404问题以及XML sitemap无法打开问题</title>
+    <link href="https://19492035.xyz/posts/deb19a93.html"/>
+    <id>https://19492035.xyz/posts/deb19a93.html</id>
+    <published>2024-05-05T12:08:26.000Z</published>
+    <updated>2024-05-05T12:37:28.943Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>1.用宝塔面板建站用的是Nginx环境，天真的我还想换成Apache，结果。。。</p><p>404 Not Found<br>nginx</p><p><img src="https://image.19492035.xyz/file/81f4452e085734801b7e5.png"></p><p>2.用SEO插件打开生成的sitemap XML 出现这样的情况,不管怎么换插件还是这样</p><p>This page contains the following errors:<br>error on line 3 at column 6: XML declaration allowed only at the start of the document<br>Below is a rendering of the page up to the first error.</p><p><img src="https://image.19492035.xyz/file/5f454623aa980f45df1e5.png"></p><h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><ol><li>Nginx环境如何配置WordPress伪静态规则问题，由于我是宝塔面板就直接在站点修改上进行伪静态修改</li></ol><p><img src="https://image.19492035.xyz/file/0e67ee1b21ca0a65e46a9.png"></p><pre class="line-numbers language-php" data-language="php"><code class="language-php">location <span class="token operator">~</span> <span class="token punctuation">.</span><span class="token operator">*</span>\<span class="token punctuation">.</span><span class="token punctuation">(</span>ini<span class="token operator">|</span>zip<span class="token operator">|</span><span class="token number">7</span>z<span class="token operator">|</span>rar<span class="token operator">|</span>tar<span class="token operator">|</span>gz<span class="token operator">|</span>sql<span class="token operator">|</span>conf<span class="token operator">|</span>bak<span class="token operator">|</span>asp<span class="token operator">|</span>aspx<span class="token operator">|</span>jsp<span class="token punctuation">)</span><span class="token operator">?</span>$ <span class="token punctuation">{</span> deny all<span class="token punctuation">;</span> <span class="token punctuation">}</span>location <span class="token operator">=</span> <span class="token operator">/</span>wp<span class="token operator">-</span>admin<span class="token operator">/</span>install<span class="token punctuation">.</span>php <span class="token punctuation">{</span> deny all<span class="token punctuation">;</span> <span class="token punctuation">}</span>location <span class="token operator">=</span> <span class="token operator">/</span>wp<span class="token operator">-</span>config<span class="token punctuation">.</span>php <span class="token punctuation">{</span> deny all<span class="token punctuation">;</span> <span class="token punctuation">}</span><span class="token shell-comment comment"># END 保护敏感文件</span>location <span class="token operator">=</span> <span class="token operator">/</span>favicon<span class="token punctuation">.</span>ico <span class="token punctuation">{</span>log_not_found off<span class="token punctuation">;</span>access_log off<span class="token punctuation">;</span><span class="token punctuation">}</span>location <span class="token operator">=</span> <span class="token operator">/</span>robots<span class="token punctuation">.</span>txt <span class="token punctuation">{</span>allow all<span class="token punctuation">;</span>log_not_found off<span class="token punctuation">;</span>access_log off<span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token shell-comment comment"># WordPress伪静态</span>location <span class="token operator">/</span> <span class="token punctuation">{</span><span class="token shell-comment comment"># BEGIN 安全标头</span>add_header <span class="token constant">X</span><span class="token operator">-</span>Content<span class="token operator">-</span>Type<span class="token operator">-</span>Options nosniff<span class="token punctuation">;</span>add_header <span class="token constant">X</span><span class="token operator">-</span>Frame<span class="token operator">-</span>Options <span class="token constant">SAMEORIGIN</span><span class="token punctuation">;</span>add_header <span class="token constant">X</span><span class="token operator">-</span><span class="token constant">XSS</span><span class="token operator">-</span>Protection <span class="token double-quoted-string string">"1; mode=block"</span><span class="token punctuation">;</span>add_header Referrer<span class="token operator">-</span>Policy <span class="token double-quoted-string string">"no-referrer-when-downgrade"</span><span class="token punctuation">;</span><span class="token shell-comment comment"># END 安全标头</span>try_files <span class="token variable">$uri</span> <span class="token variable">$uri</span><span class="token operator">/</span> <span class="token operator">/</span>index<span class="token punctuation">.</span>php<span class="token operator">?</span><span class="token variable">$args</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token shell-comment comment"># 静态资源优化</span>location <span class="token operator">~</span><span class="token operator">*</span> \<span class="token punctuation">.</span><span class="token punctuation">(</span>js<span class="token operator">|</span>css<span class="token operator">|</span>webp<span class="token operator">|</span>png<span class="token operator">|</span>jpg<span class="token operator">|</span>jpeg<span class="token operator">|</span>gif<span class="token operator">|</span>ico<span class="token operator">|</span>svg<span class="token operator">|</span>woff<span class="token operator">|</span>woff2<span class="token operator">|</span>ttf<span class="token operator">|</span>mp4<span class="token operator">|</span>mp3<span class="token punctuation">)</span>$ <span class="token punctuation">{</span>add_header <span class="token constant">X</span><span class="token operator">-</span>Content<span class="token operator">-</span>Type<span class="token operator">-</span>Options nosniff<span class="token punctuation">;</span>expires max<span class="token punctuation">;</span>log_not_found off<span class="token punctuation">;</span>access_log off<span class="token punctuation">;</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>这样就成了，得感谢<a href="https://zhanzhangb.cn/tutorials/nginx-pseudo-static-and-security-settings.html">大佬得方法</a></p><p>2.经过查找多次实践，出现该问题的原因是代码书写不规范：某些php文件 <!--?php前或 ?-->后有空格或空行。</p><p>如果自己修改过主题的可能会在复制人家代码的时候导致 <!--?php前或 ?-->后有空格或空行</p><p><img src="https://image.19492035.xyz/file/08229c3707efd9b721af2.png"></p><p>还有要注意的其他“空格”的地方：</p><pre class="line-numbers language-<?php是不能有空格及其他字符分开的。<?php?>" data-language="<?php是不能有空格及其他字符分开的。<?php?>"><div class="caption"><span>是PHP的默认语法，而<!--??-->则是短标记方法，需要在php.ini中开启short_open_tag指令的。</span></div><code class="language-<?php是不能有空格及其他字符分开的。<?php?>">&lt;?后面紧跟着php,之间没有空格；是&lt;?php 而不是 &lt;? php<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>总之要做的是：找出不该存在的空格或空行，删除之即可。</p><p><a href="https://github.com/Yoast/wordpress-seo/issues/17521">GitHub也有这样得讨论</a></p><p><img src="https://image.19492035.xyz/file/db37b8731079a077d1dcb.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="技术篇" scheme="https://19492035.xyz/categories/%E6%8A%80%E6%9C%AF%E7%AF%87/"/>
+    
+    
+    <category term="Hexo" scheme="https://19492035.xyz/tags/Hexo/"/>
+    
+    <category term="博客" scheme="https://19492035.xyz/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="建站" scheme="https://19492035.xyz/tags/%E5%BB%BA%E7%AB%99/"/>
+    
+  </entry>
   
   <entry>
     <title>给网站加个动态时间</title>
@@ -514,9 +542,9 @@
     
     <category term="Hexo" scheme="https://19492035.xyz/tags/Hexo/"/>
     
-    <category term="博客" scheme="https://19492035.xyz/tags/%E5%8D%9A%E5%AE%A2/"/>
-    
     <category term="纠错" scheme="https://19492035.xyz/tags/%E7%BA%A0%E9%94%99/"/>
+    
+    <category term="博客" scheme="https://19492035.xyz/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
@@ -543,32 +571,6 @@
     <category term="hexo-blog-lucky" scheme="https://19492035.xyz/tags/hexo-blog-lucky/"/>
     
     <category term="博客搭建教程" scheme="https://19492035.xyz/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo之渲染绕过</title>
-    <link href="https://19492035.xyz/posts/17fd92ae.html"/>
-    <id>https://19492035.xyz/posts/17fd92ae.html</id>
-    <published>2020-04-27T16:00:00.000Z</published>
-    <updated>2024-04-06T07:48:46.218Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="0x001-Hexo-渲染"><a href="#0x001-Hexo-渲染" class="headerlink" title="0x001 Hexo 渲染"></a>0x001 Hexo 渲染</h3><p>  在Hexo部署时会默认渲染source下的所有html页面，但有时候想在Hexo博客上单独自定义html页面或README.md时，却不希望被Hexo渲染。因此对某个文件或者目录进行排除渲染是非常必要的。</p><h3 id="0x002-方法一：font-matter"><a href="#0x002-方法一：font-matter" class="headerlink" title="0x002 方法一：font matter"></a>0x002 方法一：font matter</h3><p><code>Hexo</code>新建网站页面，然后将你的代码直接写入 <code>index.md</code> 中</p><p>在 <code>Front matter</code> 中添加 <code>layout: false</code>，此方法适用于单一的纯<code>HTML</code><br><code>CSS</code> 页面。</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">---title: toolsdate: <span class="token number">2020</span>-04-28 00:00:00type: <span class="token string">"tools"</span>layout: <span class="token boolean">false</span>---<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="0x003-方法二：skip-render"><a href="#0x003-方法二：skip-render" class="headerlink" title="0x003 方法二：skip render"></a>0x003 方法二：skip render</h3><p>在博客根目录下的 <code>_config.yml</code>，找到 <code>skip_render</code>，大概在32行左右，写入你想要的跳过渲染的路径，注意缩进和空格。</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 指定目录跳过hexo渲染</span>skip_render:  - <span class="token string">'tools/*'</span>  - <span class="token string">'tools/**'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><blockquote><p>注释：<code>tools/*</code> 表示在目录 <code>source/fireworks</code> 下的文件全部跳过渲染，<code>tools/**</code> 表示在博客根目录 <code>source/tools/</code> 文件夹下的文件全部跳过渲染（例如页面的 js、css 在另一个文件夹中）。</p></blockquote><h3 id="0x004-案例：webstack-导航"><a href="#0x004-案例：webstack-导航" class="headerlink" title="0x004 案例：webstack 导航"></a>0x004 案例：webstack 导航</h3><p><code>webstack</code>是一个纯静态的网址导航网站，内容均由<code>viggo</code>收集并整理。项目基于<code>bootstrap</code>前端框架开发。</p><p><img src="https://camo.githubusercontent.com/41111c4c1d9922982f380566e6a2f8415204c52c/687474703a2f2f7777772e776562737461636b2e63632f6173736574732f696d616765732f707265766965772e676966" alt="image"></p><ul><li>Github：<a href="https://github.com/WebStackPage/WebStackPage.github.io">https://github.com/WebStackPage/WebStackPage.github.io</a></li></ul><p>在博客根目录 <code>source/</code>下新建<code>tools</code>，然后新建<code>index.html</code>,将<code>webstack</code>网页源码全选复制粘贴到里面。</p><ul><li>本站的webstack源码：<a href="view-source:http://luckyzmj.cn/tools/">view-source:http://luckyzmj.cn/tools/</a></li></ul><blockquote><p>注意：将源码里的部分信息以及跳转链接按照你真实个人博客的环境进行修改。</p></blockquote><p>然后打开博客根目录下配置文件<code>_config.yml</code>，找到<code>skip_render</code>，做如下修改：</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">skip_render:  - <span class="token string">'tools/*'</span>  - <span class="token string">'tools/**'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>最后执行<code>hexo clean</code>和<code>hexo s -g </code>本地预览，检查无误后<code>hexo g -d</code>部署到服务器上即可。</p><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><ul><li><a href="https://xiabor.com/2020/04/21/hexo3/#%E5%A6%82%E4%BD%95%E8%B7%B3%E8%BF%87hexo%E7%9A%84%E6%B8%B2%E6%9F%93">https://xiabor.com/2020/04/21/hexo3/#%E5%A6%82%E4%BD%95%E8%B7%B3%E8%BF%87hexo%E7%9A%84%E6%B8%B2%E6%9F%93</a></li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    <category term="博客篇" scheme="https://19492035.xyz/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/"/>
-    
-    
-    <category term="Hexo" scheme="https://19492035.xyz/tags/Hexo/"/>
-    
-    <category term="渲染绕过" scheme="https://19492035.xyz/tags/%E6%B8%B2%E6%9F%93%E7%BB%95%E8%BF%87/"/>
     
   </entry>
   

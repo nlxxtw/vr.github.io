@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>解决wordpress网站页面打不开404问题以及XML sitemap无法打开问题</title>
+      <link href="posts/deb19a93.html"/>
+      <url>posts/deb19a93.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>1.用宝塔面板建站用的是Nginx环境，天真的我还想换成Apache，结果。。。</p><p>404 Not Found<br>nginx</p><p><img src="https://image.19492035.xyz/file/81f4452e085734801b7e5.png"></p><p>2.用SEO插件打开生成的sitemap XML 出现这样的情况,不管怎么换插件还是这样</p><p>This page contains the following errors:<br>error on line 3 at column 6: XML declaration allowed only at the start of the document<br>Below is a rendering of the page up to the first error.</p><p><img src="https://image.19492035.xyz/file/5f454623aa980f45df1e5.png"></p><h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><ol><li>Nginx环境如何配置WordPress伪静态规则问题，由于我是宝塔面板就直接在站点修改上进行伪静态修改</li></ol><p><img src="https://image.19492035.xyz/file/0e67ee1b21ca0a65e46a9.png"></p><pre class="line-numbers language-php" data-language="php"><code class="language-php">location <span class="token operator">~</span> <span class="token punctuation">.</span><span class="token operator">*</span>\<span class="token punctuation">.</span><span class="token punctuation">(</span>ini<span class="token operator">|</span>zip<span class="token operator">|</span><span class="token number">7</span>z<span class="token operator">|</span>rar<span class="token operator">|</span>tar<span class="token operator">|</span>gz<span class="token operator">|</span>sql<span class="token operator">|</span>conf<span class="token operator">|</span>bak<span class="token operator">|</span>asp<span class="token operator">|</span>aspx<span class="token operator">|</span>jsp<span class="token punctuation">)</span><span class="token operator">?</span>$ <span class="token punctuation">{</span> deny all<span class="token punctuation">;</span> <span class="token punctuation">}</span>location <span class="token operator">=</span> <span class="token operator">/</span>wp<span class="token operator">-</span>admin<span class="token operator">/</span>install<span class="token punctuation">.</span>php <span class="token punctuation">{</span> deny all<span class="token punctuation">;</span> <span class="token punctuation">}</span>location <span class="token operator">=</span> <span class="token operator">/</span>wp<span class="token operator">-</span>config<span class="token punctuation">.</span>php <span class="token punctuation">{</span> deny all<span class="token punctuation">;</span> <span class="token punctuation">}</span><span class="token shell-comment comment"># END 保护敏感文件</span>location <span class="token operator">=</span> <span class="token operator">/</span>favicon<span class="token punctuation">.</span>ico <span class="token punctuation">{</span>log_not_found off<span class="token punctuation">;</span>access_log off<span class="token punctuation">;</span><span class="token punctuation">}</span>location <span class="token operator">=</span> <span class="token operator">/</span>robots<span class="token punctuation">.</span>txt <span class="token punctuation">{</span>allow all<span class="token punctuation">;</span>log_not_found off<span class="token punctuation">;</span>access_log off<span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token shell-comment comment"># WordPress伪静态</span>location <span class="token operator">/</span> <span class="token punctuation">{</span><span class="token shell-comment comment"># BEGIN 安全标头</span>add_header <span class="token constant">X</span><span class="token operator">-</span>Content<span class="token operator">-</span>Type<span class="token operator">-</span>Options nosniff<span class="token punctuation">;</span>add_header <span class="token constant">X</span><span class="token operator">-</span>Frame<span class="token operator">-</span>Options <span class="token constant">SAMEORIGIN</span><span class="token punctuation">;</span>add_header <span class="token constant">X</span><span class="token operator">-</span><span class="token constant">XSS</span><span class="token operator">-</span>Protection <span class="token double-quoted-string string">"1; mode=block"</span><span class="token punctuation">;</span>add_header Referrer<span class="token operator">-</span>Policy <span class="token double-quoted-string string">"no-referrer-when-downgrade"</span><span class="token punctuation">;</span><span class="token shell-comment comment"># END 安全标头</span>try_files <span class="token variable">$uri</span> <span class="token variable">$uri</span><span class="token operator">/</span> <span class="token operator">/</span>index<span class="token punctuation">.</span>php<span class="token operator">?</span><span class="token variable">$args</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token shell-comment comment"># 静态资源优化</span>location <span class="token operator">~</span><span class="token operator">*</span> \<span class="token punctuation">.</span><span class="token punctuation">(</span>js<span class="token operator">|</span>css<span class="token operator">|</span>webp<span class="token operator">|</span>png<span class="token operator">|</span>jpg<span class="token operator">|</span>jpeg<span class="token operator">|</span>gif<span class="token operator">|</span>ico<span class="token operator">|</span>svg<span class="token operator">|</span>woff<span class="token operator">|</span>woff2<span class="token operator">|</span>ttf<span class="token operator">|</span>mp4<span class="token operator">|</span>mp3<span class="token punctuation">)</span>$ <span class="token punctuation">{</span>add_header <span class="token constant">X</span><span class="token operator">-</span>Content<span class="token operator">-</span>Type<span class="token operator">-</span>Options nosniff<span class="token punctuation">;</span>expires max<span class="token punctuation">;</span>log_not_found off<span class="token punctuation">;</span>access_log off<span class="token punctuation">;</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>这样就成了，得感谢<a href="https://zhanzhangb.cn/tutorials/nginx-pseudo-static-and-security-settings.html">大佬得方法</a></p><p>2.经过查找多次实践，出现该问题的原因是代码书写不规范：某些php文件 <!--?php前或 ?-->后有空格或空行。</p><p>如果自己修改过主题的可能会在复制人家代码的时候导致 <!--?php前或 ?-->后有空格或空行</p><p><img src="https://image.19492035.xyz/file/08229c3707efd9b721af2.png"></p><p>还有要注意的其他“空格”的地方：</p><pre class="line-numbers language-<?php是不能有空格及其他字符分开的。<?php?>" data-language="<?php是不能有空格及其他字符分开的。<?php?>"><div class="caption"><span>是PHP的默认语法，而<!--??-->则是短标记方法，需要在php.ini中开启short_open_tag指令的。</span></div><code class="language-<?php是不能有空格及其他字符分开的。<?php?>">&lt;?后面紧跟着php,之间没有空格；是&lt;?php 而不是 &lt;? php<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>总之要做的是：找出不该存在的空格或空行，删除之即可。</p><p><a href="https://github.com/Yoast/wordpress-seo/issues/17521">GitHub也有这样得讨论</a></p><p><img src="https://image.19492035.xyz/file/db37b8731079a077d1dcb.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术篇 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 博客 </tag>
+            
+            <tag> 建站 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>给网站加个动态时间</title>
       <link href="posts/d09a2d58.html"/>
       <url>posts/d09a2d58.html</url>
@@ -515,9 +544,9 @@
             
             <tag> Hexo </tag>
             
-            <tag> 博客 </tag>
-            
             <tag> 纠错 </tag>
+            
+            <tag> 博客 </tag>
             
         </tags>
       
@@ -652,9 +681,9 @@
             
             <tag> Hexo </tag>
             
-            <tag> 阿里云 </tag>
-            
             <tag> 博客 </tag>
+            
+            <tag> 阿里云 </tag>
             
         </tags>
       
