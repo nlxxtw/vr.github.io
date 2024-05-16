@@ -5,7 +5,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="为WordPress网站创建网站地图（Sitemap）, JackTang 计算机 虚拟现实 元宇宙">
+    <meta name="keywords" content="星宿小程序, JackTang 计算机 虚拟现实 元宇宙">
     <meta name="description" content="硕士 | 计算机科学与技术 | 虚拟现实技术">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -30,7 +30,7 @@
 </script>
 
 
-    <title>为WordPress网站创建网站地图（Sitemap） | JackTang</title>
+    <title>星宿小程序 | JackTang</title>
     
 
     <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/nlxxtw/cdn@main/favicon.png">
@@ -773,12 +773,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928014621.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021815.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">为WordPress网站创建网站地图（Sitemap）</h1>
+                    <h1 class="description center-align post-title">星宿小程序</h1>
                 </div>
             </div>
         </div>
@@ -899,16 +899,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Hexo/">
-                                <span class="chip bg-color">Hexo</span>
+                            <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/">
+                                <span class="chip bg-color">微信小程序</span>
                             </a>
                         
-                            <a href="/tags/%E5%BB%BA%E7%AB%99/">
-                                <span class="chip bg-color">建站</span>
-                            </a>
-                        
-                            <a href="/tags/wordpress/">
-                                <span class="chip bg-color">wordpress</span>
+                            <a href="/tags/%E6%98%9F%E5%AE%BF/">
+                                <span class="chip bg-color">星宿</span>
                             </a>
                         
                     </div>
@@ -932,28 +928,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2024-05-05
+                    2024-05-16
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-05-05
+                    2024-05-16
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    672
+                    2.6k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    9 分
                 </div>
                 
 
@@ -971,71 +967,178 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="WordPress创建一个站点地图页面"><a href="#WordPress创建一个站点地图页面" class="headerlink" title="WordPress创建一个站点地图页面"></a>WordPress创建一个站点地图页面</h2><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://image.19492035.xyz/file/f46a9beb04ce2c949725e.png"></p>
-<p>一、新创建一个PHP文件，名称：sitemap.php</p>
-<p>二、将以下代码放入sitemap.php文件中</p>
-<p>三、然后上传至自己正在使用主题的目录</p>
-<p>四、到后台页面-新建页面，选择sitemap页面模板</p>
-<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://image.19492035.xyz/file/9c2ba2e0e304a72f5110b.png"></p>
-<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token operator">&lt;</span><span class="token operator">?</span>php
-<span class="token comment">/*
-Template Name: Sitemap
-*/</span>
-<span class="token operator">?</span><span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span><span class="token operator">!</span><span class="token constant">DOCTYPE</span> html <span class="token constant">PUBLIC</span> <span class="token string">"-//W3C//DTD XHTML 1.0 Transitional//EN"</span> <span class="token string">"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"</span><span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span>html xmlns<span class="token operator">=</span><span class="token string">"http://www.w3.org/1999/xhtml"</span><span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span>head profile<span class="token operator">=</span><span class="token string">"http://gmpg.org/xfn/11"</span><span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span>meta http<span class="token operator">-</span>equiv<span class="token operator">=</span><span class="token string">"Content-Type"</span> content<span class="token operator">=</span><span class="token string">"text/html; charset=&lt;?php bloginfo( 'charset' ); ?&gt;"</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span>title<span class="token operator">&gt;</span>站点地图 <span class="token operator">-</span> <span class="token operator">&lt;</span><span class="token operator">?</span>php <span class="token function">bloginfo</span><span class="token punctuation">(</span><span class="token string">'name'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>title<span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span>meta name<span class="token operator">=</span><span class="token string">"keywords"</span> content<span class="token operator">=</span><span class="token string">"站点地图,&lt;?php bloginfo('name'); ?&gt;"</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span>meta name<span class="token operator">=</span><span class="token string">"copyright"</span> content<span class="token operator">=</span><span class="token string">"&lt;?php bloginfo('name'); ?&gt;"</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span>link rel<span class="token operator">=</span><span class="token string">"canonical"</span> href<span class="token operator">=</span><span class="token string">"&lt;?php echo get_permalink(); ?&gt;"</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span>style type<span class="token operator">=</span><span class="token string">"text/css"</span><span class="token operator">&gt;</span>
-body <span class="token punctuation">{</span>font<span class="token operator">-</span>family<span class="token operator">:</span> Microsoft Yahei<span class="token punctuation">,</span>Verdana<span class="token punctuation">;</span>font<span class="token operator">-</span>size<span class="token operator">:</span><span class="token number">13</span>px<span class="token punctuation">;</span>margin<span class="token operator">:</span><span class="token number">0</span> auto<span class="token punctuation">;</span>color<span class="token operator">:</span> #<span class="token number">000000</span><span class="token punctuation">;</span>background<span class="token operator">:</span> #ffffff<span class="token punctuation">;</span>width<span class="token operator">:</span> <span class="token number">990</span>px<span class="token punctuation">;</span>margin<span class="token operator">:</span> <span class="token number">0</span> auto<span class="token punctuation">}</span>
-a<span class="token operator">:</span>link<span class="token punctuation">,</span>a<span class="token operator">:</span>visited <span class="token punctuation">{</span>color<span class="token operator">:</span>#<span class="token number">000</span><span class="token punctuation">;</span>text<span class="token operator">-</span>decoration<span class="token operator">:</span>none<span class="token punctuation">;</span><span class="token punctuation">}</span>
-a<span class="token operator">:</span>hover <span class="token punctuation">{</span>color<span class="token operator">:</span>#<span class="token number">08</span>d<span class="token punctuation">;</span>text<span class="token operator">-</span>decoration<span class="token operator">:</span>none<span class="token punctuation">;</span><span class="token punctuation">}</span>
-h1<span class="token punctuation">,</span>h2<span class="token punctuation">,</span>h3<span class="token punctuation">,</span>h4<span class="token punctuation">,</span>h5<span class="token punctuation">,</span>h6 <span class="token punctuation">{</span>font<span class="token operator">-</span>weight<span class="token operator">:</span>normal<span class="token punctuation">;</span><span class="token punctuation">}</span>
-img <span class="token punctuation">{</span>border<span class="token operator">:</span><span class="token number">0</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
-li <span class="token punctuation">{</span>margin<span class="token operator">-</span>top<span class="token operator">:</span> <span class="token number">8</span>px<span class="token punctuation">;</span><span class="token punctuation">}</span>
-<span class="token punctuation">.</span>page <span class="token punctuation">{</span>padding<span class="token operator">:</span> <span class="token number">4</span>px<span class="token punctuation">;</span> border<span class="token operator">-</span>top<span class="token operator">:</span> <span class="token number">1</span>px #<span class="token constant">EEEEEE</span> solid<span class="token punctuation">}</span>
-<span class="token punctuation">.</span>author <span class="token punctuation">{</span>background<span class="token operator">-</span>color<span class="token operator">:</span>#<span class="token constant">EEEEFF</span><span class="token punctuation">;</span> padding<span class="token operator">:</span> <span class="token number">6</span>px<span class="token punctuation">;</span> border<span class="token operator">-</span>top<span class="token operator">:</span> <span class="token number">1</span>px #ddddee solid<span class="token punctuation">}</span>
-#nav<span class="token punctuation">,</span> #content<span class="token punctuation">,</span> #footer <span class="token punctuation">{</span>padding<span class="token operator">:</span> <span class="token number">8</span>px<span class="token punctuation">;</span> border<span class="token operator">:</span> <span class="token number">1</span>px solid #<span class="token constant">EEEEEE</span><span class="token punctuation">;</span> clear<span class="token operator">:</span> both<span class="token punctuation">;</span> width<span class="token operator">:</span> <span class="token number">95</span><span class="token operator">%</span><span class="token punctuation">;</span> margin<span class="token operator">:</span> auto<span class="token punctuation">;</span> margin<span class="token operator">-</span>top<span class="token operator">:</span> <span class="token number">10</span>px<span class="token punctuation">;</span><span class="token punctuation">}</span>
-<span class="token operator">&lt;</span><span class="token operator">/</span>style<span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span><span class="token operator">/</span>head<span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span>body vlink<span class="token operator">=</span><span class="token string">"#333333"</span> link<span class="token operator">=</span><span class="token string">"#333333"</span><span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span>h2 style<span class="token operator">=</span><span class="token string">"text-align: center; margin-top: 20px"</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">?</span>php <span class="token function">bloginfo</span><span class="token punctuation">(</span><span class="token string">'name'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token operator">?</span><span class="token operator">&gt;</span>'s SiteMap <span class="token operator">&lt;</span><span class="token operator">/</span>h2<span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span>center<span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>center<span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span>div id<span class="token operator">=</span><span class="token string">"nav"</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span>a href<span class="token operator">=</span><span class="token string">"&lt;?php bloginfo('url'); ?&gt;/"</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span>strong<span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">?</span>php <span class="token function">bloginfo</span><span class="token punctuation">(</span><span class="token string">'name'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>strong<span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>a<span class="token operator">&gt;</span> » <span class="token operator">&lt;</span>a href<span class="token operator">=</span><span class="token string">"&lt;?php echo get_permalink(); ?&gt;"</span><span class="token operator">&gt;</span>站点地图<span class="token operator">&lt;</span><span class="token operator">/</span>a<span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span>div id<span class="token operator">=</span><span class="token string">"content"</span><span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span>h3<span class="token operator">&gt;</span>最新文章<span class="token operator">&lt;</span><span class="token operator">/</span>h3<span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span>ul<span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span><span class="token operator">?</span>php
-$previous_year <span class="token operator">=</span> $year <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-$previous_month <span class="token operator">=</span> $month <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-$ul_open <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
-$myposts <span class="token operator">=</span> <span class="token function">get_posts</span><span class="token punctuation">(</span><span class="token string">'numberposts=-1&amp;orderby=post_date&amp;order=DESC'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token function">foreach</span><span class="token punctuation">(</span>$myposts <span class="token keyword">as</span> $post<span class="token punctuation">)</span> <span class="token operator">:</span>
-<span class="token operator">?</span><span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span>li<span class="token operator">&gt;</span><span class="token operator">&lt;</span>a href<span class="token operator">=</span><span class="token string">"&lt;?php the_permalink(); ?&gt;"</span> title<span class="token operator">=</span><span class="token string">"&lt;?php the_title(); ?&gt;"</span> target<span class="token operator">=</span><span class="token string">"_blank"</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">?</span>php <span class="token function">the_title</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>a<span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span><span class="token operator">?</span>php endforeach<span class="token punctuation">;</span> <span class="token operator">?</span><span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span><span class="token operator">/</span>ul<span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span>div id<span class="token operator">=</span><span class="token string">"content"</span><span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span>li <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"categories"</span><span class="token operator">&gt;</span>分类目录<span class="token operator">&lt;</span>ul<span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span><span class="token operator">?</span>php <span class="token function">wp_list_categories</span><span class="token punctuation">(</span><span class="token string">'title_li='</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token operator">?</span><span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span><span class="token operator">/</span>ul<span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span>div id<span class="token operator">=</span><span class="token string">"content"</span><span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span>li <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"categories"</span><span class="token operator">&gt;</span>单页面<span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span><span class="token operator">?</span>php <span class="token function">wp_page_menu</span><span class="token punctuation">(</span> $args <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token operator">?</span><span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span>div id<span class="token operator">=</span><span class="token string">"footer"</span><span class="token operator">&gt;</span>查看博客首页<span class="token operator">:</span> <span class="token operator">&lt;</span>strong<span class="token operator">&gt;</span><span class="token operator">&lt;</span>a href<span class="token operator">=</span><span class="token string">"&lt;?php bloginfo('url'); ?&gt;/"</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">?</span>php <span class="token function">bloginfo</span><span class="token punctuation">(</span><span class="token string">'name'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>a<span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>strong<span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span><span class="token operator">&lt;</span>br <span class="token operator">/</span><span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span>center<span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"text-algin: center; font-size: 11px"</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span>strong<span class="token operator">&gt;</span><span class="token operator">&lt;</span>a href<span class="token operator">=</span><span class="token string">"https://www.shareppp.site/sitemap.xml"</span> <span class="token comment">/*这里是自己站点的xml版本的站点地图地址*/</span>target<span class="token operator">=</span><span class="token string">"_blank"</span><span class="token operator">&gt;</span>Baidu<span class="token operator">-</span>SiteMap<span class="token operator">&lt;</span><span class="token operator">/</span>a<span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>strong<span class="token operator">&gt;</span> Latest Update<span class="token operator">:</span> <span class="token operator">&lt;</span><span class="token operator">?</span>php $last <span class="token operator">=</span> $wpdb<span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">get_results</span><span class="token punctuation">(</span><span class="token string">"SELECT MAX(post_modified) AS MAX_m FROM $wpdb-&gt;posts WHERE (post_type = 'post' OR post_type = 'page') AND (post_status = 'publish' OR post_status = 'private')"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>$last <span class="token operator">=</span> <span class="token function">date</span><span class="token punctuation">(</span><span class="token string">'Y-m-d G:i:s'</span><span class="token punctuation">,</span> <span class="token function">strtotime</span><span class="token punctuation">(</span>$last<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">-</span><span class="token operator">&gt;</span>MAX_m<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>echo $last<span class="token punctuation">;</span> <span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span>br <span class="token operator">/</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span>br <span class="token operator">/</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span><span class="token operator">/</span>center<span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span><span class="token operator">/</span>body<span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span><span class="token operator">/</span>html<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>方法来源：<a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/2166750">https://cloud.tencent.com/developer/article/2166750</a></p>
+                <h2 id="0-页面预览-​"><a href="#0-页面预览-​" class="headerlink" title="0.页面预览 ​"></a>0.页面预览 <a href="#_0-%E9%A1%B5%E9%9D%A2%E9%A2%84%E8%A7%88">​</a></h2><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://docs.frbkw.com/images/xs2.jpg" alt="星宿Ui 页面预览"><br><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://docs.frbkw.com/images/xs1.jpg" alt="星宿Ui 页面预览"></p>
+<p>注意</p>
+<p><code>星宿V2.X</code>版本文档和代码已经不在提供维护，建议老版本升级<code>星宿V3.0</code>，当然如果你个人主体以及有十分多的流量稳妥暂时不升级为好</p>
+<h2 id="1-源码及工具下载-​"><a href="#1-源码及工具下载-​" class="headerlink" title="1.源码及工具下载 ​"></a>1.源码及工具下载 <a href="#_1-%E6%BA%90%E7%A0%81%E5%8F%8A%E5%B7%A5%E5%85%B7%E4%B8%8B%E8%BD%BD">​</a></h2><p><code>HBulider X App</code>开发版:<a target="_blank" rel="noopener" href="https://www.dcloud.io/hbuilderx.html">https://www.dcloud.io/hbuilderx.html</a></p>
+<p>微信小程序开发工具：<a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html">https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html</a></p>
+<p>小程序源码：<a target="_blank" rel="noopener" href="https://docs.frbkw.com/xingshu/sidebar/download/download.html">点击下载</a></p>
+<p>教程：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1ti421o78n">星宿UI V3.0从安装到使用全过程</a></p>
+<h2 id="2-wordpress后台设置-​"><a href="#2-wordpress后台设置-​" class="headerlink" title="2.wordpress后台设置 ​"></a>2.wordpress后台设置 <a href="#_2-wordpress%E5%90%8E%E5%8F%B0%E8%AE%BE%E7%BD%AE">​</a></h2><h3 id="4-1-安装-​"><a href="#4-1-安装-​" class="headerlink" title="4.1.安装 ​"></a>4.1.安装 <a href="#_4-1-%E5%AE%89%E8%A3%85">​</a></h3><p>百度下载<code>wordpress</code>最新版本</p>
+<h3 id="4-2-设置伪静态-​"><a href="#4-2-设置伪静态-​" class="headerlink" title="4.2.设置伪静态 ​"></a>4.2.设置伪静态 <a href="#_4-2-%E8%AE%BE%E7%BD%AE%E4%BC%AA%E9%9D%99%E6%80%81">​</a></h3><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.frbkw.com/wp-center/uploads/2019/09/2019091617143517.png" alt="星宿UI wordpress设置伪静态"></p>
+<h3 id="4-3-设置固定链接-​"><a href="#4-3-设置固定链接-​" class="headerlink" title="4.3.设置固定链接 ​"></a>4.3.设置固定链接 <a href="#_4-3-%E8%AE%BE%E7%BD%AE%E5%9B%BA%E5%AE%9A%E9%93%BE%E6%8E%A5">​</a></h3><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.frbkw.com/wp-center/uploads/2021/01/1610548189-7798a7cfde457af.png" alt="星宿UI 媒体图片"></p>
+<h3 id="4-4-设置媒体裁剪为0-​"><a href="#4-4-设置媒体裁剪为0-​" class="headerlink" title="4.4.设置媒体裁剪为0 ​"></a>4.4.设置媒体裁剪为0 <a href="#_4-4-%E8%AE%BE%E7%BD%AE%E5%AA%92%E4%BD%93%E8%A3%81%E5%89%AA%E4%B8%BA0">​</a></h3><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.frbkw.com/wp-center/uploads/2020/05/1588643785-566ca636c0a792d.png" alt="星宿UI 媒体图片"></p>
+<h2 id="3-设置SSL证书-​"><a href="#3-设置SSL证书-​" class="headerlink" title="3.设置SSL证书 ​"></a>3.设置SSL证书 <a href="#_3-%E8%AE%BE%E7%BD%AEssl%E8%AF%81%E4%B9%A6">​</a></h2><p><code>宝塔后台</code>-—<code>网站</code>-—<code>设置</code>申请<code>SSL证书</code></p>
+<h2 id="4-安装插件-​"><a href="#4-安装插件-​" class="headerlink" title="4.安装插件 ​"></a>4.安装插件 <a href="#_4-%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6">​</a></h2><p>下载<code>源码</code>在目录中找到<code>接口和插件</code>文件夹，<code>wordpress</code>后台–<code>插件</code>--<code>上传</code>安装</p>
+<p><code>wordpress</code>-—<code>插件</code>-—上传<code>fengrui-xingshu.zip</code>插件</p>
+<p>注意</p>
+<p>如果出现<code>存档不兼容</code>，请将<code>fengrui-xingshu.zip</code>插件通过宝塔上传到<code>wordpress</code>后台<code>/wp-content/plugins</code>目录中解压</p>
+<p><code>wordpress</code>-—<code>插件</code>-—上传<code>PODS.zip</code>插件</p>
+<h2 id="5-导入pods字段-​"><a href="#5-导入pods字段-​" class="headerlink" title="5.导入pods字段 ​"></a>5.导入pods字段 <a href="#_5-%E5%AF%BC%E5%85%A5pods%E5%AD%97%E6%AE%B5">​</a></h2><p>7.1<code>wordpress</code>后台设置<code>pods菜单</code>-—<code>组件</code>-—<code>lmport/Export packages</code></p>
+<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.frbkw.com/wp-center/uploads/2021/01/1610548700-9d3a9f539c86703.jpg" alt="星宿UI 媒体图片"></p>
+<p>7.2点击<code>lmport/Export packages</code>，上传<code>pods.json</code>文件 <img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.frbkw.com/wp-center/uploads/2021/01/1610548946-5343bca7eb51752.png" alt="星宿UI 媒体图片"></p>
+<p>7.3.随后左边菜单就会多出一个<code>基本配置</code>-—<code>新建文章</code>-—<code>关于我们</code>，小程序的基本配置全在这里 <img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.frbkw.com/wp-center/uploads/2021/01/1610549133-e5193dbf76404b9.jpg" alt="星宿UI 媒体图片"></p>
+<h2 id="6-修改源码-​"><a href="#6-修改源码-​" class="headerlink" title="6.修改源码 ​"></a>6.修改源码 <a href="#_6-%E4%BF%AE%E6%94%B9%E6%BA%90%E7%A0%81">​</a></h2><p>在打开下载好的<code>星宿UI</code>小程序前端源码放入<code>HBuilder X</code>中</p>
+<h3 id="修改域名-​"><a href="#修改域名-​" class="headerlink" title="修改域名 ​"></a>修改域名 <a href="#%E4%BF%AE%E6%94%B9%E5%9F%9F%E5%90%8D">​</a></h3><p>域名修改在源码<code>utils/http.js</code>修改</p>
+<p>js</p>
+<pre class="line-numbers language-auto" data-language="auto"><code class="language-auto">const baseUrl = 'https://www.frbkw.com';<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="修改App-ID-​"><a href="#修改App-ID-​" class="headerlink" title="修改App ID ​"></a>修改App ID <a href="#%E4%BF%AE%E6%94%B9app-id">​</a></h3><p>小程序<code>App id</code>在源码<code>manifest.json</code>找到<code>微信小程序ID</code>且修改</p>
+<h3 id="修改名称-​"><a href="#修改名称-​" class="headerlink" title="修改名称 ​"></a>修改名称 <a href="#%E4%BF%AE%E6%94%B9%E5%90%8D%E7%A7%B0">​</a></h3><p>在源码<code>pages.json</code>中找到<code>星宿UI-枫瑞博客</code>修改成你的（有2处）</p>
+<h2 id="7-运行调试-​"><a href="#7-运行调试-​" class="headerlink" title="7.运行调试 ​"></a>7.运行调试 <a href="#_7-%E8%BF%90%E8%A1%8C%E8%B0%83%E8%AF%95">​</a></h2><p>下载安装<code>HBulider X</code> 之后点击左上角点击<code>偏好设置</code>-—<code>设置</code>—–<code>运行配置</code>—-配置相对于的开发工具路径<br><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.frbkw.com/wp-center/uploads/2020/10/QQ20201011-152642@2x-scaled.jpg" alt="星宿Ui hbuilder x 配置图"></p>
+<h3 id="运行程序-​"><a href="#运行程序-​" class="headerlink" title="运行程序 ​"></a>运行程序 <a href="#%E8%BF%90%E8%A1%8C%E7%A8%8B%E5%BA%8F">​</a></h3><p><code>hbuilder x 菜</code>单点击<code>运行----运行到微信小程序</code></p>
+<h2 id="8-HBuilder-X修改标识-​"><a href="#8-HBuilder-X修改标识-​" class="headerlink" title="8.HBuilder X修改标识 ​"></a>8.HBuilder X修改标识 <a href="#_8-hbuilder-x%E4%BF%AE%E6%94%B9%E6%A0%87%E8%AF%86">​</a></h2><p>如果是第一次请登录Hbuilder x用户点击<code>manifest.json</code>文件<code>基础配置</code>下的重新获取<code>uni-app应用标识</code><br><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.frbkw.com/wp-center/uploads/2022/08/1660212145-2-scaled.jpg" alt="星宿UI 媒体图片"></p>
+<p>如果之前已有应用标识请点击登录Hbuilder x用户点击<code>manifest.json</code>文件最最下方<code>源码视图</code> 随后修改<code>appid</code>保存 <img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.frbkw.com/wp-center/uploads/2022/08/1660212161-3.jpg" alt="星宿UI 媒体图片"></p>
+<h2 id="9-发布-​"><a href="#9-发布-​" class="headerlink" title="9.发布 ​"></a>9.发布 <a href="#_9-%E5%8F%91%E5%B8%83">​</a></h2><p><code>HBuilder x</code> 菜单点击<code>发行</code>-—<code>发行到微信小程序</code></p>
+<p>微信小程序后台<code>设置</code>-—<code>开发设置</code>-—<code>服务器域名</code>中添加<code>request</code>域名</p>
+<h2 id="基本配置-​"><a href="#基本配置-​" class="headerlink" title="基本配置 ​"></a>基本配置 <a href="#%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE">​</a></h2><h4 id="轮播图-​"><a href="#轮播图-​" class="headerlink" title="轮播图 ​"></a>轮播图 <a href="#%E8%BD%AE%E6%92%AD%E5%9B%BE">​</a></h4><p>wordpress后台基本配置里面，添加需要轮播的文章id</p>
+<h4 id="公告-紧急弹窗-​"><a href="#公告-紧急弹窗-​" class="headerlink" title="公告 紧急弹窗 ​"></a>公告 紧急弹窗 <a href="#%E5%85%AC%E5%91%8A-%E7%B4%A7%E6%80%A5%E5%BC%B9%E7%AA%97">​</a></h4><p>滚动公告</p>
+<h4 id="紧急弹窗-​"><a href="#紧急弹窗-​" class="headerlink" title="紧急弹窗 ​"></a>紧急弹窗 <a href="#%E7%B4%A7%E6%80%A5%E5%BC%B9%E7%AA%97">​</a></h4><p>全局弹窗</p>
+<h4 id="弹窗Url访问-​"><a href="#弹窗Url访问-​" class="headerlink" title="弹窗Url访问 ​"></a>弹窗Url访问 <a href="#%E5%BC%B9%E7%AA%97url%E8%AE%BF%E9%97%AE">​</a></h4><p>用于全局弹窗点击确定反问其他页面，目前支持微信公众号，业务域名，二级页面</p>
+<h4 id="小程序logo-​"><a href="#小程序logo-​" class="headerlink" title="小程序logo ​"></a>小程序logo <a href="#%E5%B0%8F%E7%A8%8B%E5%BA%8Flogo">​</a></h4><p>输入图片地址需要https协议</p>
+<h4 id="金刚区-​"><a href="#金刚区-​" class="headerlink" title="金刚区 ​"></a>金刚区 <a href="#%E9%87%91%E5%88%9A%E5%8C%BA">​</a></h4><p>需要按以下格式添加，不要的部分留空不可删除</p>
+<p>json</p>
+<pre class="line-numbers language-auto" data-language="auto"><code class="language-auto">格式：
+{"title": "标题", "type": "类型", "appid": "小程序ID","route":"页面地址","himg":"图标地址"}
+
+事例：
+{"title": "视频号", "type": "xs_wxvideo_activity", "appid": "sphZH1MCAzuup7O","route":"export/UzFfAgtgekIEAQAAAAAAkmgZ-dnzgQAAAAstQy6ubaLX4KHWvLEZgBPEvqEYVUZGRauDzNPgMJqd9yLzTJ4xAM85VZ0MYmrr","himg":"/static/index/dstrict-1.svg"}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>金刚区类型</p>
+<ul>
+<li>  <code>xs_default</code>：跳二级页面</li>
+<li>  <code>xs_tab</code>：跳转底部导航</li>
+<li>  <code>xs_program</code>：跳转小程序</li>
+<li>  <code>xs_business</code>：跳转web</li>
+<li>  <code>xs_wxvideo_activity</code>：打开视频号视频（appid：输入视频号id，以“sph”开头的id，route：视频feedId，就是视频链接）</li>
+<li>  <code>xs_bilibli</code>：跳转b站小程序，appid参数是AV号，在PC端的播放页面打开F12输入aid即可获得</li>
+</ul>
+<h4 id="首页顶部分类-​"><a href="#首页顶部分类-​" class="headerlink" title="首页顶部分类 ​"></a>首页顶部分类 <a href="#%E9%A6%96%E9%A1%B5%E9%A1%B6%E9%83%A8%E5%88%86%E7%B1%BB">​</a></h4><p>输入分<code>类id</code>存在多个请用英文逗号隔开</p>
+<h4 id="公众号文章-​"><a href="#公众号文章-​" class="headerlink" title="公众号文章 ​"></a>公众号文章 <a href="#%E5%85%AC%E4%BC%97%E5%8F%B7%E6%96%87%E7%AB%A0">​</a></h4><p>需要按以下格式添加，不要的部分留空不可删除</p>
+<p>json</p>
+<pre class="line-numbers language-auto" data-language="auto"><code class="language-auto">格式：
+{"title": "标题", "hurl": "Url地址", "himg": "封面图片https协议"}
+
+事例：
+{"title": "一本不同的张嘉佳《天堂旅行团》读后感", "hurl": "https://cdn.frbkw.com/wp-center/uploads/2021/11/1638271775-202111301930.jpg"}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="首页图文样式-​"><a href="#首页图文样式-​" class="headerlink" title="首页图文样式 ​"></a>首页图文样式 <a href="#%E9%A6%96%E9%A1%B5%E5%9B%BE%E6%96%87%E6%A0%B7%E5%BC%8F">​</a></h4><ul>
+<li>  1.扁平图标（默认值）</li>
+<li>  2.大图模式</li>
+</ul>
+<h4 id="选择不显示的分类-​"><a href="#选择不显示的分类-​" class="headerlink" title="选择不显示的分类 ​"></a>选择不显示的分类 <a href="#%E9%80%89%E6%8B%A9%E4%B8%8D%E6%98%BE%E7%A4%BA%E7%9A%84%E5%88%86%E7%B1%BB">​</a></h4><p>请输入不显示<code>分类id</code>，多个使用英文逗号隔开</p>
+<h4 id="专题分类页面样式-​"><a href="#专题分类页面样式-​" class="headerlink" title="专题分类页面样式 ​"></a>专题分类页面样式 <a href="#%E4%B8%93%E9%A2%98%E5%88%86%E7%B1%BB%E9%A1%B5%E9%9D%A2%E6%A0%B7%E5%BC%8F">​</a></h4><ul>
+<li>  1.默认一级</li>
+<li>  2.显示二级分类 首先得在<code>wordpress</code>后台基本配置内容下选择专题分类显示样式为二级分类，在后台分类编辑中设置好一级二级菜单(父级子级菜单) (<img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.frbkw.com/wp-center/uploads/2021/10/1634463066-QQ20211017-133553@2x.png" alt="星宿UI 媒体图片">)</li>
+</ul>
+<h4 id="小程序分享标题-​"><a href="#小程序分享标题-​" class="headerlink" title="小程序分享标题 ​"></a>小程序分享标题 <a href="#%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%88%86%E4%BA%AB%E6%A0%87%E9%A2%98">​</a></h4><p>小程序右上角分享的标题</p>
+<h4 id="小程序分享图片-​"><a href="#小程序分享图片-​" class="headerlink" title="小程序分享图片 ​"></a>小程序分享图片 <a href="#%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%88%86%E4%BA%AB%E5%9B%BE%E7%89%87">​</a></h4><p>小程序右上角分享中心图片</p>
+<h4 id="公众号名称-​"><a href="#公众号名称-​" class="headerlink" title="公众号名称 ​"></a>公众号名称 <a href="#%E5%85%AC%E4%BC%97%E5%8F%B7%E5%90%8D%E7%A7%B0">​</a></h4><p>请输入关注微信公众号名称</p>
+<h4 id="公众号logo-​"><a href="#公众号logo-​" class="headerlink" title="公众号logo ​"></a>公众号logo <a href="#%E5%85%AC%E4%BC%97%E5%8F%B7logo">​</a></h4><p>请输入关注微信公众号头像地址</p>
+<h4 id="公众号二维码-​"><a href="#公众号二维码-​" class="headerlink" title="公众号二维码 ​"></a>公众号二维码 <a href="#%E5%85%AC%E4%BC%97%E5%8F%B7%E4%BA%8C%E7%BB%B4%E7%A0%81">​</a></h4><p>请输入关注微信公众号文章链接</p>
+<h4 id="微信激广告-​"><a href="#微信激广告-​" class="headerlink" title="微信激广告 ​"></a>微信激广告 <a href="#%E5%BE%AE%E4%BF%A1%E6%BF%80%E5%B9%BF%E5%91%8A">​</a></h4><p>微信广告ID</p>
+<h4 id="一键复制-​"><a href="#一键复制-​" class="headerlink" title="一键复制 ​"></a>一键复制 <a href="#%E4%B8%80%E9%94%AE%E5%A4%8D%E5%88%B6">​</a></h4><p>开启后资源下载<code>Url</code>会变成随机<code>64位编码</code>，同时支持点击按钮复制真正的地址</p>
+<h2 id="分类专题-​"><a href="#分类专题-​" class="headerlink" title="分类专题 ​"></a>分类专题 <a href="#%E5%88%86%E7%B1%BB%E4%B8%93%E9%A2%98">​</a></h2><h4 id="分类样式-​"><a href="#分类样式-​" class="headerlink" title="分类样式 ​"></a>分类样式 <a href="#%E5%88%86%E7%B1%BB%E6%A0%B7%E5%BC%8F">​</a></h4><p>分类列表顺序可以在<code>wordpress</code>后台安装<code>simple custom post order</code>插件拖拽改变顺序(感谢Andreas提供帮助)</p>
+<h4 id="封面-​"><a href="#封面-​" class="headerlink" title="封面 ​"></a>封面 <a href="#%E5%B0%81%E9%9D%A2">​</a></h4><p><code>wordpress</code>后台—-<code>分类</code>列表里面，选择对应的分类点击编辑就可以看到填写图片地址</p>
+<h4 id="置顶-​"><a href="#置顶-​" class="headerlink" title="置顶 ​"></a>置顶 <a href="#%E7%BD%AE%E9%A1%B6">​</a></h4><p><code>wordpress</code>后台—-分类列表里面，选择对应的分类点击编辑就可以看到是否置顶分类的按钮</p>
+<h2 id="搜索-​"><a href="#搜索-​" class="headerlink" title="搜索 ​"></a>搜索 <a href="#%E6%90%9C%E7%B4%A2">​</a></h2><h4 id="标签-​"><a href="#标签-​" class="headerlink" title="标签 ​"></a>标签 <a href="#%E6%A0%87%E7%AD%BE">​</a></h4><p>随机出现</p>
+<h2 id="文章详情-​"><a href="#文章详情-​" class="headerlink" title="文章详情 ​"></a>文章详情 <a href="#%E6%96%87%E7%AB%A0%E8%AF%A6%E6%83%85">​</a></h2><h4 id="文章阅读方式-​"><a href="#文章阅读方式-​" class="headerlink" title="文章阅读方式 ​"></a>文章阅读方式 <a href="#%E6%96%87%E7%AB%A0%E9%98%85%E8%AF%BB%E6%96%B9%E5%BC%8F">​</a></h4><ul>
+<li>  0正常阅读(默认值)</li>
+<li>  1跳转公众号</li>
+<li>  2跳转资源下载</li>
+<li>  3跳转视频号</li>
+<li>  4跳转b站</li>
+</ul>
+<h4 id="文章公告弹窗-​"><a href="#文章公告弹窗-​" class="headerlink" title="文章公告弹窗 ​"></a>文章公告弹窗 <a href="#%E6%96%87%E7%AB%A0%E5%85%AC%E5%91%8A%E5%BC%B9%E7%AA%97">​</a></h4><p>文章的公告弹窗内容</p>
+<h4 id="文章激励视频阅读-​"><a href="#文章激励视频阅读-​" class="headerlink" title="文章激励视频阅读 ​"></a>文章激励视频阅读 <a href="#%E6%96%87%E7%AB%A0%E6%BF%80%E5%8A%B1%E8%A7%86%E9%A2%91%E9%98%85%E8%AF%BB">​</a></h4><p>请选择文章是否关闭激励视频阅读（默认不开启，最好选择一些直接下载，不然首页面审核提示强制广告）</p>
+<h4 id="资源激励视频下载-​"><a href="#资源激励视频下载-​" class="headerlink" title="资源激励视频下载 ​"></a>资源激励视频下载 <a href="#%E8%B5%84%E6%BA%90%E6%BF%80%E5%8A%B1%E8%A7%86%E9%A2%91%E4%B8%8B%E8%BD%BD">​</a></h4><p>请选择资源下载是否需要激励视频（最好选择一些直接下载，不然资源页面审核提示强制广告）</p>
+<h4 id="资源名称-​"><a href="#资源名称-​" class="headerlink" title="资源名称 ​"></a>资源名称 <a href="#%E8%B5%84%E6%BA%90%E5%90%8D%E7%A7%B0">​</a></h4><p>资源下载名称标题</p>
+<h4 id="资源下载方式-​"><a href="#资源下载方式-​" class="headerlink" title="资源下载方式 ​"></a>资源下载方式 <a href="#%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD%E6%96%B9%E5%BC%8F">​</a></h4><ul>
+<li>  1.显示下载链接(默认值)</li>
+<li>  2.小程序直接下载文件</li>
+</ul>
+<h4 id="网盘地址-​"><a href="#网盘地址-​" class="headerlink" title="网盘地址 ​"></a>网盘地址 <a href="#%E7%BD%91%E7%9B%98%E5%9C%B0%E5%9D%80">​</a></h4><p>资源下载地址</p>
+<h4 id="提取码-​"><a href="#提取码-​" class="headerlink" title="提取码 ​"></a>提取码 <a href="#%E6%8F%90%E5%8F%96%E7%A0%81">​</a></h4><p>盘下载提取码</p>
+<h4 id="文件下载地址-​"><a href="#文件下载地址-​" class="headerlink" title="文件下载地址 ​"></a>文件下载地址 <a href="#%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80">​</a></h4><p>当值为<code>1</code>的时候使用小程序下载功能下载地址需要在微信小程序后台添加合法的下载域名，文件下载完成之后会提示转发好友，这样我们就可以得到下载的文件 <img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.frbkw.com/wp-center/uploads/2022/06/1654433388-WX20220604-091548@2x.png" alt="星宿UI 2.0文章密码反问"></p>
+<h4 id="文件下载格式-​"><a href="#文件下载格式-​" class="headerlink" title="文件下载格式 ​"></a>文件下载格式 <a href="#%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD%E6%A0%BC%E5%BC%8F">​</a></h4><p>文件格式，例如：<code>zip</code></p>
+<h4 id="视频号id-​"><a href="#视频号id-​" class="headerlink" title="视频号id ​"></a>视频号id <a href="#%E8%A7%86%E9%A2%91%E5%8F%B7id">​</a></h4><p>视频号助手中获取，以<code>sph</code>开头的<code>id</code></p>
+<h4 id="视频号feedId-​"><a href="#视频号feedId-​" class="headerlink" title="视频号feedId ​"></a>视频号feedId <a href="#%E8%A7%86%E9%A2%91%E5%8F%B7feedid">​</a></h4><p>视频 feedId 就是视频链接</p>
+<h4 id="B站视频-​"><a href="#B站视频-​" class="headerlink" title="B站视频 ​"></a>B站视频 <a href="#b%E7%AB%99%E8%A7%86%E9%A2%91">​</a></h4><p>在PC端的播放页面打开F12输入<code>aid</code>即可获得，或者通过其他的接口等方法<br><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.frbkw.com/wp-center/uploads/2022/03/1646836745-WX20220309-180325@2x.png" alt="枫瑞博客网微信公众号"></p>
+<h2 id="DIY-首页金刚区-​"><a href="#DIY-首页金刚区-​" class="headerlink" title="DIY 首页金刚区 ​"></a>DIY 首页金刚区 <a href="#diy-%E9%A6%96%E9%A1%B5%E9%87%91%E5%88%9A%E5%8C%BA">​</a></h2><p>金刚区<code>type</code>值星宿中有<code>6</code>种定义分别为：</p>
+<p>ts</p>
+<pre class="line-numbers language-auto" data-language="auto"><code class="language-auto">1.xs_default 默认值跳二级
+2.xs_tap 跳转底部导航 (感谢B站大佬`老夫的仙女梦er`反馈错误)
+3.xs_program 跳转小程序
+4.xs_business 跳转业务域名请在route填写网站地址
+5.xs_wxvideo_activity 打开某个视频号视频
+6.xs_bilibli跳转b站小程序，appid参数是AV号，但b站目前只有显式的BV号。获取视频的号，在PC端的播放页面打开F12输入aid即可获得<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="跳文章详情-​"><a href="#跳文章详情-​" class="headerlink" title="跳文章详情 ​"></a>跳文章详情 <a href="#%E8%B7%B3%E6%96%87%E7%AB%A0%E8%AF%A6%E6%83%85">​</a></h4><p>在<code>基本配置</code>-–<code>金刚区</code>中可配置跳转文章详情</p>
+<p>json</p>
+<pre class="line-numbers language-auto" data-language="auto"><code class="language-auto">格式：
+{"title": "标题", "type": "xs_default", "appid": "","route":"/pages/data/data?id=文章ID","himg":"图标地址"}
+事例：
+{"title": "星宿V3.0", "type": "xs_default", "appid": "","route":"/pages/data/data?id=4247","himg":"https://www.frbkw.com/xingsu.png"}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="跳分类列表-​"><a href="#跳分类列表-​" class="headerlink" title="跳分类列表 ​"></a>跳分类列表 <a href="#%E8%B7%B3%E5%88%86%E7%B1%BB%E5%88%97%E8%A1%A8">​</a></h4><p>在<code>基本配置</code>-–<code>金刚区</code>中可配置跳分类列表</p>
+<p>json</p>
+<pre class="line-numbers language-auto" data-language="auto"><code class="language-auto">格式：
+{"title": "标题", "type": "xs_default", "appid": "","route":"/pages/list/list?catepos=分类ID","himg":"图标地址"}
+事例：
+{"title": "Uni-apps", "type": "xs_default", "appid": "","route":"/pages/list/list?catepos=147","himg":"https://www.frbkw.com/xingsu.png"}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="跳转web-view-​"><a href="#跳转web-view-​" class="headerlink" title="跳转web-view ​"></a>跳转web-view <a href="#%E8%B7%B3%E8%BD%ACweb-view">​</a></h4><p>在<code>基本配置</code>-–<code>金刚区</code>中可配置跳网页，个人小程序能<code>跳转公众号</code>，企业可以跳<code>业务域名</code>；</p>
+<p>json</p>
+<pre class="line-numbers language-auto" data-language="auto"><code class="language-auto">格式：
+{"title": "标题", "type": "xs_business", "appid": "","route":"公众号文章地址","himg":"图标地址"}
+事例：
+{"title": "规划", "type": "xs_business", "appid": "","route":"https://mp.weixin.qq.com/s/WSb53WO_Em4F81khimsbBw","himg":"/static/index/dstrict-2.svg"}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="跳转小程序-​"><a href="#跳转小程序-​" class="headerlink" title="跳转小程序 ​"></a>跳转小程序 <a href="#%E8%B7%B3%E8%BD%AC%E5%B0%8F%E7%A8%8B%E5%BA%8F">​</a></h4><p>在<code>基本配置</code>-–<code>金刚区</code>中可配置跳转小程序；<code>route</code>可以留空，留空默认跳转首页，它也可以跳转详情页面只需要写页面地址和参数</p>
+<p>json</p>
+<pre class="line-numbers language-auto" data-language="auto"><code class="language-auto">格式：
+{"title": "标题", "type": "xs_program", "appid": "小程序ID","route":"","himg":"图标地址"}
+事例：
+{"title": "规划", "type": "xs_program", "appid": "wx770bd62bc4ca8c7b","route":"","himg":"/static/index/dstrict-2.svg"}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="视频号-​"><a href="#视频号-​" class="headerlink" title="视频号 ​"></a>视频号 <a href="#%E8%A7%86%E9%A2%91%E5%8F%B7">​</a></h4><p>在<code>基本配置</code>-–<code>金刚区</code>中可配置跳转视频号；<code>appid</code>：输入视频号id，以“sph”开头的id，<code>route</code>：视频feedId，就是视频链接</p>
+<p>json</p>
+<pre class="line-numbers language-auto" data-language="auto"><code class="language-auto">格式：
+{"title": "标题", "type": "xs_wxvideo_activity", "appid": "小程序ID","route":"","himg":"图标地址"}
+事例：
+{"title": "视频号", "type": "xs_wxvideo_activity", "appid": "sphZH1MCAzuup7O","route":"export/UzFfAgtgekIEAQAAAAAAkmgZ-dnzgQAAAAstQy6ubaLX4KHWvLEZgBPEvqEYVUZGRauDzNPgMJqd9yLzTJ4xAM85VZ0MYmrr","himg":"/static/index/dstrict-1.svg"}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="跳转B站-​"><a href="#跳转B站-​" class="headerlink" title="跳转B站 ​"></a>跳转B站 <a href="#%E8%B7%B3%E8%BD%ACb%E7%AB%99">​</a></h4><p>在<code>基本配置</code>-–<code>金刚区</code>中可配置跳转B站；在PC端的播放页面打开F12输入<code>aid</code>即可获得，或者通过其他的接口等方法</p>
+<p>json</p>
+<pre class="line-numbers language-auto" data-language="auto"><code class="language-auto">格式：
+{"title": "标题", "type": "xs_program", "appid": "视频aid号","route":"","himg":"图标地址"}
+事例：
+{"title": "B站", "type": "xs_program", "appid": "512196103","route":"","himg":"/static/index/dstrict-2.svg"}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+<h2 id="域名添加-​"><a href="#域名添加-​" class="headerlink" title="域名添加 ​"></a>域名添加 <a href="#%E5%9F%9F%E5%90%8D%E6%B7%BB%E5%8A%A0">​</a></h2><p>我们小程序发起的请求域名是需要备案，且支持SSl证书，在微信小程序后台 <code>设置----开发设置----服务器域名</code>中添加<code>request</code>域名记录</p>
+<h2 id="客服-​"><a href="#客服-​" class="headerlink" title="客服 ​"></a>客服 <a href="#%E5%AE%A2%E6%9C%8D">​</a></h2><p>微信小程序客服如何回复消息</p>
+<p>首先需要在微信小程序后台配置客服微信号</p>
+<p>网页客服回复消息：<a target="_blank" rel="noopener" href="https://mpkf.weixin.qq.com/">https://mpkf.weixin.qq.com/</a></p>
+<p>微信小程序回复消息</p>
+<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.frbkw.com/wp-center/uploads/2020/04/1587611170-a0a888983c63ac9.jpg" alt="星宿UI 微信小程序客服"></p>
+<h2 id="公众号文章-​-1"><a href="#公众号文章-​-1" class="headerlink" title="公众号文章 ​"></a>公众号文章 <a href="#%E5%85%AC%E4%BC%97%E5%8F%B7%E6%96%87%E7%AB%A0">​</a></h2><p>小程序打通微信公众号文章，微信在公众号文章地址需要在手机上复制，电脑端复制无效</p>
+<h2 id="导读-​"><a href="#导读-​" class="headerlink" title="导读 ​"></a>导读 <a href="#%E5%AF%BC%E8%AF%BB">​</a></h2><p><code>星宿V3.0</code>之后如果需要设置一个后台运行<code>多个</code>程序或者<code>多平台</code>，只需要在<code>wordpress后台</code>-—<code>基本配置</code>-—<code>新增about</code><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.frbkw.com/wp-center/uploads/2024/03/20240311103107240.jpg" alt="星宿设置多端"></p>
+<p>小程序前端源码需修改配置文字的索引值 <img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.frbkw.com/wp-center/uploads/2024/03/20240311103107172.jpg" alt="星宿设置多端"></p>
+<p>我们需要明白一个后台配置多个程序，他们最终只是配置文件差异，详细阅读本章节会让你一语道破，文字十分难说清楚等待视频更新</p>
+<h2 id="微信端-​"><a href="#微信端-​" class="headerlink" title="微信端 ​"></a>微信端 <a href="#%E5%BE%AE%E4%BF%A1%E7%AB%AF">​</a></h2><p><code>微信端</code>是最近兼容的一个，初开发也是以<code>微信</code>为基础，需要多个<code>微信端</code>只需要安<code>导读</code>部分操作即可</p>
+<h2 id="抖音端-​"><a href="#抖音端-​" class="headerlink" title="抖音端 ​"></a>抖音端 <a href="#%E6%8A%96%E9%9F%B3%E7%AB%AF">​</a></h2><p>开发中</p>
+<h2 id="百度端-​"><a href="#百度端-​" class="headerlink" title="百度端 ​"></a>百度端 <a href="#%E7%99%BE%E5%BA%A6%E7%AB%AF">​</a></h2><p>开发中</p>
 
                 
             </div>
@@ -1062,7 +1165,7 @@ $myposts <span class="token operator">=</span> <span class="token function">get_
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://19492035.xyz/posts/7716fc29.html">https://19492035.xyz/posts/7716fc29.html</a>
+                    <a href="https://19492035.xyz/posts/7703d477.html">https://19492035.xyz/posts/7703d477.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1100,16 +1203,12 @@ $myposts <span class="token operator">=</span> <span class="token function">get_
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Hexo/">
-                                    <span class="chip bg-color">Hexo</span>
+                                <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/">
+                                    <span class="chip bg-color">微信小程序</span>
                                 </a>
                             
-                                <a href="/tags/%E5%BB%BA%E7%AB%99/">
-                                    <span class="chip bg-color">建站</span>
-                                </a>
-                            
-                                <a href="/tags/wordpress/">
-                                    <span class="chip bg-color">wordpress</span>
+                                <a href="/tags/%E6%98%9F%E5%AE%BF/">
+                                    <span class="chip bg-color">星宿</span>
                                 </a>
                             
                         </div>
@@ -1280,7 +1379,7 @@ $myposts <span class="token operator">=</span> <span class="token function">get_
         repo: 'issue',
         owner: 'nlxxtw',
         admin: "nlxxtw",
-        id: '2024-05-05T21-03-20',
+        id: '2024-05-16T12-51-29',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -1608,9 +1707,64 @@ new Valine({
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/posts/7703d477.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021815.jpg" class="responsive-img" alt="星宿小程序">
+                        
+                        <span class="card-title">星宿小程序</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-05-16
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%8A%80%E6%9C%AF%E7%AF%87/" class="post-category">
+                                    技术篇
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/">
+                        <span class="chip bg-color">微信小程序</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%98%9F%E5%AE%BF/">
+                        <span class="chip bg-color">星宿</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/posts/2f58d10.html">
                     <div class="card-image">
@@ -1628,9 +1782,9 @@ new Valine({
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2024-05-16
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-05-16
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1652,63 +1806,6 @@ new Valine({
                     
                     <a href="/tags/%E7%81%B5%E6%B2%90/">
                         <span class="chip bg-color">灵沐</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/posts/deb19a93.html">
-                    <div class="card-image">
-                        
-                        
-                        <img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021744.jpg" class="responsive-img" alt="解决wordpress网站页面打不开404问题以及XML sitemap无法打开问题">
-                        
-                        <span class="card-title">解决wordpress网站页面打不开404问题以及XML sitemap无法打开问题</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            404 Not Found nginx
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-05-05
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E6%8A%80%E6%9C%AF%E7%AF%87/" class="post-category">
-                                    技术篇
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Hexo/">
-                        <span class="chip bg-color">Hexo</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%8D%9A%E5%AE%A2/">
-                        <span class="chip bg-color">博客</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%BB%BA%E7%AB%99/">
-                        <span class="chip bg-color">建站</span>
                     </a>
                     
                 </div>

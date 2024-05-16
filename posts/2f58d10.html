@@ -899,16 +899,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Hexo/">
-                                <span class="chip bg-color">Hexo</span>
-                            </a>
-                        
-                            <a href="/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/">
-                                <span class="chip bg-color">小程序</span>
+                            <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/">
+                                <span class="chip bg-color">微信小程序</span>
                             </a>
                         
                             <a href="/tags/%E7%81%B5%E6%B2%90/">
-                                <span class="chip bg-color">灵沐]</span>
+                                <span class="chip bg-color">灵沐</span>
                             </a>
                         
                     </div>
@@ -946,14 +942,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.2k
+                    1.6k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    6 分
                 </div>
                 
 
@@ -1210,6 +1206,39 @@ https://mp.weixin.qq.com/MzIxMzQ2Nzc3OA
 <li><p>  <code>category</code>:关联的分类不需要用户操作</p>
 </li>
 </ul>
+<h2 id="升级-​"><a href="#升级-​" class="headerlink" title="升级 ​"></a>升级 <a href="#%E5%8D%87%E7%BA%A7">​</a></h2><p>在升级<code>灵沐</code>之前我们需要明白它是什么组成的：</p>
+<ul>
+<li>  Strapi Cms</li>
+<li>  小程序前端</li>
+<li>  自定义的API</li>
+</ul>
+<p>看了结构我们会明白小程序和自定义API是有<code>枫瑞</code>自己写的，<code>Strapi Cms</code>会有官方团队维护。因此我们升级就分为2个部分</p>
+<ul>
+<li>  1 枫瑞发布的小程序和API</li>
+<li>  2 后台提示Strapi要升级</li>
+</ul>
+<h2 id="章节视频教程-​-2"><a href="#章节视频教程-​-2" class="headerlink" title="章节视频教程 ​"></a>章节视频教程 <a href="#%E7%AB%A0%E8%8A%82%E8%A7%86%E9%A2%91%E6%95%99%E7%A8%8B">​</a></h2><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Fg4y137ju/?share_source=copy_web&amp;vd_source=ac7bcdc4a3b47cfed57145f1ed1d5cca">点击：04-灵沐升级</a></p>
+<h2 id="小程序升级-​"><a href="#小程序升级-​" class="headerlink" title="小程序升级 ​"></a>小程序升级 <a href="#%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%8D%87%E7%BA%A7">​</a></h2><p><code>枫瑞</code>更新发布源码之后我们只需要将源码解压，将小程序源码导入微信开发工具<code>utils/http.js</code>修改域名信息 <img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.frbkw.com/wp-center/uploads/2023/04/20230406203236972.jpg" alt="小程序升级"></p>
+<p><code>V3.0</code>开始只要打开项目目录<code>my-project</code>将下载好的小程序源码中的<code>server.js</code>和<code>src.zip</code>上传解压</p>
+<p>注意</p>
+<p><code>V2.0</code>是宝塔后台找到src目录将下载好的小程序源码中的<code>API</code>和<code>compomemts</code>以及<code>extensions</code>上传解压</p>
+<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.frbkw.com/wp-center/uploads/2023/04/20230404201542297.jpg" alt="灵沐开源资源下载小程序"></p>
+<p>重启<code>node</code><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.frbkw.com/wp-center/uploads/2024/01/20240107163403678.jpg" alt="灵沐开源资源下载小程序"></p>
+<h2 id="后台升级-​"><a href="#后台升级-​" class="headerlink" title="后台升级 ​"></a>后台升级 <a href="#%E5%90%8E%E5%8F%B0%E5%8D%87%E7%BA%A7">​</a></h2><p>后台升级和wordpress概念是一样的，和小程序升级毫无关系。因此你可以理解为不是很必要的情况下不升级也是可行，若想将Strapi 软件包版本号升级到最新的稳定 Strapi 版本 在宝塔后台编辑<code>package.json</code></p>
+<pre class="line-numbers language-auto" data-language="auto"><code class="language-auto">// path: package.json
+
+{
+  // ...
+  "dependencies": {
+    "@strapi/strapi": "4.7.0", 
+    "@strapi/plugin-users-permissions": "4.7.0",
+    "@strapi/plugin-i18n": "4.7.0",
+    "better-sqlite3": "7.4.6"
+    // ...
+  }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>将文件中的<code>4.7.0</code>替换成最新的，保存编辑后的文件，终端执行</p>
 
                 
             </div>
@@ -1274,16 +1303,12 @@ https://mp.weixin.qq.com/MzIxMzQ2Nzc3OA
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Hexo/">
-                                    <span class="chip bg-color">Hexo</span>
-                                </a>
-                            
-                                <a href="/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/">
-                                    <span class="chip bg-color">小程序</span>
+                                <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/">
+                                    <span class="chip bg-color">微信小程序</span>
                                 </a>
                             
                                 <a href="/tags/%E7%81%B5%E6%B2%90/">
-                                    <span class="chip bg-color">灵沐]</span>
+                                    <span class="chip bg-color">灵沐</span>
                                 </a>
                             
                         </div>
@@ -1782,30 +1807,29 @@ new Valine({
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/posts/2f58d10.html">
+                <a href="/posts/7703d477.html">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928020120.jpg" class="responsive-img" alt="灵沐教程">
+                        <img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021815.jpg" class="responsive-img" alt="星宿小程序">
                         
-                        <span class="card-title">灵沐教程</span>
+                        <span class="card-title">星宿小程序</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            本教程来自官网
+                            
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-05-16
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-05-16
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1818,20 +1842,15 @@ new Valine({
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Hexo/">
-                        <span class="chip bg-color">Hexo</span>
+                    <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/">
+                        <span class="chip bg-color">微信小程序</span>
                     </a>
                     
-                    <a href="/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/">
-                        <span class="chip bg-color">小程序</span>
-                    </a>
-                    
-                    <a href="/tags/%E7%81%B5%E6%B2%90/">
-                        <span class="chip bg-color">灵沐]</span>
+                    <a href="/tags/%E6%98%9F%E5%AE%BF/">
+                        <span class="chip bg-color">星宿</span>
                     </a>
                     
                 </div>
@@ -2117,7 +2136,7 @@ new Valine({
 
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">76.3k</span>&nbsp;字
+                class="white-color">79.3k</span>&nbsp;字
             
             
             
