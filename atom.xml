@@ -6,7 +6,7 @@
   <link href="https://19492035.xyz/atom.xml" rel="self"/>
   
   <link href="https://19492035.xyz/"/>
-  <updated>2024-05-16T04:58:50.516Z</updated>
+  <updated>2024-06-27T14:41:12.591Z</updated>
   <id>https://19492035.xyz/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>灵沐小程序微信端配置</title>
+    <link href="https://19492035.xyz/posts/13ce3e59.html"/>
+    <id>https://19492035.xyz/posts/13ce3e59.html</id>
+    <published>2024-06-27T14:29:40.000Z</published>
+    <updated>2024-06-27T14:41:12.591Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="微信端-​"><a href="#微信端-​" class="headerlink" title="微信端 ​"></a>微信端 <a href="#%E5%BE%AE%E4%BF%A1%E7%AB%AF">​</a></h2><p>后台菜单—内容管理—wxSet <img src="https://cdn.frbkw.com/wp-center/uploads/2023/04/20230406174441271-scaled.jpg" alt="灵沐小程序微信端设置"></p><h2 id="章节视频教程-​"><a href="#章节视频教程-​" class="headerlink" title="章节视频教程 ​"></a>章节视频教程 <a href="#%E7%AB%A0%E8%8A%82%E8%A7%86%E9%A2%91%E6%95%99%E7%A8%8B">​</a></h2><p><a href="https://www.bilibili.com/video/BV1R24y157Yr/?share_source=copy_web&amp;vd_source=ac7bcdc4a3b47cfed57145f1ed1d5cca">点击：03-灵沐数据模型</a></p><h2 id="配置说明-​"><a href="#配置说明-​" class="headerlink" title="配置说明 ​"></a>配置说明 <a href="#%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E">​</a></h2><ul><li>  <code>appId</code>：小程序ID</li><li>  <code>appName</code>:小程序名称</li><li>  <code>indexBg</code>:首页背景(多个背景回车换行输入)</li><li>  <code>notice</code>:公告</li><li>  <code>logo</code>:logo</li><li>  <code>popNotice</code>:弹窗通知</li><li>  <code>docHost</code>:文档置顶</li><li>  <code>topicHost</code>:文档置顶</li><li>  <code>adCache</code>:广告缓存(开启一天内容同篇文章可重复阅读)</li><li>  <code>host</code>:资源置顶</li></ul><p>(注：置顶需要格式输入)</p><pre class="line-numbers language-auto" data-language="auto"><code class="language-auto">单篇文章示例：&amp;filters[id][$eq]=文章ID多篇文章示例：&amp;filters[id][$eq]=1&amp;filters[id][$eq]=2<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><ul><li>  <code>attendviImg</code>：微信公众号二维码</li></ul><p>(注：使用方式)</p><pre class="line-numbers language-auto" data-language="auto"><code class="language-auto">在此字段输入微信公众号二维码地址之后在金刚区选`wx_default`类型，输入页面值`../follow/follow`<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><ul><li>  <code>shareTitle</code>：分享标题</li><li>  <code>shareImg</code>：分享图片</li><li>  <code>vajra</code>：金刚区</li></ul><p>金刚区注解</p><ul><li>  <code>title</code>：标题</li><li>  <code>icon</code>：图标地址</li><li>  <code>url</code>：跳转web地址</li><li>  <code>appId</code>：小程序ID</li><li>  <code>type</code>：功能类型</li></ul><ol><li> <code>wx_default</code>：跳转二级页面，需在Url输入页面地址</li><li> <code>wx_program</code>：跳转小程序需要在appId输入小程序id，url默认为首页</li><li> <code>wx_web</code>：跳转微信公众号地址，需在url输入地址</li><li> <code>wx_kefu</code>：客服功能</li><li> <code>wx_share</code>：分享小程序</li></ol><p>js</p><pre class="line-numbers language-auto" data-language="auto"><code class="language-auto">// 关注title:"关注"icon:"../../images/attention.png"type:"wx_default"url:"../follow/follow"appId:""//客服(微信有效)title:"客服"icon:"../../images/kefu.png"type:"wx_kefu"url:""appId:""//打赏title:"打赏"icon:"../../images/kefu.png"type:"wx_default"url:"../about/about"appId:""//搜索关键字：url中type对应Image(壁纸)，Doc(文档)，Post(资源)，Topic(题库)，active表示默认选中第几个选项卡title:"银发"icon:"../../images/new.png"type:"wx_default"url:"../lists/lists?search="appId:""//主题类型：type对应Image(壁纸)，Doc(文档)，Post(资源)，Topic(题库)title:"题库"icon:"../../images/new.png"type:"wx_default"url:"/pages/postType/postType?type=Topic"appId:""//福利title:"题库"icon:"../../images/new.png"type:"`wx_program"url:"/pages/index/index"appId:"wxc75686797e36bc24"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p><img src="https://docs.frbkw.com/images/vajra1.jpg" alt="灵沐金刚区配置"><img src="https://docs.frbkw.com/images/vajra2.jpg" alt="灵沐金刚区配置"><img src="https://docs.frbkw.com/images/vajra3.jpg" alt="灵沐金刚区配置"><img src="https://docs.frbkw.com/images/vajra4.jpg" alt="灵沐金刚区配置"></p><ul><li>  <code>adSwitch</code>：全局广告开关</li><li>  <code>jiliAd</code>：激励视频广告ID</li><li>  <code>chapingAd</code>：插屏广告ID</li><li>  <code>videoAd</code>：视频广告ID</li><li>  <code>about</code>：关于我们</li><li>  <code>indexType</code>：首页切列表</li></ul><p>分类类型</p><ul><li><p>  <code>Post</code>：资源下载类型</p></li><li><p>  <code>Doc</code>：文档阅读类型</p></li><li><p>  <code>Image</code>：壁纸类型</p></li><li><p>  <code>Topic</code>：题库类型</p></li><li><p>  <code>copyUrl</code>：是否启动一键复制按钮(不建议开启，若开启需要设置用户隐私协议) <img src="https://cdn.frbkw.com/wp-center/uploads/2024/04/20240418214623500.png" alt="灵沐一键复制按钮"></p></li><li><p>  <code>popNoticeUrl</code>：弹窗内容访问二极页面</p></li></ul><p>html</p><pre class="line-numbers language-auto" data-language="auto"><code class="language-auto">//公众号地址https://mp.weixin.qq.com/MzIxMzQ2Nzc3OA//小程序二级页面/pages/wallcover/wallcover?id=16<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="小程序篇" scheme="https://19492035.xyz/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%AF%87/"/>
+    
+    
+    <category term="Hexo" scheme="https://19492035.xyz/tags/Hexo/"/>
+    
+    <category term="微信小程序" scheme="https://19492035.xyz/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    <category term="灵沐" scheme="https://19492035.xyz/tags/%E7%81%B5%E6%B2%90/"/>
+    
+  </entry>
   
   <entry>
     <title>星宿小程序</title>
@@ -541,34 +569,6 @@
     <category term="博客搭建" scheme="https://19492035.xyz/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
     <category term="Matery" scheme="https://19492035.xyz/tags/Matery/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>元宇宙赋能教育产业主题沙龙报告</title>
-    <link href="https://19492035.xyz/posts/18d197ad.html"/>
-    <id>https://19492035.xyz/posts/18d197ad.html</id>
-    <published>2024-04-08T13:53:27.876Z</published>
-    <updated>2024-04-09T05:37:43.725Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="元宇宙赋能教育产业主题沙龙报告-内部学习使用"><a href="#元宇宙赋能教育产业主题沙龙报告-内部学习使用" class="headerlink" title="元宇宙赋能教育产业主题沙龙报告(内部学习使用)"></a>元宇宙赋能教育产业主题沙龙报告<span style="color:red;">(内部学习使用)</span></h2><p><img src="https://cdn.jsdelivr.net/gh/nlxxtw/cdn/posts/20240408211354.png"></p><h2 id="报告一"><a href="#报告一" class="headerlink" title="报告一"></a>报告一</h2><h4 id="人工智能时代增强现实-AR-赋能虚拟仿真教学"><a href="#人工智能时代增强现实-AR-赋能虚拟仿真教学" class="headerlink" title="人工智能时代增强现实(AR)赋能虚拟仿真教学"></a><a href="https://jxstnueducn-my.sharepoint.com/:b:/g/personal/vr_jxstnu_edu_cn/ESWoHhSq7MVCjafBd_UI95ABdldAAVI_a_qIs-XTsoeVpA?e=bmjxgh">人工智能时代增强现实(AR)赋能虚拟仿真教学</a></h4><p><img src="https://cdn.jsdelivr.net/gh/nlxxtw/cdn/posts/20240408213937.png"></p><h2 id="报告二"><a href="#报告二" class="headerlink" title="报告二"></a>报告二</h2><h4 id="ChatGPT-高等教音求变创新的机遇和挑战"><a href="#ChatGPT-高等教音求变创新的机遇和挑战" class="headerlink" title="ChatGPT:高等教音求变创新的机遇和挑战"></a><a href="https://jxstnueducn-my.sharepoint.com/:b:/g/personal/vr_jxstnu_edu_cn/EQmDTq70aHJFqAez2ZtVwZ0BJR6XkY9QLEh6VUKZqjY6LA?e=GjOgTQ">ChatGPT:高等教音求变创新的机遇和挑战</a></h4><p><img src="https://cdn.jsdelivr.net/gh/nlxxtw/cdn/posts/20240408213159.png"></p><h2 id="报告三"><a href="#报告三" class="headerlink" title="报告三"></a>报告三</h2><h4 id="元宇宙数字内容智能生成与交互"><a href="#元宇宙数字内容智能生成与交互" class="headerlink" title="元宇宙数字内容智能生成与交互"></a><a href="https://jxstnueducn-my.sharepoint.com/:b:/g/personal/vr_jxstnu_edu_cn/EavsJZR1ULJKuczYDZP29oMBqea20qd0xqvshscUMSwBVg?e=OvxpzF">元宇宙数字内容智能生成与交互</a></h4><p><img src="https://cdn.jsdelivr.net/gh/nlxxtw/cdn/posts/20240408213435.png"></p><h2 id="报告四"><a href="#报告四" class="headerlink" title="报告四"></a>报告四</h2><h4 id="Web3-0推动职业教育新生态"><a href="#Web3-0推动职业教育新生态" class="headerlink" title="Web3.0推动职业教育新生态"></a><a href="https://jxstnueducn-my.sharepoint.com/:b:/g/personal/vr_jxstnu_edu_cn/EYAR2PCfjflIgcOHzxvhi_MByrGhFE0bvYEcohLWX5MxjQ?e=WaJDIZ">Web3.0推动职业教育新生态</a></h4><p><img src="https://cdn.jsdelivr.net/gh/nlxxtw/cdn/posts/20240408213713.png"></p><h2 id="报告五"><a href="#报告五" class="headerlink" title="报告五"></a>报告五</h2><h4 id="解决方案：AI多数字人元宇宙平台"><a href="#解决方案：AI多数字人元宇宙平台" class="headerlink" title="解决方案：AI多数字人元宇宙平台"></a><a href="https://jxstnueducn-my.sharepoint.com/:b:/g/personal/vr_jxstnu_edu_cn/ETBKw88h65ZEps5hPWPMYRYBWGhRflSQH-M22niiMBxh2A?e=icKnPH">解决方案：AI多数字人元宇宙平台</a></h4><p><img src="image-2.png" alt="alt text"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    <category term="学术篇" scheme="https://19492035.xyz/categories/%E5%AD%A6%E6%9C%AF%E7%AF%87/"/>
-    
-    
-    <category term="学术" scheme="https://19492035.xyz/tags/%E5%AD%A6%E6%9C%AF/"/>
-    
-    <category term="讲座" scheme="https://19492035.xyz/tags/%E8%AE%B2%E5%BA%A7/"/>
-    
-    <category term="元宇宙" scheme="https://19492035.xyz/tags/%E5%85%83%E5%AE%87%E5%AE%99/"/>
     
   </entry>
   
